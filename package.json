@@ -1,0 +1,33 @@
+{
+    "name": "static-app-template.thetyee.ca",
+    "version": "0.0.1",
+    "description": "Static App Template",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:phillipadsmith/static-app-template.thetyee.ca.org.git"
+    },
+    "author": "Phillip Smith <ps@phillipadsmith.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/phillipadsmith/static-app-template.thetyee.ca/issues"
+    },
+    "homepage": "http://static-app-template.thetyee.ca",
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "grunt-browser-sync": "^0.9.1",
+        "grunt-concurrent": "~0.5.0",
+        "grunt-contrib-connect": "~0.7.1",
+        "grunt-contrib-copy": "~0.5.0",
+        "grunt-contrib-jshint": "~0.10.0",
+        "grunt-contrib-less": "~0.11.1",
+        "grunt-contrib-watch": "~0.6.1",
+        "grunt-jekyll": "~0.4.2",
+        "grunt-jsbeautifier": "~0.2.7",
+        "grunt-open": "^0.2.3",
+        "less": "~1.7.1",
+        "load-grunt-tasks": "~0.4.0"
+    }
+}

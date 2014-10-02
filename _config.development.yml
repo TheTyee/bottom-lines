@@ -1,0 +1,10 @@
+mode: 'development'
+
+# Switches off the asset bundler when developing
+asset_bundler:
+  dev: true
+
+assets:
+  debug: true
+  cachebust: none
+  cache: true

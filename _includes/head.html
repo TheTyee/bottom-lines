@@ -1,0 +1,45 @@
+<head>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <!-- General properties -->
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="author" content="{{ site.author }}">
+    <meta name="keywords" content="{{ page.tags }}">
+    <meta name="robots" content="{{ site.robots }}" />
+    <meta name="revisit-after" content="{{ site.revisit }}" />
+    <meta name="copyright" content="{{ site.copyright}}" />
+    <meta name="MSSmartTagsPreventParsing" content="TRUE" />
+    <!-- OpenGraph properties -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:image" content="{{ site.asset_paths.img }}{{ site.image }}" />
+    <meta property="og:site_name" content="{{ site.name }}" />
+    <meta property="fb:admins" content="{{ site.fb_admins }}" />
+    <!-- Dublin Core properties -->
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+    <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+    <meta name="DC.title" lang="English" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta name="DC.creator" content="{{ site.author }}" />
+    <meta name="DC.description" lang="English" content="{{ site.description }}" />
+    <meta name="DC.publisher" content="{{ site.author }}" />
+    <meta name="DC.format" content="text/html" />
+    <meta name="DC.language" scheme="DCTERMS.URI" content="English" />
+    <!-- /Meta -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="{{ site.asset_paths.img }}ui/img/favicon.ico">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <!-- CSS -->
+    <!-- jekyll-assets pipeline -->
+    {% stylesheet styles.css %}
+    <!-- /jekyll-assets pipeline -->
+    <!-- /CSS -->
+    <!-- JS Head -->
+    <script type="text/javascript" src="//use.typekit.net/uky8tja.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!-- /JS Head -->
+</head>

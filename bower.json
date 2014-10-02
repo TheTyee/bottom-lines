@@ -1,0 +1,26 @@
+{
+  "name": "static-app-template.thetyee.ca",
+  "version": "0.0.1",
+  "authors": [
+    "Phillip Smith <ps@phillipadsmith.com>"
+  ],
+  "description": "Bottom Lines",
+  "license": "MIT",
+  "homepage": "static-app-template.thetyee.ca",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "backbone": "~1.1.2",
+    "modernizr": "~2.8.3",
+    "fullpage.js": "~2.0.7",
+    "d3": "~3.4.11",
+    "leaflet": "~0.7.3"
+  }
+}

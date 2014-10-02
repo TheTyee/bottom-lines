@@ -1,0 +1,87 @@
+# Project settings - General
+version: 0.0.1
+title: "Project title"
+description: "Project description"
+baseurl: ""
+url: "http://project-name.thetyee.ca"
+logo: 'tss_logo.png'
+
+# Project settings - Analytics
+analytics:
+    ga_tracking_id: 'UA-12345-5'
+
+# Project settings - Meta
+author: "The Tyee"
+robots: "index, follow"
+revisit: "1 day"
+copyright: "&copy; The Tyee 2014"
+
+# Project settings - Assets
+asset_paths:
+    img: ""
+    js:  ""
+
+# Project settings - URLs
+urls:
+    display: 'project-name.thetyee.ca'
+    privacy: 'http://project-name.thetyee.ca/privacy_url'
+    credits: 'http://project-name.thetyee.ca/credits_url'
+    credits: 'http://github.com/TheTyee/project-name'
+
+# Project settings - Social
+social:
+    facebook:
+        fb_admins:
+            - 12345
+        og_url:
+        og_image:
+        og_sitename:
+    twitter:
+    gplus:
+
+# Jekyll build settings
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
+  - bower.json
+  - package.json
+  - node_modules
+  - bower_components
+  - Gruntfile.js
+  - gemfile
+  - Gemfile.lock
+asset_bundler:
+  # Asset bundler plugin - not used in this version
+  compress:
+    js: yui 
+    css: yui 
+  base_path: /assets/
+  # When not in development mode, reference assets on the CDN site
+  # TODO update this to the CDN link
+  server_url: http://static-template.apps.thetyee.ca
+assets:
+  # jekyll-assets pipeline - currently using this
+  # Pathname of the destination of generated (bundled) assets relative
+  # to the destination of the root.
+  dirname: assets
+  # Base URL of assets paths.
+  baseurl: /assets/
+  sources:
+    - ui/js
+    - ui/img
+    - ui/less
+    - ui/css
+    - bower_components/jquery/dist/ 
+    - bower_components/modernizr/
+    - bower_components/bootstrap/dist/js/
+    - bower_components/underscore/
+    - bower_components/backbone/
+    - bower_components/bootstrap/dist/css/
+    - bower_components/jquery.slimscroll/
+    - bower_components/fullpage.js/
+    - bower_components/fullpage.js/vendors/
+    - bower_components/d3/
+  js_compressor: yui
+  css_compressor: yui
+  cache: true

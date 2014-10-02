@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    {% include head.html %}
+    <body class="{{ page.layout }}" id="{{ page.body_id }}">
+        <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <noscript id="js-warning">
+            This page requires Javascript. Your browser either doesn't support JavaScript or you have it turned off. Please enable JavaScript before you proceed.
+        </noscript>
+        {% include header.html %}
+
+        <div id="content">
+            <div class="container">
+                <h2>{{ page.title }}</h2>
+                <p class="lead">{{ page.overview }}</p>
+                <div id="datavis"></div>
+                <div>
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+
+        {% include footer.html %}
+        {% include footer_scripts.html %}
+        <script src="/ui/js/{{ page.chart_js }}" /></script>
+    </body>
+</html>
