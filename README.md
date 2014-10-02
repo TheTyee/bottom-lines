@@ -4,7 +4,7 @@ Work in progress toward a simple, flexible, and easy to use static news app temp
 # Install requirements
 
 This is still a work in progress, but currently I'm trying to keep it pretty simple:
-* Jekyll 2.0.3 (and dependencies)
+* Jekyll 2.4.0 (and dependencies)
 
 Jekyll plugins
 * [jeyll-assets](https://github.com/ixti/jekyll-assets)
