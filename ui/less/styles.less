@@ -6,9 +6,9 @@ CSS/LESS includes
 
 
 /* ==========================================================================
-Globals & Mixins
+Mixins (always mixedCase)
 ========================================================================== */
-.rounded-corners (@radius: 5px) {
+.roundedCorners (@radius: 5px) {
     -webkit-border-radius: @radius;
     -moz-border-radius: @radius;
     -ms-border-radius: @radius;
@@ -16,10 +16,42 @@ Globals & Mixins
     border-radius: @radius;
 }
 
-.box-shadow (@x: 0; @y: 0; @blur: 1px; @color: rgba(0,0,0,0.3)) {
+.boxShadow (@x: 0; @y: 0; @blur: 1px; @color: rgba(0,0,0,0.3)) {
     -moz-box-shadow: @arguments;
     -webkit-box-shadow: @arguments;
     box-shadow: @arguments;
+}
+.textShadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+    text-shadow: @string;
+}
+.listComma {
+    display: inline;
+    list-style: none;
+    padding: 0;
+    li {
+        display: inline;
+    }
+    li:after {
+        content: ", ";
+    }
+    li:last-child:after {
+        content: "";
+    }
+}
+/* ==========================================================================
+Utilities
+========================================================================== */
+
+@emInPx: 16;    // 16px per em (global default)
+@emInPt: 11.955168;
+
+.pxToEm(@selector, @amt, @emInPx: @emInPx) when (ispixel(@amt))
+{
+    @{selector}: unit((@amt / @emInPx), em);
+}
+.ptToEm(@selector, @amt, @emInPt: @emInPt) when (ispixel(@amt))
+{
+    @{selector}: unit((@amt / @emInPt), em);
 }
 
 /* ==========================================================================
@@ -37,32 +69,110 @@ Variables
 
 // Style tiles, Colours
 @white: #ffffff;
-@darkBlue: #285058;
-@lightBlue: #e9edee;
-@medBlue: #547678;
-@altBlue: #52737c;
-@darkGreen: #598700;
-@medGreen: #accc4f;
-@paleGreen: #dce9be;
-@lightGreen: #eef3dd;
-@limeGreen: #7FAD17;
-@gray: #7A7979;
-@lightGray: rgb(240,240,240);
-@bodyText: #303030;
-@bodyHead: #141414;
-@authorText: #568C00;
-@greyText: #7A7979;
-@editorText: #575756;
-@blockHeaders: #093742;
-@articleHeaders: #628C00;
-@articleDesc: #575756;
-@linkText: #083643;
 
 // Style tiles, Fonts
-// TODO come back to this once TypeKit is working
-@fontDefault: "Lucida Grande", Verdana, sans-serif;
-@fontHeadersDefault: "franklin-gothic-urw-cond",sans-serif;
-@fontHeadersBlock: "futura-pt", Arial, sans-serif;
+.typeChapterTitle {
+// Chapter Title: Adelle Extrabold, font-size: 60pt, line-height: 48pt, space-before: 0, space-after: 24pt, colour: B1E7FF
+    color: #1E6FBD;
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 800;
+    .ptToEm(font-size, 60);
+    .ptToEm(line-height, 48);
+}
+.typeChapterDeck {
+//Chapter deck: Adelle light, font-size: 28pt, line-height: 40pt, space-before: 0, space-after: 0, colour: 9DD6EE
+    color: #9DD6EE;
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 300;
+    .ptToEm(font-size, 28);
+    .ptToEm(line-height, 40);
+
+}
+
+.typeMajorHeader {
+//Major Header: Adelle light, font-size: 48pt, line-height: 48pt, space-before: 0, space-after: 12pt, colour: 2075C7
+    color: #2075C7;
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 300;
+    .ptToEm(font-size, 48);
+    .ptToEm(line-height, 48);
+}
+
+.typeDeck {
+//Deck: Adelle Regular, font-size: 20pt, line-height: 30pt, space-before: 12, space-after: 0pt, colour: 2075C7
+    color: #2075C7;
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 400;
+    .ptToEm(font-size, 20);
+    .ptToEm(line-height, 30);
+}
+
+.typeSubHeader {
+//Subheader: Adelle Extrabold, font-size: 22pt, line-height: 27pt, space-before: 24pt, space-after: 0pt, colour: 595959
+    color: #595959;
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 800;
+    .ptToEm(font-size, 22);
+    .ptToEm(line-height, 27);
+}
+
+.typeBodyText {
+//Body Text: Adelle Sans Light, font-size: 16pt, line-height: 24pt, space-before: 12, space-after: 0, colour: 404040
+    color: #404040;
+    font-family: "adelle-sans",sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+    .ptToEm(font-size, 16);
+    .ptToEm(line-height, 24);
+}
+
+.typeSlideTitle {
+//Slide Title: Adelle Extrabold, font-size: 22pt, line-height: 27pt, space-before: n/a, space-after: n/a, colour: 1E6FBD
+    color: #1E6FBD;
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 800;
+    .ptToEm(font-size, 22);
+    .ptToEm(line-height, 27);
+}
+.typeSlideDeck {
+//Slide deck: Adelle light, font-size: 28pt, line-height: 40pt, space-before: 0, space-after: 0, colour: 1E6FBD
+    color: #1E6FBD;
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 300;
+    .ptToEm(font-size, 28);
+    .ptToEm(line-height, 40);
+
+}
+
+.typeSidebarTitle {
+//Sidebar linked resource title: Adelle Extrabold, font-size: 12pt, line-height: 18pt, space-before: n/a, space-after: n/a, colour: 4D4D4D
+    color: #4D4D4D;
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 800;
+    .ptToEm(font-size, 12);
+    .ptToEm(line-height, 18);
+    
+}
+
+.typeSidebarText {
+//Sidebar linked resource text: Adelle Sans Light, font-size: 12pt, line-height: 18pt, space-before: n/a, space-after: n/a, colour: 4D4D4D
+    color: #4D4D4D;
+    font-family: "adelle-sans",sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+    .ptToEm(font-size, 12);
+    .ptToEm(line-height, 18);
+}
+
+@fontDefault: serif;
 
 // Party colours
 @labelLiberal: #DC2300;
@@ -75,33 +185,11 @@ Variables
 Global 
 ========================================================================== */
 
+body, html {
+    height: 100%;
+}
 body {
-    font-family: @fontDefault;
-}
-
-header {
-    background-color: @lightGray;
-    .navbar-brand {
-        padding-left: 0px;
-    }
-}
-
-header h2#org-logo {
-    text-indent: -5000px;
-    background: url('/ui/img/tss_logo.png') no-repeat top left;
-    margin-top: 10px;
-    padding-top: 50px;
-}
-
-#content {
-    background: @white;
-    padding-bottom: 40px;
-}
-
-footer.site-footer {
-    background-color: @lightGray;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    .typeBodyText;
 }
 
 
@@ -110,7 +198,7 @@ Type
 ========================================================================== */
 
 h1, h2, h3, h4 {
-    font-family: @fontHeadersDefault; 
+    .typeChapterTitle;
 }
 
 /* ==========================================================================
@@ -121,52 +209,48 @@ Layout
 Modules 
 ========================================================================== */
 
-// Module: Header navigation, .site-nave
-.site-nav {
-    border: none;
-    margin-bottom: 0px;
-    background-color: inherit;
-    .navbar-toggle {
-        border: none;
-        margin-right: 0px;
-        .icon-bar {
-            //background-color: black;
-            height: 4px;
+// Module: Chapters
+
+section {
+     .intro {
+        background-size: cover;
+        background-position: center;
+        //min-height: 100vh; // For smartphones, then use vh for larger screens
+        .intro-text {
+            margin: 30% auto;
+            h1 {
+                .typeSlideTitle;
+                .textShadow;
+            }
+            h2 {
+                .typeSlideDeck;
+                .textShadow;
+            }
+
         }
     }
-    h1 {
-        margin: 0;
-        padding: 0;
-        display: inline;
-        line-height: inherit;
-    }
-    // Temporary until I override the navbar styles
-    .navbar>.container-fluid .navbar-brand {
-        margin-left: -30px;
-    }
 }
-// Module: Fullpage
 
-body.cards {
-    header {
-        position:fixed;
-        display:block;
-        width: 100%;
-        z-index:9;
-    }
-    header{
-        top:0px;
-    }
-    footer {
-        display: none;
-    }
-    .controlArrow {
-        display: none !important;
-    }
-}
+// Module: Fullpage
+//body.cards {
+    //header {
+        //position:fixed;
+        //display:block;
+        //width: 100%;
+        //z-index:9;
+    //}
+    //header{
+        //top:0px;
+    //}
+    //footer {
+        //display: none;
+    //}
+    //.controlArrow {
+        //display: none !important;
+    //}
+//}
 
 // Modules: Data visualizations
-
 #datavis {
     width: 100%;
     height: 400px;
@@ -196,25 +280,54 @@ body#regional-chart {
 }
 
 
+
 /* ==========================================================================
 Progressively enhance for larger screens 
 ========================================================================== */
-
-@media screen and (min-width: 768px) { /* Adjust for large desktop */
-
+/*iPhone < 5:*/
+@media screen and (device-aspect-ratio: 2/3) {
+    section .intro {
+        min-height: 500px; 
+    }
 }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) { /* Adjust for standard desktop */
-
+ 
+/*iPhone 5:*/
+@media screen and (device-aspect-ratio: 40/71) {
+    section .intro {
+        min-height: 500px; 
+    }
+}
+ 
+/*iPad:*/
+@media screen and (device-aspect-ratio: 3/4) {
+    section .intro {
+        min-height: 768px; 
+    }
 }
 
 @media screen and (min-width:768px) and (max-width: 992px) { /* portrait tablets */ 
-
+    section .intro {
+        min-height: 1024px; 
+    }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
     /* Put high-resolution display styles here */
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { /* Adjust for small desktop, wide portrait */
+    section .intro {
+    }
+}
+
+@media screen and (min-width: 1025px) { /* Adjust for large desktop */
+    section .intro {
+        min-height: 100vh; // For smartphones, then use vh for larger screens
+    }
+
+}
+
+
 
 /* ==========================================================================
 Print styles.
