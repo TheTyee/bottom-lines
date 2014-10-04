@@ -6,3 +6,5 @@ node_modules
 bower_components
 _Archive
 _vendor
+_assets
+CLIPS.md
