@@ -20,6 +20,7 @@
     "backbone": "~1.1.2",
     "modernizr": "~2.8.3",
     "fullpage.js": "~2.0.7",
-    "d3": "~3.4.11"
+    "d3": "~3.4.11",
+    "layoutmanager": "~0.9.5"
   }
 }

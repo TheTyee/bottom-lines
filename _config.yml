@@ -68,6 +68,7 @@ assets:
   # Base URL of assets paths.
   baseurl: /assets/
   sources:
+    - _assets/images
     - ui/js
     - ui/img
     - ui/less
@@ -75,9 +76,10 @@ assets:
     - bower_components/jquery/dist/ 
     - bower_components/modernizr/
     - bower_components/bootstrap/dist/js/
+    - bower_components/bootstrap/dist/css/
     - bower_components/underscore/
     - bower_components/backbone/
-    - bower_components/bootstrap/dist/css/
+    - bower_components/layoutmanager/
     - bower_components/jquery.slimscroll/
     - bower_components/fullpage.js/
     - bower_components/fullpage.js/vendors/
