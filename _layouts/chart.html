@@ -11,18 +11,17 @@
         <noscript id="js-warning">
             This page requires Javascript. Your browser either doesn't support JavaScript or you have it turned off. Please enable JavaScript before you proceed.
         </noscript>
-        {% include header.html %}
 
-        <div id="content">
+        <article id="content">
             <div class="container">
                 <h2>{{ page.title }}</h2>
                 <p class="lead">{{ page.overview }}</p>
-                <div id="datavis"></div>
-                <div>
+                <section id="datavis"></section>
+                <section id="description">
                     {{ content }}
-                </div>
+                </section>
             </div>
-        </div>
+        </article>
 
         {% include footer.html %}
         {% include footer_scripts.html %}
