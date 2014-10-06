@@ -3,7 +3,7 @@ CSS/LESS includes
 ========================================================================== */
 //= require bootstrap.css
 // require jquery.fullPage.css
-
+//= require assets.css
 
 /* ==========================================================================
 Mixins (always mixedCase)
@@ -49,7 +49,7 @@ Utilities
 {
     @{selector}: unit((@amt / @emInPx), em);
 }
-.ptToEm(@selector, @amt, @emInPt: @emInPt) when (ispixel(@amt))
+.ptToEm(@selector, @amt, @emInPt: @emInPt)
 {
     @{selector}: unit((@amt / @emInPt), em);
 }
@@ -69,10 +69,12 @@ Variables
 
 // Style tiles, Colours
 @white: #ffffff;
+@chapterFooterBgColor: #2e569c;
+@chapterFooterTextColor: #ffffff;
 
 // Style tiles, Fonts
 .typeChapterTitle {
-// Chapter Title: Adelle Extrabold, font-size: 60pt, line-height: 48pt, space-before: 0, space-after: 24pt, colour: B1E7FF
+    // Chapter Title: Adelle Extrabold, font-size: 60pt, line-height: 48pt, space-before: 0, space-after: 24pt, colour: B1E7FF
     color: #1E6FBD;
     font-family: "adelle",serif;
     font-style: normal;
@@ -81,7 +83,7 @@ Variables
     .ptToEm(line-height, 48);
 }
 .typeChapterDeck {
-//Chapter deck: Adelle light, font-size: 28pt, line-height: 40pt, space-before: 0, space-after: 0, colour: 9DD6EE
+    //Chapter deck: Adelle light, font-size: 28pt, line-height: 40pt, space-before: 0, space-after: 0, colour: 9DD6EE
     color: #9DD6EE;
     font-family: "adelle",serif;
     font-style: normal;
@@ -92,7 +94,7 @@ Variables
 }
 
 .typeMajorHeader {
-//Major Header: Adelle light, font-size: 48pt, line-height: 48pt, space-before: 0, space-after: 12pt, colour: 2075C7
+    //Major Header: Adelle light, font-size: 48pt, line-height: 48pt, space-before: 0, space-after: 12pt, colour: 2075C7
     color: #2075C7;
     font-family: "adelle",serif;
     font-style: normal;
@@ -102,7 +104,7 @@ Variables
 }
 
 .typeDeck {
-//Deck: Adelle Regular, font-size: 20pt, line-height: 30pt, space-before: 12, space-after: 0pt, colour: 2075C7
+    //Deck: Adelle Regular, font-size: 20pt, line-height: 30pt, space-before: 12, space-after: 0pt, colour: 2075C7
     color: #2075C7;
     font-family: "adelle",serif;
     font-style: normal;
@@ -112,7 +114,7 @@ Variables
 }
 
 .typeSubHeader {
-//Subheader: Adelle Extrabold, font-size: 22pt, line-height: 27pt, space-before: 24pt, space-after: 0pt, colour: 595959
+    //Subheader: Adelle Extrabold, font-size: 22pt, line-height: 27pt, space-before: 24pt, space-after: 0pt, colour: 595959
     color: #595959;
     font-family: "adelle",serif;
     font-style: normal;
@@ -122,7 +124,7 @@ Variables
 }
 
 .typeBodyText {
-//Body Text: Adelle Sans Light, font-size: 16pt, line-height: 24pt, space-before: 12, space-after: 0, colour: 404040
+    //Body Text: Adelle Sans Light, font-size: 16pt, line-height: 24pt, space-before: 12, space-after: 0, colour: 404040
     color: #404040;
     font-family: "adelle-sans",sans-serif;
     font-style: normal;
@@ -132,7 +134,7 @@ Variables
 }
 
 .typeSlideTitle {
-//Slide Title: Adelle Extrabold, font-size: 22pt, line-height: 27pt, space-before: n/a, space-after: n/a, colour: 1E6FBD
+    //Slide Title: Adelle Extrabold, font-size: 22pt, line-height: 27pt, space-before: n/a, space-after: n/a, colour: 1E6FBD
     color: #1E6FBD;
     font-family: "adelle",serif;
     font-style: normal;
@@ -141,7 +143,7 @@ Variables
     .ptToEm(line-height, 27);
 }
 .typeSlideDeck {
-//Slide deck: Adelle light, font-size: 28pt, line-height: 40pt, space-before: 0, space-after: 0, colour: 1E6FBD
+    //Slide deck: Adelle light, font-size: 28pt, line-height: 40pt, space-before: 0, space-after: 0, colour: 1E6FBD
     color: #1E6FBD;
     font-family: "adelle",serif;
     font-style: normal;
@@ -152,18 +154,17 @@ Variables
 }
 
 .typeSidebarTitle {
-//Sidebar linked resource title: Adelle Extrabold, font-size: 12pt, line-height: 18pt, space-before: n/a, space-after: n/a, colour: 4D4D4D
+    //Sidebar linked resource title: Adelle Extrabold, font-size: 12pt, line-height: 18pt, space-before: n/a, space-after: n/a, colour: 4D4D4D
     color: #4D4D4D;
     font-family: "adelle",serif;
     font-style: normal;
     font-weight: 800;
     .ptToEm(font-size, 12);
     .ptToEm(line-height, 18);
-    
 }
 
 .typeSidebarText {
-//Sidebar linked resource text: Adelle Sans Light, font-size: 12pt, line-height: 18pt, space-before: n/a, space-after: n/a, colour: 4D4D4D
+    //Sidebar linked resource text: Adelle Sans Light, font-size: 12pt, line-height: 18pt, space-before: n/a, space-after: n/a, colour: 4D4D4D
     color: #4D4D4D;
     font-family: "adelle-sans",sans-serif;
     font-style: normal;
@@ -210,14 +211,24 @@ Modules
 ========================================================================== */
 
 // Module: Chapters
-
-section {
-     .intro {
+article {
+    h3 {
+        .typeMajorHeader;
+    }
+    h4 {
+        .typeDeck;
+    }
+    h5 {
+        .typeSubHeader;
+    }
+    // article header (typically a fullscreen slide)
+    header.fullscreen {
         background-size: cover;
         background-position: center;
         //min-height: 100vh; // For smartphones, then use vh for larger screens
-        .intro-text {
-            margin: 30% auto;
+        .intro {
+            //margin: 30% auto;
+            padding-top: 10%;
             h1 {
                 .typeSlideTitle;
                 .textShadow;
@@ -226,7 +237,36 @@ section {
                 .typeSlideDeck;
                 .textShadow;
             }
+            p {
+                .textShadow;
+            }
+        }
+    }
+    aside {
+        h1 {
+            .typeSidebarTitle;
+        }
+        * {
+            .typeSidebarText;
+        }
+    }
+}
 
+// Module: Parallax section breaks
+section.parallax {
+    height: 35rem;
+    margin-bottom: 4rem;
+    margin-top: 6rem;
+}
+
+// Module: Chapter footer
+article {
+    footer {
+        background: @chapterFooterBgColor;
+        color: @chapterFooterTextColor;
+        height: 12.5rem;
+        a:link, a:hover, a:visited {
+            color: @chapterFooterTextColor;
         }
     }
 }
@@ -286,27 +326,27 @@ Progressively enhance for larger screens
 ========================================================================== */
 /*iPhone < 5:*/
 @media screen and (device-aspect-ratio: 2/3) {
-    section .intro {
+    header.fullscreen {
         min-height: 500px; 
     }
 }
- 
+
 /*iPhone 5:*/
 @media screen and (device-aspect-ratio: 40/71) {
-    section .intro {
+    header.fullscreen {
         min-height: 500px; 
     }
 }
- 
+
 /*iPad:*/
 @media screen and (device-aspect-ratio: 3/4) {
-    section .intro {
+    header.fullscreen {
         min-height: 768px; 
     }
 }
 
 @media screen and (min-width:768px) and (max-width: 992px) { /* portrait tablets */ 
-    section .intro {
+    header.fullscreen {
         min-height: 1024px; 
     }
 }
@@ -316,12 +356,10 @@ Progressively enhance for larger screens
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) { /* Adjust for small desktop, wide portrait */
-    section .intro {
-    }
 }
 
 @media screen and (min-width: 1025px) { /* Adjust for large desktop */
-    section .intro {
+    header.fullscreen {
         min-height: 100vh; // For smartphones, then use vh for larger screens
     }
 
