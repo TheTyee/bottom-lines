@@ -83,7 +83,9 @@ assets:
     - bower_components/jquery-smooth-scroll/
     - bower_components/gsap/src/uncompressed/
     - bower_components/ScrollMagic/js/
-    - bower_components/fluidbox/
+    - bower_components/fluidbox
+    - bower_components/fluidbox/css/
+    - bower_components/jquery-scrollstop/
     - bower_components/jquery.slimscroll/
     - bower_components/fullpage.js/
     - bower_components/fullpage.js/vendors/

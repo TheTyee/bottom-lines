@@ -10,10 +10,11 @@
 //= require backbone.js
 //= require backbone.layoutmanager.js
 //= require jquery.smooth-scroll.js
+//= require jquery.fluidbox.min.js
+//= require jquery.scrollstop.js
 //= require TweenMax.js
 //= require jquery.scrollmagic.js
 // require jquery.scrollmagic.debug.js
-//= require jquery.fluidbox.js
 // require d3.js
 
 
@@ -105,6 +106,7 @@ App.Router = Backbone.Router.extend({
     }
 });
 
+$(function() {
 // Start the app
 App.router = new App.Router();
 Backbone.history.start();
@@ -119,3 +121,9 @@ var controller = new ScrollMagic({globalSceneOptions: {triggerHook: "onEnter", d
 new ScrollScene({triggerElement: ".parallax"})
 .setTween(TweenMax.to(".parallax", 1, {backgroundPosition: bgPosMovement, ease: Linear.easeNone}))
 .addTo(controller);
+
+// Move this into articleView 
+$('a').fluidbox();
+$(".intro").delay(1000).animate({ opacity: 1}, 700);
+
+});
