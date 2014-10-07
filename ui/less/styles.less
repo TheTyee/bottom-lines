@@ -4,6 +4,7 @@ CSS/LESS includes
 //= require bootstrap.css
 // require jquery.fullPage.css
 //= require assets.css
+//= require fluidbox.css
 
 /* ==========================================================================
 Mixins (always mixedCase)
@@ -139,7 +140,7 @@ Variables
     font-family: "adelle",serif;
     font-style: normal;
     font-weight: 800;
-    .ptToEm(font-size, 22);
+    .ptToEm(font-size, 32);
     .ptToEm(line-height, 27);
 }
 .typeSlideDeck {
@@ -211,7 +212,8 @@ Modules
 ========================================================================== */
 
 // Module: Chapters
-article {
+body.default article {
+    display: none;
     h3 {
         .typeMajorHeader;
     }
@@ -228,6 +230,7 @@ article {
         //min-height: 100vh; // For smartphones, then use vh for larger screens
         .intro {
             //margin: 30% auto;
+            opacity: 0; // For fade-in
             padding-top: 10%;
             h1 {
                 .typeSlideTitle;
@@ -240,6 +243,9 @@ article {
             p {
                 .textShadow;
             }
+           .next {
+               font-size: 3rem;
+           }
         }
     }
     aside {
@@ -250,26 +256,31 @@ article {
             .typeSidebarText;
         }
     }
-}
-
-// Module: Parallax section breaks
-section.parallax {
-    height: 35rem;
-    margin-bottom: 4rem;
-    margin-top: 6rem;
-}
-
-// Module: Chapter footer
-article {
+    .pull-right {
+        padding-left: 3rem;
+    }
+    .pull-left {
+        padding-right: 3rem;
+    }
+    // Module: Parallax section breaks
+    section.parallax {
+        height: 35rem;
+        margin-bottom: 4rem;
+        margin-top: 6rem;
+    }
+    // Module: Chapter footer
     footer {
         background: @chapterFooterBgColor;
         color: @chapterFooterTextColor;
         height: 12.5rem;
+        margin-top: 4rem;
         a:link, a:hover, a:visited {
+            .typeSubHeader;
             color: @chapterFooterTextColor;
         }
     }
 }
+
 
 // Module: Fullpage
 //body.cards {
@@ -298,7 +309,7 @@ article {
 
 // Module: Chart - Timeseries
 
-body#chart-timeseries {
+#chart-timeseries {
     .chart rect {
         fill: steelblue;
     }
@@ -311,6 +322,11 @@ body#chart-timeseries {
     path {
         stroke: black;
         fill: none;
+    }
+    button.close {
+        position: relative;
+        top: 60px;
+        right: 10px;
     }
 }
 
