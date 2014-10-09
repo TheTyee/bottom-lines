@@ -1,7 +1,7 @@
 # Project settings - General
 version: 0.0.1
-title: "Project title"
-description: "Project description"
+title: "Bottom Lines"
+description: "A quarter-century report on Canada's natural security."
 baseurl: ""
 url: "http://project-name.thetyee.ca"
 logo: 'tss_logo.png'
@@ -11,7 +11,7 @@ analytics:
     ga_tracking_id: 'UA-12345-5'
 
 # Project settings - Meta
-author: "The Tyee"
+author: "Tyee Solutions Society"
 robots: "index, follow"
 revisit: "1 day"
 copyright: "&copy; The Tyee 2014"
