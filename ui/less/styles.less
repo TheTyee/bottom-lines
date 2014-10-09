@@ -80,8 +80,8 @@ Variables
     font-family: "adelle",serif;
     font-style: normal;
     font-weight: 800;
-    .ptToEm(font-size, 60);
-    .ptToEm(line-height, 48);
+    font-size: 16px;
+    line-height: 30px;
 }
 .typeChapterDeck {
     //Chapter deck: Adelle light, font-size: 28pt, line-height: 40pt, space-before: 0, space-after: 0, colour: 9DD6EE
@@ -100,8 +100,10 @@ Variables
     font-family: "adelle",serif;
     font-style: normal;
     font-weight: 300;
-    .ptToEm(font-size, 48);
-    .ptToEm(line-height, 48);
+    font-size: 48px;
+    line-height: 48px;
+    padding-top: 0px;
+    padding-bottom: 15px;
 }
 
 .typeDeck {
@@ -109,9 +111,11 @@ Variables
     color: #2075C7;
     font-family: "adelle",serif;
     font-style: normal;
-    font-weight: 400;
-    .ptToEm(font-size, 20);
-    .ptToEm(line-height, 30);
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 40px;
+  padding-top: 15px;
+  padding-bottom: 0px;
 }
 
 .typeSubHeader {
@@ -119,62 +123,85 @@ Variables
     color: #595959;
     font-family: "adelle",serif;
     font-style: normal;
-    font-weight: 800;
-    .ptToEm(font-size, 22);
-    .ptToEm(line-height, 27);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  padding-top: 30px;
 }
 
 .typeBodyText {
     //Body Text: Adelle Sans Light, font-size: 16pt, line-height: 24pt, space-before: 12, space-after: 0, colour: 404040
-    color: #404040;
+    color: #333;
     font-family: "adelle-sans",sans-serif;
     font-style: normal;
     font-weight: 300; 
-    .ptToEm(font-size, 16);
-    .ptToEm(line-height, 24);
+    font-size: 16px;
+    line-height: 30px;
 }
 
 .typeSlideTitle {
-    //Slide Title: Adelle Extrabold, font-size: 22pt, line-height: 27pt, space-before: n/a, space-after: n/a, colour: 1E6FBD
-    color: #1E6FBD;
-    font-family: "adelle",serif;
-    font-style: normal;
-    font-weight: 800;
-    .ptToEm(font-size, 32);
-    .ptToEm(line-height, 27);
+  //Slide Title: Adelle Extrabold, font-size: 22pt, line-height: 27pt, space-before: n/a, space-after: n/a, colour: 1E6FBD
+  color: #FFF;
+  font-family: "adelle", serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 90px;
+  padding-top: 200px;
+  padding-bottom: 15px;
 }
 .typeSlideDeck {
     //Slide deck: Adelle light, font-size: 28pt, line-height: 40pt, space-before: 0, space-after: 0, colour: 1E6FBD
-    color: #1E6FBD;
-    font-family: "adelle",serif;
-    font-style: normal;
-    font-weight: 300;
-    .ptToEm(font-size, 28);
-    .ptToEm(line-height, 40);
+  color: #C7E8FF;
+  font-family: "adelle", serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 33px;
+  line-height: 45px;
+  padding-top: 5px;
+  padding-bottom: 40px;
+}
 
+.typeSlideBody {
+      color: #C7E8FF;
 }
 
 .typeSidebarTitle {
     //Sidebar linked resource title: Adelle Extrabold, font-size: 12pt, line-height: 18pt, space-before: n/a, space-after: n/a, colour: 4D4D4D
-    color: #4D4D4D;
-    font-family: "adelle",serif;
-    font-style: normal;
-    font-weight: 800;
-    .ptToEm(font-size, 12);
-    .ptToEm(line-height, 18);
+  color: #4D4D4D;
+  font-family: "adelle", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
 }
 
 .typeSidebarText {
     //Sidebar linked resource text: Adelle Sans Light, font-size: 12pt, line-height: 18pt, space-before: n/a, space-after: n/a, colour: 4D4D4D
-    color: #4D4D4D;
-    font-family: "adelle-sans",sans-serif;
-    font-style: normal;
-    font-weight: 300; 
-    .ptToEm(font-size, 12);
-    .ptToEm(line-height, 18);
+  color: #333;
+  font-family: "adelle-sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
 }
 
-@fontDefault: serif;
+.typeFigcaption {
+      color: #333;
+      font-family: "adelle-sans", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 20px;
+}
+
+.typeFooterLinks {
+  color: #fff;
+  font-family: "adelle", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+
+}
 
 // Party colours
 @labelLiberal: #DC2300;
@@ -193,7 +220,13 @@ body, html {
 body {
     .typeBodyText;
 }
-
+p { 
+  margin: 0;
+  padding: 15px 0 0 0;
+}
+dl {
+  margin: 0;
+}
 
 /* ==========================================================================
 Type
@@ -201,11 +234,26 @@ Type
 
 h1, h2, h3, h4 {
     .typeChapterTitle;
+    margin: 0;
+    padding: 0;
 }
 
 /* ==========================================================================
 Layout
 ========================================================================== */
+// Layout: header & navigation
+header.site-header {
+  background: #5F7EB4;
+    nav {
+      background: #5F7EB4;
+      margin: 0;
+      padding: 0;
+      border-bottom: 1px solid white;
+    }
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #C7E8FF;
+}
 
 /* ==========================================================================
 Modules 
@@ -223,28 +271,27 @@ body.default article {
     h5 {
         .typeSubHeader;
     }
-    // article header (typically a fullscreen slide)
-    header.fullscreen {
+    header.fullscreen { // article header (typically a fullscreen slide)
         background-size: cover;
         background-position: center;
-        //min-height: 100vh; // For smartphones, then use vh for larger screens
+        margin-bottom: 100px;
         .intro {
-            //margin: 30% auto;
             opacity: 0; // For fade-in
             padding-top: 10%;
             h1 {
                 .typeSlideTitle;
-                .textShadow;
             }
             h2 {
                 .typeSlideDeck;
-                .textShadow;
             }
             p {
-                .textShadow;
+                .typeSlideBody;
             }
            .next {
-               font-size: 3rem;
+              color: #ABDCFF;
+              font-size: 5rem;
+              padding-top: 30px;
+              padding-bottom: 15px;
            }
         }
     }
@@ -256,6 +303,11 @@ body.default article {
             .typeSidebarText;
         }
     }
+    figcaption {
+        .typeFigcaption;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
     .pull-right {
         padding-left: 3rem;
     }
@@ -264,23 +316,37 @@ body.default article {
     }
     // Module: Parallax section breaks
     section.parallax {
-        height: 35rem;
-        margin-bottom: 4rem;
-        margin-top: 6rem;
+          height: 350px;
+          margin-bottom: 50px;
+          margin-top: 80px;
+          h3 {
+              position: absolute;
+              bottom: 0;
+              font-weight: 700;
+          }
     }
     // Module: Chapter footer
     footer {
         background: @chapterFooterBgColor;
         color: @chapterFooterTextColor;
-        height: 12.5rem;
-        margin-top: 4rem;
+      height: 70px;
+      margin-top: 40px;
+      padding-top: 18px;
+      text-align: right;
         a:link, a:hover, a:visited {
-            .typeSubHeader;
+            .typeFooterLinks;
             color: @chapterFooterTextColor;
         }
     }
 }
 
+article.card {
+    padding-top: 100px; // Account for fixed navigation bar
+    h2 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+}
 
 // Module: Fullpage
 //body.cards {
@@ -324,17 +390,13 @@ body.default article {
         fill: none;
     }
     button.close {
-        position: relative;
-        top: 60px;
-        right: 10px;
+        //position: relative;
+        //top: 60px;
+        //right: 10px;
     }
 }
-
-// Module: Map - Regions
-body#regional-chart {
-
+#chart-region {
 }
-
 
 
 /* ==========================================================================
@@ -362,8 +424,25 @@ Progressively enhance for larger screens
 }
 
 @media screen and (min-width:768px) and (max-width: 992px) { /* portrait tablets */ 
-    header.fullscreen {
-        min-height: 1024px; 
+    body.default article { // Chapters
+        header.fullscreen {
+            min-height: 1024px; 
+        }
+        .pull-left {
+          position: relative;
+          left: -60px;
+          padding-top: 22px;
+          margin-right: -10px;
+          padding-bottom: 15px;
+        }
+        .pull-right {
+          position: relative;
+          left: 60px;
+          padding-top: 22px;
+          margin-left: -10px;
+          padding-bottom: 15px;
+          
+        }
     }
 }
 
@@ -372,13 +451,30 @@ Progressively enhance for larger screens
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) { /* Adjust for small desktop, wide portrait */
+
 }
 
 @media screen and (min-width: 1025px) { /* Adjust for large desktop */
-    header.fullscreen {
-        min-height: 100vh; // For smartphones, then use vh for larger screens
+    body.default article { // Chapters
+        header.fullscreen {
+            min-height: 100vh; // For smartphones, then use vh for larger screens
+        }
+        .pull-left {
+          position: relative;
+          left: -60px;
+          padding-top: 22px;
+          margin-right: -10px;
+          padding-bottom: 15px;
+        }
+        .pull-right {
+          position: relative;
+          left: 60px;
+          padding-top: 22px;
+          margin-left: -10px;
+          padding-bottom: 15px;
+          
+        }
     }
-
 }
 
 
