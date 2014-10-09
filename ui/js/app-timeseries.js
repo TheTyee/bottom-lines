@@ -19,7 +19,7 @@ var time_scale, percent_scale;
 var time_axis, count_axis;
 
 // Draw function
-function draw(data) {
+function drawTime(data) {
 	// Make the data avaialble to the console
 	csv_data = data;
 	// Get the extend of the data	

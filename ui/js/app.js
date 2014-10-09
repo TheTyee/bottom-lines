@@ -17,6 +17,7 @@
 // require jquery.scrollmagic.debug.js
 //= require d3.js
 //= require app-timeseries.js
+//= require app-regions.js
 
 
 // 
@@ -66,7 +67,7 @@ App.ArticleView = Backbone.View.extend({
         var parallax = this.$('.parallax');
         if (parallax.length >= 1) { 
             var duration = parallax.height() + $(window).height();
-            var bgPosMovement = "0 " + (duration*0.8) + "px";
+            var bgPosMovement = "0 " + (duration*1.1) + "px";
             // init controller
             var controller = new ScrollMagic({globalSceneOptions: {triggerHook: "onEnter", duration: duration}});
             // build scenes
@@ -84,55 +85,85 @@ App.ArticleView = Backbone.View.extend({
 
 App.CardView = Backbone.View.extend({
     visible: false,
+    type: '',
     events: {
         "click button.close": function() { Backbone.history.history.back(); }
     },
     initialize: function (options) {
         var id = options.id;
         var visibility = options.visible;
+        var type = options.type;
         this.el = id;
         this.$el = $(id); 
         this.visible = visibility;
+        this.type    = type;
     },
     show: function() {
         this.$el.show();
         this.visible = true;
-        // Find the window dimensions
-        margins = {top: 10, right: 80, bottom: 60, left: 60};
-        width = parseInt(d3.select("#datavis").style("width"));
-        height = parseInt(d3.select("#datavis").style("height"));
+        if ( this.type === 'timeseries' ) {
+            if (!chart) { // Temporary fix to prevent redraw, but need re-animate
+                // Find the window dimensions
+                margins = {top: 10, right: 80, bottom: 60, left: 60};
+                width = parseInt(d3.select("article#chart-timeseries #datavis").style("width"));
+                height = parseInt(d3.select("article#chart-timeseries #datavis").style("height"));
 
-        // Setup container & chart dimensions
-        container_dimensions = {width: width, height: height},
-        chart_dimensions = {
-            width: container_dimensions.width - margins.left - margins.right,
-            height: container_dimensions.height - margins.top - margins.bottom
-        };
-        if (!chart) { // Temporary fix to prevent redraw, but need re-animate
-            // Setup SVG
-            chart = d3.select("#datavis")
-            .append("svg")
-            .attr("width", container_dimensions.width)
-            .attr("height", container_dimensions.height)
-            .append("g")
-            .attr("transform", "translate(" + margins.left + "," + margins.top + ")")
-            .attr("id","chart");
-
-            d3.csv("/data/data.csv", function(d) {
-                return {
-                    year: new Date(+d.Year, 0, 1), // convert "Year" column to Date
-                    ghgs: +d.GHGs,
-                    pop: +d.Population,
-                    kyoto: +d.Kyoto
+                // Setup container & chart dimensions
+                container_dimensions = {width: width, height: height},
+                chart_dimensions = {
+                    width: container_dimensions.width - margins.left - margins.right,
+                    height: container_dimensions.height - margins.top - margins.bottom
                 };
-            }, draw );
+                // Setup SVG
+                chart = d3.select("article#chart-timeseries #datavis")
+                .append("svg")
+                .attr("width", container_dimensions.width)
+                .attr("height", container_dimensions.height)
+                .append("g")
+                .attr("transform", "translate(" + margins.left + "," + margins.top + ")")
+                .attr("id","chart");
+
+                d3.csv("/data/data.csv", function(d) {
+                    return {
+                        year: new Date(+d.Year, 0, 1), // convert "Year" column to Date
+                        ghgs: +d.GHGs,
+                        pop: +d.Population,
+                        kyoto: +d.Kyoto
+                    };
+                }, drawTime );
+            }
+        } else if ( this.type === 'region' ) {
+            if (!map) { // Temporary fix to prevent redraw, but need re-animate
+                // Find the window dimensions
+                margins = {top: 10, right: 80, bottom: 60, left: 60};
+                width = parseInt(d3.select("article#chart-region #datavis").style("width"));
+                height = parseInt(d3.select("article#chart-region #datavis").style("height"));
+
+                // Setup container & chart dimensions
+                container_dimensions = {width: width, height: height},
+                chart_dimensions = {
+                    width: container_dimensions.width - margins.left - margins.right,
+                    height: container_dimensions.height - margins.top - margins.bottom
+                };
+                // Setup SVG
+                map = d3.select("article#chart-region #datavis")
+                .append("svg")
+                .attr("width", container_dimensions.width)
+                .attr("height", container_dimensions.height)
+                .append("g")
+                .attr("transform", "translate(" + margins.left + "," + margins.top + ")")
+                .attr("id","map");
+
+                d3.json("/data/data.geojson", function(err, data) { 
+                    drawMap(data);
+                });
+            }
         }
     },
     hide: function() {
         this.$el.hide();
     }
 }); // Data cards
-
 
 
 // ===================================================================
@@ -145,7 +176,8 @@ App.Layout = new Backbone.Layout({
     views: {
         "last-in-class": new App.ArticleView({id: '#last-in-class', visible: true }), // Start with Chapter One
         "air-and-water": new App.ArticleView({id: '#air-and-water'}),
-        "chart-timeseries": new App.CardView({id: '#chart-timeseries'})
+        "chart-timeseries": new App.CardView({id: '#chart-timeseries', type: 'timeseries'}),
+        "chart-region": new App.CardView({id: '#chart-region', type: 'region' })
     },
     initialize: function () {
         var self = this;
