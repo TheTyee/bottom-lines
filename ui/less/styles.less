@@ -111,11 +111,11 @@ Variables
     color: #2075C7;
     font-family: "adelle",serif;
     font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 40px;
-  padding-top: 15px;
-  padding-bottom: 0px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    padding-top: 15px;
+    padding-bottom: 0px;
 }
 
 .typeSubHeader {
@@ -123,10 +123,10 @@ Variables
     color: #595959;
     font-family: "adelle",serif;
     font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 30px;
-  padding-top: 30px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    padding-top: 30px;
 }
 
 .typeBodyText {
@@ -140,66 +140,66 @@ Variables
 }
 
 .typeSlideTitle {
-  //Slide Title: Adelle Extrabold, font-size: 22pt, line-height: 27pt, space-before: n/a, space-after: n/a, colour: 1E6FBD
-  color: #FFF;
-  font-family: "adelle", serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 100px;
-  line-height: 90px;
-  padding-top: 200px;
-  padding-bottom: 15px;
+    //Slide Title: Adelle Extrabold, font-size: 22pt, line-height: 27pt, space-before: n/a, space-after: n/a, colour: 1E6FBD
+    color: #FFF;
+    font-family: "adelle", serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 90px;
+    padding-top: 200px;
+    padding-bottom: 15px;
 }
 .typeSlideDeck {
     //Slide deck: Adelle light, font-size: 28pt, line-height: 40pt, space-before: 0, space-after: 0, colour: 1E6FBD
-  color: #C7E8FF;
-  font-family: "adelle", serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 33px;
-  line-height: 45px;
-  padding-top: 5px;
-  padding-bottom: 40px;
+    color: #C7E8FF;
+    font-family: "adelle", serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 33px;
+    line-height: 45px;
+    padding-top: 5px;
+    padding-bottom: 40px;
 }
 
 .typeSlideBody {
-      color: #C7E8FF;
+    color: #C7E8FF;
 }
 
 .typeSidebarTitle {
     //Sidebar linked resource title: Adelle Extrabold, font-size: 12pt, line-height: 18pt, space-before: n/a, space-after: n/a, colour: 4D4D4D
-  color: #4D4D4D;
-  font-family: "adelle", serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
+    color: #4D4D4D;
+    font-family: "adelle", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
 }
 
 .typeSidebarText {
     //Sidebar linked resource text: Adelle Sans Light, font-size: 12pt, line-height: 18pt, space-before: n/a, space-after: n/a, colour: 4D4D4D
-  color: #333;
-  font-family: "adelle-sans", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 20px;
+    color: #333;
+    font-family: "adelle-sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
 }
 
 .typeFigcaption {
-      color: #333;
-      font-family: "adelle-sans", sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 13px;
-      line-height: 20px;
+    color: #333;
+    font-family: "adelle-sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
 }
 
 .typeFooterLinks {
-  color: #fff;
-  font-family: "adelle", serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
+    color: #fff;
+    font-family: "adelle", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
 
 }
 
@@ -216,16 +216,17 @@ Global
 
 body, html {
     height: 100%;
+    font-size: 16px;
 }
 body {
     .typeBodyText;
 }
 p { 
-  margin: 0;
-  padding: 15px 0 0 0;
+    margin: 0;
+    padding: 15px 0 0 0;
 }
 dl {
-  margin: 0;
+    margin: 0;
 }
 
 /* ==========================================================================
@@ -242,22 +243,69 @@ h1, h2, h3, h4 {
 Layout
 ========================================================================== */
 // Layout: header & navigation
+// AG's styles, to merge & LESSify
 header.site-header {
-  background: #5F7EB4;
-    nav {
-      background: #5F7EB4;
-      margin: 0;
-      padding: 0;
-      border-bottom: 1px solid white;
-    }
+    background: #5F7EB4;
+}
+header.site-header nav {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+}
+
+button.navbar-toggle {
+    background: #2E569C;
+    border:none;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background: #2E569C;
+    border:none;
+}
+.navbar-inverse .navbar-toggle:active,{
+    background: #2E569C;
+    border:none;
+}
+
+#navbar-collapse {
+    background: #2E569C;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    position:fixed;
+    top: 0;
+    width:100%;
+    border:none;
+    border-bottom: 1px solid white;
+    z-index: -1;
+}
+
+.nav-label {
+    color: #C7E8FF;
+    padding: 10px 15px 10px 15px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #C7E8FF;
+    color: #C7E8FF;
+    font-weight: 400;
+}
+
+.navbar-collapse ul.navbar-nav {
+    padding-bottom: 15px;
 }
 
 /* ==========================================================================
 Modules 
 ========================================================================== */
+
+// Module: TSS & Partner logos
+.tss-logo {
+    max-width: 100px;
+}
 
 // Module: Chapters
 body.default article {
@@ -289,12 +337,12 @@ body.default article {
             p {
                 .typeSlideBody;
             }
-           .next {
-              color: #ABDCFF;
-              font-size: 5rem;
-              padding-top: 30px;
-              padding-bottom: 15px;
-           }
+            .next {
+                color: #ABDCFF;
+                font-size: 5rem;
+                padding-top: 30px;
+                padding-bottom: 15px;
+            }
         }
     }
     aside {
@@ -318,23 +366,23 @@ body.default article {
     }
     // Module: Parallax section breaks
     section.parallax {
-          height: 350px;
-          margin-bottom: 50px;
-          margin-top: 80px;
-          h3 {
-              position: absolute;
-              bottom: 0;
-              font-weight: 700;
-          }
+        height: 350px;
+        margin-bottom: 50px;
+        margin-top: 80px;
+        h3 {
+            position: absolute;
+            bottom: 0;
+            font-weight: 700;
+        }
     }
     // Module: Chapter footer
     footer {
         background: @chapterFooterBgColor;
         color: @chapterFooterTextColor;
-      height: 70px;
-      margin-top: 40px;
-      padding-top: 18px;
-      text-align: right;
+        height: 70px;
+        margin-top: 40px;
+        padding-top: 18px;
+        text-align: right;
         a:link, a:hover, a:visited {
             .typeFooterLinks;
             color: @chapterFooterTextColor;
@@ -350,26 +398,7 @@ article.card {
     }
 }
 
-// Module: Fullpage
-//body.cards {
-    //header {
-        //position:fixed;
-        //display:block;
-        //width: 100%;
-        //z-index:9;
-    //}
-    //header{
-        //top:0px;
-    //}
-    //footer {
-        //display: none;
-    //}
-    //.controlArrow {
-        //display: none !important;
-    //}
-//}
-
-// Modules: Data visualizations
+// Module: Data visualizations
 #datavis {
     width: 100%;
     height: 400px;
@@ -400,6 +429,22 @@ article.card {
 #chart-region {
 }
 
+// Module: Social icons
+.social-block {
+    display: block;
+    position: relative;
+    text-align: right;
+    top: 0px;
+    /* top: -70px; */
+}
+.social-block {
+    top:35px;
+}
+
+.intro .social-block span{
+    filter:alpha(opacity=93); 
+    opacity: .93;
+} 
 
 /* ==========================================================================
 Progressively enhance for larger screens 
@@ -431,25 +476,21 @@ Progressively enhance for larger screens
             min-height: 1024px; 
         }
         .pull-left {
-          position: relative;
-          left: -60px;
-          padding-top: 22px;
-          margin-right: -10px;
-          padding-bottom: 15px;
+            position: relative;
+            left: -60px;
+            padding-top: 22px;
+            margin-right: -10px;
+            padding-bottom: 15px;
         }
         .pull-right {
-          position: relative;
-          left: 60px;
-          padding-top: 22px;
-          margin-left: -10px;
-          padding-bottom: 15px;
-          
+            position: relative;
+            left: 60px;
+            padding-top: 22px;
+            margin-left: -10px;
+            padding-bottom: 15px;
+
         }
     }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-    /* Put high-resolution display styles here */
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) { /* Adjust for small desktop, wide portrait */
@@ -462,24 +503,173 @@ Progressively enhance for larger screens
             min-height: 100vh; // For smartphones, then use vh for larger screens
         }
         .pull-left {
-          position: relative;
-          left: -60px;
-          padding-top: 22px;
-          margin-right: -10px;
-          padding-bottom: 15px;
+            position: relative;
+            left: -60px;
+            padding-top: 22px;
+            margin-right: -10px;
+            padding-bottom: 15px;
         }
         .pull-right {
-          position: relative;
-          left: 60px;
-          padding-top: 22px;
-          margin-left: -10px;
-          padding-bottom: 15px;
-          
+            position: relative;
+            left: 60px;
+            padding-top: 22px;
+            margin-left: -10px;
+            padding-bottom: 15px;
+
         }
     }
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    /* Put high-resolution display styles here */
+}
 
+/* ==========================================================================
+AG's media queries to be merged
+========================================================================== */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    body.default article header.fullscreen .intro {
+        opacity: 0;
+        padding-top: 15%;
+    }
+
+    .next {
+        color: #ABDCFF;
+        font-size: 60px;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .social-block {
+        top:0px;
+        padding-top: 10px;
+    }
+
+    header.site-header nav {
+        background: #5F7EB4;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid white;
+        overflow: hidden;
+    }
+    #navbar-collapse {
+        background: none;
+    }
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        position:fixed;
+        border:none;
+        border-bottom: none;
+        z-index: -1;
+    }
+
+    .nav-label {
+        padding-top: 17px;
+        font-weight: 400;
+    }
+    .navbar-inverse .navbar-nav > li > a {
+        font-weight: 100;
+    }
+
+    body.default article h3 {
+        font-size: 48px;
+        line-height: 48px;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    body.default article h4 {
+        font-size: 24px;
+        line-height: 40px;
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+    body.default article h5 {
+        line-height: 40px;
+        padding-top: 40px;
+    }
+
+    .chapter-section {
+        padding-top: 40px;
+    }
+
+    body.default article header.fullscreen .intro h1 {
+        color: #FFF;
+        font-family: "adelle", serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 100px; 
+        line-height: 90px; 
+        padding-top: 200px; 
+        padding-bottom: 15px; 
+    }
+    body.default article header.fullscreen .intro h2 {
+        color: #C7E8FF;
+        font-family: "adelle", serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 33px;
+        line-height: 45px;
+        padding-top: 5px;
+        padding-bottom: 40px;
+    }
+    body.default article header.fullscreen .site-intro h1 {
+        padding-top: 80px;
+    }
+
+
+    article.card {
+        padding-top: 67.5px;
+        background-color: #eee;
+    }
+    article.card h2 {
+        font-weight: 600;
+        font-size: 35px;
+        margin-top:22px;
+        margin-bottom: 7.5px;
+    }
+
+    article.card .lead {
+        margin-bottom: 22.5px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body.default article header.fullscreen .intro .next {
+        color: #ABDCFF;
+        font-size: 80px;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+    body.default article .pull-left {
+        position: relative;
+        left: -60px;
+        padding-top: 22px;
+        margin-right: -10px;
+        padding-bottom: 15px;
+    }
+    body.default article .pull-right {
+        position: relative;
+        left: 60px;
+        padding-top: 22px;
+        margin-left: -10px;
+        padding-bottom: 15px;
+    }
+    .tss-logo {
+        max-width: 100%;
+    }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
 
 /* ==========================================================================
 Print styles.
