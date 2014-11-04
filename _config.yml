@@ -69,6 +69,7 @@ assets:
   baseurl: /assets/
   sources:
     - _assets/images
+    - _assets/icons
     - ui/js
     - ui/img
     - ui/less
