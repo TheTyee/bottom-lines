@@ -32,8 +32,8 @@ projection
     .scale(s)
     .translate(t);
 
-    var svg = d3.select("svg");
-    var group = svg.append('g');
+    //var svg = d3.select("svg");
+    var group = map.append('g');
     
     group.selectAll("path")
     .data(collection.features)
