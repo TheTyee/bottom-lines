@@ -162,6 +162,7 @@ App.CardView = Backbone.View.extend({
     },
     hide: function() {
         this.$el.hide();
+        this.visible = false;
     }
 }); // Data cards
 
