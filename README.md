@@ -21,7 +21,7 @@ There's extra stuff in here for local development with Grunt, which can be ignor
 
 2. Install the JavaScript dependencies
 
-If you don't have [NPM](https://www.npmjs.org/) installed, you'll need to do that first by installing [Node.js](http://nodejs.org/). Just download and install the package that's available for your operating system.
+If you don't have [NPM](https://www.npmjs.org/) installed, you'll need to do that first by installing [Node.js](http://nodejs.org/). Just download and install the package that's available for your operating system [from the Node website](http://nodejs.org/).
 
 Then, to install [Bower, the JavaScript package manager](http://bower.io/), run:
 
