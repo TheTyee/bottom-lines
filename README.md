@@ -21,21 +21,33 @@ There's extra stuff in here for local development with Grunt, which can be ignor
 
 2. Install the JavaScript dependencies
 
+If you don't have [NPM](https://www.npmjs.org/) installed, you'll need to do that first by installing [Node.js](http://nodejs.org/). Just download and install the package that's available for your operating system.
+
+Then, to install [Bower, the JavaScript package manager](http://bower.io/), run:
+
+`npm install bower -g`
+
+Then, to install the project's JavaScript dependencies, run:
+
 `bower install`
+
+You should see output relating to [Backbone](http://backbonejs.org/) and so on.
 
 3. Install the Ruby dependencies
 
-If you don't have a global install of [Bundler](http://bundler.io/), you'll want to install that first:
+If you're running a relatively recent version of OSX or Linux, you should already have a working version of Ruby. If you don't, have a look at [rbenv](https://github.com/sstephenson/rbenv) and the associated ruby-build project.
+
+From there, if you don't have a global install of [Bundler](http://bundler.io/), you'll want to install that:
 
 `gem update && gem install bundler`
 
-Then install the project requirements in local directory so that you know you're using the right ones:
+Then install the project requirements into a local directory so that you know you're using the right ones:
 
 `bundle install --path _vendor`
 
 ## Bundler, Jekyll & development modes
 
-If you run Jekyll though Bundler the project can the gems installed in the `_vendor` directory:
+If you run Jekyll though Bundler the project and the gems installed will be in hte the `_vendor` directory, which means you can run the project with the following command:
 
 `bundle exec jekyll serve -w --config _config.yml`
 
