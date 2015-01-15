@@ -177,6 +177,9 @@ App.Layout = new Backbone.Layout({
     views: {
         "last-in-class": new App.ArticleView({id: '#last-in-class', visible: true }), // Start with Chapter One
         "air-and-water": new App.ArticleView({id: '#air-and-water'}),
+        "species": new App.ArticleView({id: '#species'}),
+        "climate": new App.ArticleView({id: '#climate'}),
+        "environment": new App.ArticleView({id: '#environment'}),
         "about": new App.ArticleView({id: '#about'}),
         "chart-timeseries": new App.CardView({id: '#chart-timeseries', type: 'timeseries'}),
         "chart-region": new App.CardView({id: '#chart-region', type: 'region' })
