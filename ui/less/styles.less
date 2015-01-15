@@ -382,10 +382,20 @@ body.default article {
         height: 70px;
         margin-top: 40px;
         padding-top: 18px;
-        text-align: right;
         a:link, a:hover, a:visited {
             .typeFooterLinks;
             color: @chapterFooterTextColor;
+        }
+        nav.chapter {
+            width: 45%;
+        }
+        nav.chapter-previous {
+            float: left;
+            text-align: left;
+        }
+        nav.chapter-next {
+            float: right;
+            text-align: right;
         }
     }
 }
