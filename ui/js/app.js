@@ -18,7 +18,7 @@
 //= require d3.js
 //= require app-timeseries.js
 //= require app-regions.js
-
+//= require bigfoot.js
 
 // 
 // ===================================================================
