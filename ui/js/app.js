@@ -253,4 +253,7 @@ $(function() {
     // Start the app
     App.router = new App.Router();
     Backbone.history.start();
+    $.bigfoot({
+        actionOriginalFN: "ignore"
+    });
 });
