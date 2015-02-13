@@ -27,6 +27,7 @@
     "greensock": "~1.13.2",
     "ScrollMagic": "~1.1.2",
     "fluidbox": "~1.3.5",
-    "jquery-scrollstop": "~1.1.0"
+    "jquery-scrollstop": "~1.1.0",
+    "bigfoot": "~2.1.1"
   }
 }
