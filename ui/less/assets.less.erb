@@ -1,4 +1,212 @@
+//= require bootstrap.css
+// require jquery.fullPage.css
+//= require assets.css
+//= require fluidbox.css
 //= require bigfoot-number.css
+
+/* ==========================================================================
+Mixins (always mixedCase)
+========================================================================== */
+.roundedCorners (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.boxShadow (@x: 0; @y: 0; @blur: 1px; @color: rgba(0,0,0,0.3)) {
+    -moz-box-shadow: @arguments;
+    -webkit-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+.textShadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+    text-shadow: @string;
+}
+.listComma {
+    display: inline;
+    list-style: none;
+    padding: 0;
+    li {
+        display: inline;
+    }
+    li:after {
+        content: ", ";
+    }
+    li:last-child:after {
+        content: "";
+    }
+}
+/* ==========================================================================
+Utilities
+========================================================================== */
+
+@emInPx: 16;    // 16px per em (global default)
+@emInPt: 11.955168;
+
+.pxToEm(@selector, @amt, @emInPx: @emInPx) when (ispixel(@amt))
+{
+    @{selector}: unit((@amt / @emInPx), em);
+}
+.ptToEm(@selector, @amt, @emInPt: @emInPt)
+{
+    @{selector}: unit((@amt / @emInPt), em);
+}
+
+/* ==========================================================================
+Variables
+========================================================================== */
+
+// Breakpoints
+
+//("all", 0px),
+//("small", 420px),
+//("medium", 640px),
+//("large", 960px),
+//("xlarge", 1200px)
+
+
+// Style tiles, Colours
+@white: #ffffff;
+@chapterFooterBgColor: #2e569c;
+@chapterFooterTextColor: #ffffff;
+
+// Style tiles, Fonts
+.typeChapterTitle {
+    // Chapter Title: Adelle Extrabold, font-size: 60pt, line-height: 48pt, space-before: 0, space-after: 24pt, colour: B1E7FF
+    color: #1E6FBD;
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 30px;
+}
+.typeChapterDeck {
+    //Chapter deck: Adelle light, font-size: 28pt, line-height: 40pt, space-before: 0, space-after: 0, colour: 9DD6EE
+    color: #9DD6EE;
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 300;
+    .ptToEm(font-size, 28);
+    .ptToEm(line-height, 40);
+
+}
+
+.typeMajorHeader {
+    //Major Header: Adelle light, font-size: 48pt, line-height: 48pt, space-before: 0, space-after: 12pt, colour: 2075C7
+    color: #2075C7;
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 48px;
+    padding-top: 0px;
+    padding-bottom: 15px;
+}
+
+.typeDeck {
+    //Deck: Adelle Regular, font-size: 20pt, line-height: 30pt, space-before: 12, space-after: 0pt, colour: 2075C7
+    color: #2075C7;
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.typeSubHeader {
+    //Subheader: Adelle Extrabold, font-size: 22pt, line-height: 27pt, space-before: 24pt, space-after: 0pt, colour: 595959
+    color: #595959;
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    padding-top: 30px;
+}
+
+.typeBodyText {
+    //Body Text: Adelle Sans Light, font-size: 16pt, line-height: 24pt, space-before: 12, space-after: 0, colour: 404040
+    color: #333;
+    font-family: "adelle-sans",sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.typeSlideTitle {
+    //Slide Title: Adelle Extrabold, font-size: 22pt, line-height: 27pt, space-before: n/a, space-after: n/a, colour: 1E6FBD
+    color: #FFF;
+    font-family: "adelle", serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 90px;
+    padding-top: 200px;
+    padding-bottom: 15px;
+}
+.typeSlideDeck {
+    //Slide deck: Adelle light, font-size: 28pt, line-height: 40pt, space-before: 0, space-after: 0, colour: 1E6FBD
+    color: #C7E8FF;
+    font-family: "adelle", serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 33px;
+    line-height: 45px;
+    padding-top: 5px;
+    padding-bottom: 40px;
+}
+
+.typeSlideBody {
+    color: #C7E8FF;
+}
+
+.typeSidebarTitle {
+    //Sidebar linked resource title: Adelle Extrabold, font-size: 12pt, line-height: 18pt, space-before: n/a, space-after: n/a, colour: 4D4D4D
+    color: #4D4D4D;
+    font-family: "adelle", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.typeSidebarText {
+    //Sidebar linked resource text: Adelle Sans Light, font-size: 12pt, line-height: 18pt, space-before: n/a, space-after: n/a, colour: 4D4D4D
+    color: #333;
+    font-family: "adelle-sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.typeFigcaption {
+    color: #333;
+    font-family: "adelle-sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.typeFooterLinks {
+    color: #fff;
+    font-family: "adelle", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+// Party colours
+@labelLiberal: #DC2300;
+@labelConservative: #084A99;
+@labelGreen: #008000;
+@labelNdp: #FF8733;
+
 article#last-in-class header {
   background-image: url("<%= asset_path('1-dock-shutterstock_127444943-ag-3.jpg') %>");
   
