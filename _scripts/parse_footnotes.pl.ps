@@ -1,0 +1,260 @@
+%!PS-Adobe-3.0
+%%Title: _scripts/parse_footnotes.pl
+%%For: phillipadsmith
+%%Creator: VIM - Vi IMproved 7.4 (2013 Aug 10)
+%%CreationDate: Thu Feb 12 14:09:44 2015
+%%DocumentData: Clean8Bit
+%%Orientation: Portrait
+%%Pages: (atend)
+%%PageOrder: Ascend
+%%BoundingBox: 59 49 564 800
+%%DocumentMedia: A4 595 842 0 () ()
+%%DocumentNeededResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%DocumentSuppliedResources: procset VIM-Prolog 1.4 1
+%%+ encoding VIM-latin1 1.0 0
+%%Requirements: duplex collate color
+%%EndComments
+%%BeginDefaults
+%%PageResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%PageMedia: A4
+%%EndDefaults
+%%BeginProlog
+%%BeginResource: procset VIM-Prolog
+%%BeginDocument: /usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/Resources/vim/runtime/print/prolog.ps
+%!PS-Adobe-3.0 Resource-ProcSet
+%%Title: VIM-Prolog
+%%Version: 1.4 1
+%%EndComments
+% Editing of this file is NOT RECOMMENDED.  You run a very good risk of causing
+% all PostScript printing from VIM failing if you do.  PostScript is not called
+% a write-only language for nothing!
+/packedarray where not{userdict begin/setpacking/pop load def/currentpacking
+false def end}{pop}ifelse/CP currentpacking def true setpacking
+/bd{bind def}bind def/ld{load def}bd/ed{exch def}bd/d/def ld
+/db{dict begin}bd/cde{currentdict end}bd
+/T true d/F false d
+/SO null d/sv{/SO save d}bd/re{SO restore}bd
+/L2 systemdict/languagelevel 2 copy known{get exec}{pop pop 1}ifelse 2 ge d
+/m/moveto ld/s/show ld /ms{m s}bd /g/setgray ld/r/setrgbcolor ld/sp{showpage}bd
+/gs/gsave ld/gr/grestore ld/cp/currentpoint ld
+/ul{gs UW setlinewidth cp UO add 2 copy newpath m 3 1 roll add exch lineto
+stroke gr}bd
+/bg{gs r cp BO add 4 -2 roll rectfill gr}bd
+/sl{90 rotate 0 exch translate}bd
+L2{
+/sspd{mark exch{setpagedevice}stopped cleartomark}bd
+/nc{1 db/NumCopies ed cde sspd}bd
+/sps{3 db/Orientation ed[3 1 roll]/PageSize ed/ImagingBBox null d cde sspd}bd
+/dt{2 db/Tumble ed/Duplex ed cde sspd}bd
+/c{1 db/Collate ed cde sspd}bd
+}{
+/nc{/#copies ed}bd
+/sps{statusdict/setpage get exec}bd
+/dt{statusdict/settumble 2 copy known{get exec}{pop pop pop}ifelse
+statusdict/setduplexmode 2 copy known{get exec}{pop pop pop}ifelse}bd
+/c{pop}bd
+}ifelse
+/ffs{findfont exch scalefont d}bd/sf{setfont}bd
+/ref{1 db findfont dup maxlength dict/NFD ed{exch dup/FID ne{exch NFD 3 1 roll
+put}{pop pop}ifelse}forall/Encoding findresource dup length 256 eq{NFD/Encoding
+3 -1 roll put}{pop}ifelse NFD dup/FontType get 3 ne{/CharStrings}{/CharProcs}
+ifelse 2 copy known{2 copy get dup maxlength dict copy[/questiondown/space]{2
+copy known{2 copy get 2 index/.notdef 3 -1 roll put pop exit}if pop}forall put
+}{pop pop}ifelse dup NFD/FontName 3 -1 roll put NFD definefont pop end}bd
+CP setpacking
+(\004)cvn{}bd
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%BeginResource: encoding VIM-latin1
+%%BeginDocument: /usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/Resources/vim/runtime/print/latin1.ps
+%!PS-Adobe-3.0 Resource-Encoding
+%%Title: VIM-latin1
+%%Version: 1.0 0
+%%EndComments
+/VIM-latin1[
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quotesingle
+/parenleft /parenright /asterisk /plus /comma /minus /period /slash
+/zero /one /two /three /four /five /six /seven
+/eight /nine /colon /semicolon /less /equal /greater /question
+/at /A /B /C /D /E /F /G
+/H /I /J /K /L /M /N /O
+/P /Q /R /S /T /U /V /W
+/X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+/grave /a /b /c /d /e /f /g
+/h /i /j /k /l /m /n /o
+/p /q /r /s /t /u /v /w
+/x /y /z /braceleft /bar /braceright /asciitilde /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section
+/dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron
+/degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /periodcentered
+/cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown
+/Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+/Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+/Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls
+/agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+/egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide
+/oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis]
+/Encoding defineresource pop
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%EndProlog
+%%BeginSetup
+595 842 0 sps
+1 nc
+T F dt
+T c
+%%IncludeResource: font Courier
+/_F0 /VIM-latin1 /Courier ref
+/F0 10 /_F0 ffs
+%%IncludeResource: font Courier-Bold
+/_F1 /VIM-latin1 /Courier-Bold ref
+/F1 10 /_F1 ffs
+%%IncludeResource: font Courier-Oblique
+/_F2 /VIM-latin1 /Courier-Oblique ref
+/F2 10 /_F2 ffs
+%%IncludeResource: font Courier-BoldOblique
+/_F3 /VIM-latin1 /Courier-BoldOblique ref
+/F3 10 /_F3 ffs
+/UO -1 d
+/UW 0.5 d
+/BO -2.5 d
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(_scripts/parse_footnotes.pl                           12/02/2015 14:09:44     Page 1)59.5 792.4 ms
+F0 sf
+0.396 0.145 0.043 r
+(#!/usr/bin/env perl )59.5 772.4 ms
+F2 sf
+0.173 0.216 0.227 r
+(#===============================================================================)59.5 762.4 ms
+(#)59.5 752.4 ms
+(#         FILE: parse_footnotes.pl)59.5 742.4 ms
+(#)59.5 732.4 ms
+(#        USAGE: ./parse_footnotes.pl  )59.5 722.4 ms
+(#)59.5 712.4 ms
+(#  DESCRIPTION: )59.5 702.4 ms
+(#)59.5 692.4 ms
+(#      OPTIONS: ---)59.5 682.4 ms
+(# REQUIREMENTS: ---)59.5 672.4 ms
+(#         BUGS: ---)59.5 662.4 ms
+(#        NOTES: ---)59.5 652.4 ms
+(#       AUTHOR: YOUR NAME \(\), )59.5 642.4 ms
+(# ORGANIZATION: )59.5 632.4 ms
+(#      VERSION: 1.0)59.5 622.4 ms
+(#      CREATED: 05/02/2015 16:43:15)59.5 612.4 ms
+(#     REVISION: ---)59.5 602.4 ms
+(#===============================================================================)59.5 592.4 ms
+F0 sf
+0.259 0.298 0 r
+(use strict)59.5 572.4 ms
+0 g
+(;)s
+0.259 0.298 0 r
+(use warnings)59.5 562.4 ms
+0 g
+(;)s
+0.259 0.298 0 r
+(use utf8)59.5 552.4 ms
+0 g
+(;)s
+0.259 0.298 0 r
+(use feature)59.5 542.4 ms
+0 g
+( )s
+0.082 0.314 0.298 r
+('say')s
+0 g
+(;)s
+0.259 0.298 0 r
+(use )59.5 532.4 ms
+0 g
+(FindBin;)s
+0.259 0.298 0 r
+(use lib)59.5 522.4 ms
+0 g
+( )s
+0.082 0.314 0.298 r
+(")s
+0.353 0.267 0 r
+6 10 0 0.169 0.212 bg
+($)s
+(FindBin::)s
+18 10 0 0.169 0.212 bg
+(Bin)s
+0.082 0.314 0.298 r
+(/../local/lib/perl5")s
+0 g
+(;)s
+0.259 0.298 0 r
+(use )59.5 512.4 ms
+0 g
+(Text::CSV;)s
+0.259 0.298 0 r
+(use )59.5 502.4 ms
+0 g
+(IO::All;)s
+0.259 0.298 0 r
+(use )59.5 492.4 ms
+0 g
+(Data::Dumper;)s
+0.259 0.298 0 r
+(my)59.5 472.4 ms
+0 g
+( )s
+0.353 0.267 0 r
+54 10 0 0.169 0.212 bg
+($contents)s
+0 g
+( < io\()s
+0.082 0.314 0.298 r
+('-')s
+0 g
+(\);)s
+F2 sf
+0.173 0.216 0.227 r
+(#my @matches = \( $contents =~ m/\(?:\\[\([\\d,]+\)\\]\)/g \);)59.5 452.4 ms
+(#say $_ for @matches;)59.5 442.4 ms
+(# Step one)59.5 412.4 ms
+(#)59.5 402.4 ms
+(# Get a list of footnotes to markup from the CSV)59.5 392.4 ms
+(#)59.5 382.4 ms
+(# Step two)59.5 372.4 ms
+(#)59.5 362.4 ms
+(# Grep through the HTML for the numbers, in braces, and only that number)59.5 352.4 ms
+(# and replace it with footnote markup)59.5 342.4 ms
+(#)59.5 332.4 ms
+(# For each of the footnotes in the CSV, create a footnote entry)59.5 322.4 ms
+(#)59.5 312.4 ms
+(# But are the footnotes in HTML or in md files)59.5 302.4 ms
+re sp
+%%PageTrailer
+%%Trailer
+%%Pages: 1
+%%EOF
+

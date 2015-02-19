@@ -8,3 +8,5 @@ _Archive
 _vendor
 CLIPS.md
 *.lock
+local
+cpanfile.snapshot
