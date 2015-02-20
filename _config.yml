@@ -21,6 +21,11 @@ asset_paths:
     img: ""
     js:  ""
 
+# Project collections
+collections:
+  chapters:
+    output: true
+
 # Project settings - URLs
 urls:
     display: 'project-name.thetyee.ca'

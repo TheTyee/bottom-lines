@@ -175,7 +175,8 @@ App.Layout = new Backbone.Layout({
     // Attach the Layout to the main container.
     el: "body",
     views: {
-        "last-in-class": new App.ArticleView({id: '#last-in-class', visible: true }), // Start with Chapter One
+        "intro": new App.ArticleView({id: '#intro', visible: true }), // Start with Chapter One
+        "last-in-class": new App.ArticleView({id: '#last-in-class' }), // Start with Chapter One
         "air-and-water": new App.ArticleView({id: '#air-and-water'}),
         "species": new App.ArticleView({id: '#species'}),
         "climate": new App.ArticleView({id: '#climate'}),
@@ -218,7 +219,7 @@ App.Router = Backbone.Router.extend({
     },
     start: function() {
         console.log('Routing started');
-        this.navigate("chapter/last-in-class", {trigger: true});
+        this.navigate("chapter/intro", {trigger: true});
     },
     displayChapter: function(name) {
         console.log('Showing chapter: ' + name);
