@@ -1,5 +1,4 @@
 ---
-layout: chapter
 id: intro 
 chapter_number: 0
 title: ""

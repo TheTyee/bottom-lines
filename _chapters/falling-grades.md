@@ -1,5 +1,4 @@
 ---
-layout: chapter
 id: last-in-class 
 chapter_number: 1
 header_title: "Last in class"
