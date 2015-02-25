@@ -130,7 +130,7 @@ Modules
 body.default article {
   display: none;
 }
-body.default article h3 {
+h3 {
   color: #2075C7;
   font-family: "adelle", serif;
   font-style: normal;
@@ -140,7 +140,7 @@ body.default article h3 {
   padding-top: 0px;
   padding-bottom: 15px;
 }
-body.default article h4 {
+h4 {
   color: #2075C7;
   font-family: "adelle", serif;
   font-style: normal;
@@ -150,7 +150,7 @@ body.default article h4 {
   padding-top: 15px;
   padding-bottom: 0px;
 }
-body.default article h5 {
+h5 {
   color: #595959;
   font-family: "adelle", serif;
   font-style: normal;
@@ -159,18 +159,18 @@ body.default article h5 {
   line-height: 30px;
   padding-top: 30px;
 }
-body.default article .longform {
+.longform {
   padding-top: 100px;
 }
-body.default article header.fullscreen {
+header.fullscreen {
   background-size: cover;
   background-position: center;
 }
-body.default article header.fullscreen .intro {
+.intro {
   opacity: 0;
   padding-top: 10%;
 }
-body.default article header.fullscreen .intro h1 {
+.intro h1 {
   color: #FFF;
   font-family: "adelle", serif;
   font-style: normal;
@@ -180,7 +180,7 @@ body.default article header.fullscreen .intro h1 {
   padding-top: 200px;
   padding-bottom: 15px;
 }
-body.default article header.fullscreen .intro h2 {
+.intro h2 {
   color: #C7E8FF;
   font-family: "adelle", serif;
   font-style: normal;
@@ -190,23 +190,23 @@ body.default article header.fullscreen .intro h2 {
   padding-top: 5px;
   padding-bottom: 40px;
 }
-body.default article header.fullscreen .intro p {
+.intro p {
   color: #C7E8FF;
 }
-body.default article header.fullscreen .intro .next {
+.intro .next {
   color: #ABDCFF;
   font-size: 5rem;
   padding-top: 30px;
   padding-bottom: 15px;
 }
-body.default article aside h1 {
+aside h1 {
   color: #4D4D4D;
   font-family: "adelle", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
 }
-body.default article aside * {
+aside * {
   color: #333;
   font-family: "adelle-sans", sans-serif;
   font-style: normal;
@@ -214,7 +214,7 @@ body.default article aside * {
   font-size: 13px;
   line-height: 20px;
 }
-body.default article figcaption {
+figcaption {
   color: #333;
   font-family: "adelle-sans", sans-serif;
   font-style: normal;
@@ -224,32 +224,32 @@ body.default article figcaption {
   padding-top: 10px;
   padding-bottom: 0px;
 }
-body.default article .pull-right {
+.pull-right {
   padding-left: 3rem;
 }
-body.default article .pull-left {
+.pull-left {
   padding-right: 3rem;
 }
-body.default article section.parallax {
+section.parallax {
   height: 350px;
   margin-bottom: 50px;
   margin-top: 80px;
 }
-body.default article section.parallax h3 {
+section.parallax h3 {
   position: absolute;
   bottom: 0;
   font-weight: 700;
 }
-body.default article footer {
+footer {
   background: #2e569c;
   color: #ffffff;
   height: 70px;
   margin-top: 40px;
   padding-top: 18px;
 }
-body.default article footer a:link,
-body.default article footer a:hover,
-body.default article footer a:visited {
+footer a:link,
+footer a:hover,
+footer a:visited {
   color: #fff;
   font-family: "adelle", serif;
   font-style: normal;
@@ -257,14 +257,14 @@ body.default article footer a:visited {
   font-size: 16px;
   color: #ffffff;
 }
-body.default article footer nav.chapter {
+footer nav.chapter {
   width: 45%;
 }
-body.default article footer nav.chapter-previous {
+footer nav.chapter-previous {
   float: left;
   text-align: left;
 }
-body.default article footer nav.chapter-next {
+footer nav.chapter-next {
   float: right;
   text-align: right;
 }
@@ -327,17 +327,17 @@ Progressively enhance for larger screens
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   /* portrait tablets */
-  body.default article header.fullscreen {
+  header.fullscreen {
     min-height: 1024px;
   }
-  body.default article .pull-left {
+  .pull-left {
     position: relative;
     left: -60px;
     padding-top: 22px;
     margin-right: -10px;
     padding-bottom: 15px;
   }
-  body.default article .pull-right {
+  .pull-right {
     position: relative;
     left: 60px;
     padding-top: 22px;
@@ -350,17 +350,17 @@ Progressively enhance for larger screens
 }
 @media screen and (min-width: 1025px) {
   /* Adjust for large desktop */
-  body.default article header.fullscreen {
+  header.fullscreen {
     min-height: 100vh;
   }
-  body.default article .pull-left {
+  .pull-left {
     position: relative;
     left: -60px;
     padding-top: 22px;
     margin-right: -10px;
     padding-bottom: 15px;
   }
-  body.default article .pull-right {
+  .pull-right {
     position: relative;
     left: 60px;
     padding-top: 22px;
@@ -378,7 +378,7 @@ AG's media queries to be merged
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  body.default article header.fullscreen .intro {
+  header.fullscreen .intro {
     opacity: 0;
     padding-top: 15%;
   }
@@ -416,26 +416,26 @@ AG's media queries to be merged
   .navbar-inverse .navbar-nav > li > a {
     font-weight: 100;
   }
-  body.default article h3 {
+  h3 {
     font-size: 48px;
     line-height: 48px;
     padding-top: 20px;
     padding-bottom: 15px;
   }
-  body.default article h4 {
+  h4 {
     font-size: 24px;
     line-height: 40px;
     padding-top: 15px;
     padding-bottom: 0px;
   }
-  body.default article h5 {
+  h5 {
     line-height: 40px;
     padding-top: 40px;
   }
   .chapter-section {
     padding-top: 40px;
   }
-  body.default article header.fullscreen .intro h1 {
+  .intro h1 {
     color: #FFF;
     font-family: "adelle", serif;
     font-style: normal;
@@ -445,7 +445,7 @@ AG's media queries to be merged
     padding-top: 200px;
     padding-bottom: 15px;
   }
-  body.default article header.fullscreen .intro h2 {
+  .intro h2 {
     color: #C7E8FF;
     font-family: "adelle", serif;
     font-style: normal;
@@ -455,7 +455,7 @@ AG's media queries to be merged
     padding-top: 5px;
     padding-bottom: 40px;
   }
-  body.default article header.fullscreen .site-intro h1 {
+  header.fullscreen .site-intro h1 {
     padding-top: 80px;
   }
   article.card {
@@ -474,20 +474,20 @@ AG's media queries to be merged
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  body.default article header.fullscreen .intro .next {
+  .intro .next {
     color: #ABDCFF;
     font-size: 80px;
     padding-top: 30px;
     padding-bottom: 15px;
   }
-  body.default article .pull-left {
+  .pull-left {
     position: relative;
     left: -60px;
     padding-top: 22px;
     margin-right: -10px;
     padding-bottom: 15px;
   }
-  body.default article .pull-right {
+  .pull-right {
     position: relative;
     left: 60px;
     padding-top: 22px;
