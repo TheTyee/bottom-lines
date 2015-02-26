@@ -7,9 +7,9 @@ title: "Falling Grades"
 dek: "Twenty-five years of active lawmaking has not halted the decline of Canada’s ecosystems or environmental standing."
 ---
 
-Nothing says ‘Canada’ quite like a scenic vista—be it Gros Morne, the Saskatchewan sky, or a whale breeching in the Salish Sea. Canadians are justly proud of the vast variety of our landscapes. Our pride and concern for our natural environment has been rock-steady over a quarter of a century. Only Swiss and Norwegian citizens are more likely than Canadians to identify [355] the environment as their No. 1 political issue.
+Nothing says ‘Canada’ quite like a scenic vista—be it Gros Morne, the Saskatchewan sky, or a whale breeching in the Salish Sea. Canadians are justly proud of the vast variety of our landscapes. Our pride and concern for our natural environment has been rock-steady over a quarter of a century. Only Swiss and Norwegian citizens are more likely than Canadians to identify ^355 the environment as their No. 1 political issue.
 
-Our leaders have appeared to be in step. Regardless of party, they have regularly assured us that Canada’s natural security is well protected. Legislation has been enacted [112,118,183,194] across an impressive range of fronts, from protecting species to penalizing polluters and preventing foreseeable harm.
+Our leaders have appeared to be in step. Regardless of party, they have regularly assured us that Canada’s natural security is well protected. Legislation has been enacted ^112 ^118 ^183 ^194 across an impressive range of fronts, from protecting species to penalizing polluters and preventing foreseeable harm.
 
 Yet independent assessments [35,40,46,48,56],and a candid account of our history tell quite a different story. Much of this country’s original wealth was created by logging forests for timber, breaking native prairie for grain fields, and blasting minerals from hard rock. The idea that environmental loss is a regrettable but necessary price for prosperity has been deeply engrained. Last year, the Prime Minister argued against additional measures to preserve a stable climate by saying, “No country is going to take actions that are going to deliberately destroy jobs and growth in their country.”
 
