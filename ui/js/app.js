@@ -3,22 +3,30 @@
 //= require jquery.js
 //= require modernizr.js
 //= require bootstrap.js
-//= require jquery.easings.min.js
-//= require jquery.slimscroll.js
-//= require jquery.fullPage.js
+// require jquery.easings.min.js
+// require jquery.slimscroll.js
+// require jquery.fullPage.js
 //= require underscore.js
 //= require backbone.js
 //= require backbone.layoutmanager.js
+//  
+//  # Smooth scroll for intro jumps
 //= require jquery.smooth-scroll.js
 //= require jquery.fluidbox.min.js
 //= require jquery.scrollstop.js
+//  
+//  # Scroll Magic for parallax
 //= require TweenMax.js
 //= require jquery.scrollmagic.js
 // require jquery.scrollmagic.debug.js
+//  # D3 for cards
 //= require d3.js
+//  # BigFoot for footnotes
+//= require bigfoot.js
+//
+//  # Thes should be loaded by the cards, not app.js
 //= require app-timeseries.js
 //= require app-regions.js
-//= require bigfoot.js
 
 // 
 // ===================================================================
@@ -48,22 +56,36 @@ Backbone.Layout.configure({
 
 App.ArticleView = Backbone.View.extend({ 
     visible: 'false',
+    card: '',
     events: {
     },
     initialize: function (options) {
+        console.log(options);
         var id = options.id;
         var visibility = options.visible;
+        var card = options.card;
         this.el = id;
         this.$el = $(id); 
         this.visible = visibility;
+        this.card    = card;
     },
     afterRender: function() {
+        // Handle cards experiement
+        if ( this.card ) {
+            console.log("showing a modal");
+        }
     },
     show: function() {
+        console.log(this.card);
         this.$el.show();
         this.visible = true;
         $(".intro").delay(1500).animate({ opacity: 1}, 700);
         $(this.el + " figure a").fluidbox();
+        // Handle cards
+        if ( this.card ) {
+            console.log("showing a modal");
+            $('#myModal').modal();
+        };
         var parallax = this.$('.parallax');
         if (parallax.length >= 1) { 
             var duration = parallax.height() + $(window).height();
@@ -75,6 +97,9 @@ App.ArticleView = Backbone.View.extend({
             .setTween(TweenMax.to(parallax, 1, {backgroundPosition: bgPosMovement, ease: Linear.easeNone}))
             .addTo(controller);
         }
+    },
+    addCard: function(card) {
+        this.card = card;
     },
     hide: function() {
         this.$el.hide();
@@ -214,6 +239,7 @@ App.Router = Backbone.Router.extend({
     routes: {
         '': 'start',
         'chapter(/:name)': 'displayChapter',
+        'chapter/:name/:card' : 'displayChapterWithCard',
         'card(/:name)': 'displayCard',
         '*default': 'defaultRoute'
     },
@@ -226,7 +252,20 @@ App.Router = Backbone.Router.extend({
         var currentView = App.Layout.getView({ visible: true });
         var nextView = App.Layout.getView(name);
         if ( nextView ) {
+            currentView.hide();            
+            nextView.show();
+            window.scrollTo(0, 0); // Yuck!
+        } else {
+            console.log('No matching chapter');
+        }
+    },
+    displayChapterWithCard: function(name, card) {
+        console.log('Showing chapter: ' + name + ' with card ' + card );
+        var currentView = App.Layout.getView({ visible: true });
+        var nextView = App.Layout.getView(name);
+        if ( nextView ) {
             currentView.hide();
+            nextView.addCard(card);            
             nextView.show();
             window.scrollTo(0, 0); // Yuck!
         } else {
