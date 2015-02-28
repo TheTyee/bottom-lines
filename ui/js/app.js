@@ -9,6 +9,7 @@
 //= require underscore.js
 //= require backbone.js
 //= require backbone.layoutmanager.js
+//= require backbone.modal.js
 //  
 //  # Smooth scroll for intro jumps
 //= require jquery.smooth-scroll.js
@@ -54,6 +55,13 @@ Backbone.Layout.configure({
 // Views
 // ===================================================================
 
+
+// Create a modal view class
+App.Modal = Backbone.Modal.extend({
+    template: '#modal-template',
+    cancelEl: '.bbm-button'
+});
+
 App.ArticleView = Backbone.View.extend({ 
     visible: 'false',
     card: '',
@@ -83,9 +91,12 @@ App.ArticleView = Backbone.View.extend({
         $(this.el + " figure a").fluidbox();
         // Handle cards
         if ( this.card ) {
-            console.log("showing a modal");
+            // Using backbone-modal
+            //App.modalView = new App.Modal();
+            // $('#modal').html(App.modalView.render().el);
+            // Or just Bootstrap
             $('#myModal').modal();
-        };
+        }
         var parallax = this.$('.parallax');
         if (parallax.length >= 1) { 
             var duration = parallax.height() + $(window).height();
