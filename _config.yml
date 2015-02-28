@@ -89,6 +89,7 @@ assets:
     - bower_components/fullpage.js/vendors/
     - bower_components/d3/
     - bower_components/bigfoot/dist/
+    - bower_components/backbone-modal/
   js_compressor: yui
   css_compressor: yui
   cache: true
