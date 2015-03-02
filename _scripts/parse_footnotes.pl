@@ -24,7 +24,8 @@ my $file = shift @ARGV;
 my $content < io $file;
 
 # Find numerica markdown footnote [^1] references, replace with footnote style markup
-$content =~ s!(\[)\^(\d+)(\])!<sup id="fnref:$2"><a href="#fn:$2" rel="footnote">$2</a></sup>!g;
+#$content =~ s!(\[)\^(\d+)(\])!<sup id="fnref:$2"><a href="#fn:$2" rel="footnote">$2</a></sup>!g;
+$content =~ s!\^(\d+)!<sup id="fnref:$1"><a href="#fn:$1" rel="footnote">$1</a></sup>!g;
 
 # Write the file
 $content > io($file);
