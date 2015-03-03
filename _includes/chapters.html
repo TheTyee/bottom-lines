@@ -48,9 +48,18 @@
                     <nav class="chapter chapter-previous">
                         &nbsp;
                     </nav>
+{% assign current = forloop.index %}
+{% assign next = chapters_sorted[current] %}
+{% if next %}
+
                     <nav class="chapter chapter-next">
-                        <a href="/#chapter/air-and-water">Next: Air &amp; Water &raquo;</a>
+                        <a href="/#chapter/{{ next.id }}">Next: {{ next.header_title }} &raquo;</a>
                     </nav>
+{% else %}
+                    <nav class="chapter chapter-next">
+                        <a href="/#chapter/intro">Back to introduction &raquo;</a>
+                    </nav>
+{% endif %}
                 </div>
             </div>
         </div>
