@@ -4,7 +4,7 @@ chapter_number: 5
 header_title: "Billions of Reasons to Change"
 header_dek: "Impaired natural security leaves Canada at a global disadvantage."
 title: ""
-dek: ""
+dek: "Researchers have cracked the code to work out nature’s dollar value to the economy"
 ---
 It’s an old economic truism, a corollary of the law of supply and demand, that scarcity creates value. In an era when natural capital is disappearing, it is also increasingly highly valued. Canada’s ineffective stewardship of its ecological assets puts at risk hundreds of billions, potentially trillions, of dollars worth of wealth, in addition to intrinsic and cultural values.
 

@@ -4,7 +4,7 @@ chapter_number: 3
 header_title: "More Endangered than Ever"
 header_dek: "Most Species “Protected” Under Canadian Law Are Losing Ground"
 title: ""
-dek: ""
+dek: "Canada has made strong commitments on biodiversity; fewer promises have been fully met"
 ---
 In a Canada Day poll a couple of years ago, 83 per cent of us identified our untamed landscape as a “good” or “great” reflection of Canadian identity. [389] And surely the iconic moose and orca, the loon that adorns the dollar and its twoonie counterpart the polar bear, the old national symbol of the beaver—all speak to Canadians’ affinity for the wildlife beyond our urban limits. 
 

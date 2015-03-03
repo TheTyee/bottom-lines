@@ -2,7 +2,7 @@
 id: intro 
 chapter_number: 0
 title: ""
-dek: ""
+dek: "Our review covered Canada’s record on water, land and air, as well as species, ecosystems and climate change."
 ---
 
 In this era of stressed ecologies and climate instability, Canadians should be able to count on the world’s second-largest landscape for resilient natural security: a healthy environment to support both our well-being and our prosperity long into the future. But can we? 

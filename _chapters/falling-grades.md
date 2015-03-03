@@ -1,10 +1,10 @@
 ---
 id: last-in-class 
 chapter_number: 1
-header_title: "Last in class"
-header_dek: "Some catchy dek for the slide here..."
-title: "Falling Grades"
-dek: "Twenty-five years of active lawmaking has not halted the decline of Canada’s ecosystems or environmental standing."
+header_title: "Falling Grades"
+header_dek: "Twenty-five years of active lawmaking has not halted the decline of Canada’s ecosystems or environmental standing."
+title: ""
+dek: "When others grade our stewardship, Canada consistently falls short of its citizens’ aspirations"
 ---
 
 Nothing says ‘Canada’ quite like a scenic vista—be it Gros Morne, the Saskatchewan sky, or a whale breeching in the Salish Sea. Canadians are justly proud of the vast variety of our landscapes. Our pride and concern for our natural environment has been rock-steady over a quarter of a century. Only Swiss and Norwegian citizens are more likely than Canadians to identify ^355 the environment as their No. 1 political issue.

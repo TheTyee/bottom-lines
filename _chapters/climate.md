@@ -4,7 +4,7 @@ chapter_number: 4
 header_title: "A Different Country"
 header_dek: "As Canada delays, rising temperatures alter the landscape and test the economy."
 title: ""
-dek: ""
+dek: "Canada’s greenhouse emissions briefly dropped, and are now forecast to rise sharply"
 ---
 
 Nothing has changed more widely or dramatically over the past 25 years than the global climate. And on no other subject has Canada’s  natural security policy reversed more sharply. In 1989, Canada was a leader in the international response to climate change. [227,228] In many assessments it is now deemed a laggard. [48,285,357]

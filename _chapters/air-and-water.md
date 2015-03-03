@@ -4,7 +4,7 @@ chapter_number: 2
 header_title: "Return of the Dead Zones"
 header_dek: "Few Advances on Canadians’ Top Three Concerns: Air, Water, and Toxic Chemicals"
 title: ""
-dek: ""
+dek: "Some familiar old threats are back, and exotic new ones are coming to light."
 ---
 When Canadians were asked back in 1989 to name their biggest environmental concerns, the top three answers they gave were, in descending order: toxic chemicals, water quality, and air quality. ^360 Four in ten were hopeful that things would improve within a decade.
 
