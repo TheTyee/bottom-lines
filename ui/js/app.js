@@ -255,6 +255,7 @@ $(function() {
     App.router = new App.Router();
     Backbone.history.start();
     $.bigfoot({
-        actionOriginalFN: "ignore"
+        actionOriginalFN: "ignore",
+        useFootnoteOnlyOnce: false
     });
 });
