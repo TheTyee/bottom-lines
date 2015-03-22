@@ -3,13 +3,22 @@ id: last-in-class
 chapter_number: 1
 header_title: "Falling Grades"
 header_dek: "Twenty-five years of active lawmaking has not halted the decline of Canada’s ecosystems or environmental standing."
-title: ""
+title: "This Needs a Header"
 dek: "When others grade our stewardship, Canada consistently falls short of its citizens’ aspirations"
 ---
 
-Nothing says ‘Canada’ quite like a scenic vista—be it Gros Morne, the Saskatchewan sky, or a whale breeching in the Salish Sea. Canadians are justly proud of the vast variety of our landscapes. Our pride and concern for our natural environment has been rock-steady over a quarter of a century. Only Swiss and Norwegian citizens are more likely than Canadians to identify ^355 the environment as their No. 1 political issue.
+Nothing says ‘Canada’ quite like a scenic vista—be it Gros Morne, the Saskatchewan sky, or a whale breeching in the Salish Sea. Canadians are justly proud of the vast variety of our landscapes. Our pride and concern for our natural environment has been rock-steady over a quarter of a century. Only Swiss and Norwegian citizens are more likely than Canadians to identify ^355 the environment as their No. 1 political issue. Here's a test of an inline <a href="url" class="link-resource">linked resource</a>.
 
 Our leaders have appeared to be in step. Regardless of party, they have regularly assured us that Canada’s natural security is well protected. Legislation has been enacted ^112 ^118 ^183 ^194 across an impressive range of fronts, from protecting species to penalizing polluters and preventing foreseeable harm.
+
+<aside class="sidebar pull-right">
+    <h1>Glossary</h1>
+    <dl>
+        <dt>Lorem</dt>
+        <dd>ipsum dolor sit amet</dd>
+    </dl> 
+</aside>
+
 
 Yet independent assessments ^35 ^40 ^46 ^48 ^56,and a candid account of our history tell quite a different story. Much of this country’s original wealth was created by logging forests for timber, breaking native prairie for grain fields, and blasting minerals from hard rock. The idea that environmental loss is a regrettable but necessary price for prosperity has been deeply engrained. Last year, the Prime Minister argued against additional measures to preserve a stable climate by saying, “No country is going to take actions that are going to deliberately destroy jobs and growth in their country.”
 
@@ -19,9 +28,28 @@ Significantly, as the value of the security these natural systems provide has co
 
 We examined the actions that Canada’s governments—of differing political stripes—have taken to protect and secure the environment since 1989, as well as the global context of those actions. Over the 25-year period to 2014, we found that state-of-the-art legislation to protect biodiversity, the safety of air and water, and critical natural systems, has never been fully implemented or effectively enforced. Numerous mandated goals remain unmet. ^213 ^217 ^218
 
+<figure class="pull-right">
+    <a href="http://placehold.it/1000x1000" title="">
+        <img src="http://placehold.it/200x200" title="" alt="" />
+    </a> 
+    <figcaption>
+        Figure caption
+    </figcaption> 
+</figure>
+
+
 The consequences of bi-partisan neglect are now becoming apparent. Many supposedly ‘protected’ species are at greater risk 214 today than they were in 1989. New and more elusive chemical threats have replaced older biological ones in Canada’s water—although some of the latter are also back with a vengeance.
 
 Ambitious goals articulated a quarter-century ago ^228 to reduce Canada’s climate-altering greenhouse gas emissions have slipped by unmet. ^281 Our contributions to climate change ^283 have reversed a brief decline and are now again trending upward, even as its manifestations take a growing toll ^99 on livelihoods and structures.
+
+<aside class="pull-right">
+    <a href="http://placehold.it/1000x1000" title="">
+        <img src="http://placehold.it/200x200" title="" alt="" />
+    </a> 
+    <figcaption>
+        Figure caption
+    </figcaption> 
+</aside>
 
 Elsewhere, international investors and key agencies like the World Bank ^104 and International Monetary Fund ^110 now question the conventional Canadian wisdom that expanding the economy is worth any price to the environment. Bodies that report on how well different countries’ maintain their natural security have made the same link.
 
@@ -29,12 +57,28 @@ Elsewhere, international investors and key agencies like the World Bank ^104 and
 
 Such rankings are only as old as the new century. One of the earliest was completed in 2000 as a pilot project for the World Economic Forum. Combining ^64 indicators, the Yale Centre for Environmental Law and Policy and Columbia University Center for International Earth Science ranked Canada 7th ^12 among ^56 developed and developing countries. In a more polished version the following year, Canada scored even better: third in a field of 122. ^14
 
+>Here's a test of a blockquote. It's pretty big and possibly somewhat controversial, definitely very important.
+> — <cite>[Optional source citation][1]</cite>
+
+[1]:http://www.quotedb.com/quotes/2112
+
 But more critical assessments surfaced almost at once. In the same year that Yale and Columbia placed Canada third in the world, researchers at the University of Victoria called Canada’s environmental record, “one of the poorest of the industrialized countries." ^16 In follow-up comparisons, the same team ranked Canada 28th among 30 wealthy countries in 2005, 25 and 24th of 25 in 2010. ^35
+
+![Photo of Canada losing](assets/runners.jpg "Canada comes in last")
+{% image geese_man.jpg alt="Photo of Canada losing" title="Canada comes in last" %}
 
 Other assessments have reached the same unflattering conclusion: against its developed peers, Canada trails. The United Nations Environment Program put us as low as 43rd in the world in environmental “vulnerability” in 2005. ^26 The business-oriented Conference Board of Canada scored us 15th among 17 countries in 2013. ^46
 
-That same year the Centre for Global Development put us last in class for environmental care: 27th in a field of 27 rich, educated nations. ^48 And last year the Climate Action Network and a research partner again placed Canada at the very bottom of 58 countries whose climate protection policies they evaluated. ^357
+<figure>
+    <img src="assets/runners.jpg" title="Canada comes in last" alt="Photo of Canada losing" /> 
+    <figcaption>
+        Figure caption
+    </figcaption> 
+</figure>
 
+
+That same year the Centre for Global Development put us last in class for environmental care: 27th in a field of 27 rich, educated nations. ^48 And last year the Climate Action Network and a research partner again placed Canada at the very bottom of 58 countries whose climate protection policies they evaluated. ^357
+ 
 ##### Not how we see ourselves
 
 Our national decline in global stewardship rankings is at odds with Canadians’ priorities over the same years as captured in opinion polls, although these also reveal that we’ve long been skeptical that our governments were up to the job.
