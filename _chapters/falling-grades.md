@@ -6,7 +6,7 @@ header_dek: "Twenty-five years of active lawmaking has not halted the decline of
 title: ""
 dek: "When others grade our stewardship, Canada consistently falls short of its citizens’ aspirations"
 ---
-### When others grade our stewardship, Canada consistently falls short of its citizens’ aspirations
+#### When others grade our stewardship, Canada consistently falls short of its citizens’ aspirations
 
 Nothing says ‘Canada’ quite like a scenic vista—be it Gros Morne, the Saskatchewan sky, or a whale breeching in the Salish Sea. Canadians are justly proud of the vast variety of our landscapes. Our pride and concern for our natural environment has been rock-steady over a quarter of a century. Only Swiss and Norwegian citizens are more likely than Canadians to identify the environment as their No. 1 political issue. ^355
  
