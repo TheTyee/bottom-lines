@@ -6,6 +6,8 @@ header_dek: "Impaired natural security leaves Canada at a global disadvantage."
 title: ""
 dek: "Researchers have cracked the code to work out nature’s dollar value to the economy"
 ---
+#### Researchers have cracked the code to work out nature’s dollar value to the economy
+
 It’s an old economic truism, a corollary of the law of supply and demand, that scarcity creates value. In an era when natural capital is disappearing, it is also increasingly highly valued. Canada’s ineffective stewardship of its ecological assets puts at risk hundreds of billions, potentially trillions, of dollars worth of wealth, in addition to intrinsic and cultural values.
 
 Economists have estimated that the ecological services provided by the Mackenzie River watershed in northern Canada are worth some $571 billion a year—thirteen and a half times the region’s official GDP of $42 billion. ^83 In 2014 an unknown portion of that wealth went up in smoke, when fires consumed vast swaths of boreal forest. Soot from the fires in the Northwest Territories drifted downwind to darken Greenland’s ice sheets, hastening their melt. ^384

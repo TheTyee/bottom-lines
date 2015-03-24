@@ -6,6 +6,8 @@ header_dek: "How and why this report came to be: Disclosure, methods and sources
 title: ""
 dek: "About the project"
 ---
+#### About the project
+
 [Tyee Solutions Society (TSS)](http://www.tyeesolutions.org) is a Canadian non-profit society that uses traditional investigative techniques and innovative technological approaches to provide citizens with the information they need to create positive change. Its previous work has included new approaches to aboriginal education, solutions for affordable housing, practical ideas for ‘greening’ Canada’s oil sands, and more.
  
 This TSS project asked a deceptively simple question: Cutting through all partisan rhetoric, how well has Canada cared for its environment, really?
