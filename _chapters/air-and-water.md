@@ -18,7 +18,7 @@ The primary cause of their summertime ‘blooms’ in lakes, oceans and rivers i
  
 And such toxic blooms are spreading. ^364 ^365 Once banished from Lake Erie, blooms have returned to the shallowest Great Lake. Last summer, residents of the U.S. city of Toledo and Canada’s Pelee Island were warned that drinking tap-water piped from Lake Erie could endanger their lives. ^369 ^370 ‘Dead zones’ created by algae die-offs in Lake Winnipeg have at times covered half the lake’s surface, rivaling those in the Gulf of Mexico for expanse. ^367 Toxic blooms have even been spotted in the St. Lawrence River and the Salish Sea. ^366
  
-#### Gender-bending new pollutants
+### Gender-bending new pollutants
  
 After intestinal ailments killed seven people in Walkerton, ON, in 2000, and sickened half the population of North Battleford, SK, ten months later, many provinces tightened up regulations to protect Canadians’ drinking water. ^368 Traditional water-borne threats such as cholera and typhoid are largely vanquished, although hundreds of smaller and remote communities continue to experience water safety warnings, some of many years standing. ^368 ^371
  
@@ -28,7 +28,7 @@ Doctors observe an ongoing decline in the number of Canadian boys being born in 
  
 Of an estimated 23,000 such ‘chemicals of concern, Health Canada and Environment Canada have targeted 4,300 for re-evaluation, but do not expect to complete the task until 2020 at the earliest. ^368 Toxicity information for nearly nine in ten chemicals in current use (87%) is missing, the Council of Canadian Academies warned in 2012. ^379
  
-#### Airborne wins and losses
+### Airborne wins and losses
  
 Air quality presents the same mixed picture over the past two-and-a-half decades. While some pollutants, such as the nitrogen and sulfur oxides that created acid rain, have receded, others such as air-borne ammonia are on the rise. ^380 Toxic mercury, carcinogenic hydrocarbons, and EDCs have been found to be accumulating on surfaces downwind from Alberta’s oil sands regions. ^381 ^382
  
