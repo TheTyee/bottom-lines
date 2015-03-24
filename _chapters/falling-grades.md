@@ -6,7 +6,7 @@ header_dek: "Twenty-five years of active lawmaking has not halted the decline of
 title: ""
 dek: "When others grade our stewardship, Canada consistently falls short of its citizens’ aspirations"
 ---
-#### When others grade our stewardship, Canada consistently falls short of its citizens’ aspirations
+### When others grade our stewardship, Canada consistently falls short of its citizens’ aspirations
 
 Nothing says ‘Canada’ quite like a scenic vista—be it Gros Morne, the Saskatchewan sky, or a whale breeching in the Salish Sea. Canadians are justly proud of the vast variety of our landscapes. Our pride and concern for our natural environment has been rock-steady over a quarter of a century. Only Swiss and Norwegian citizens are more likely than Canadians to identify the environment as their No. 1 political issue. ^355
  
@@ -52,7 +52,7 @@ Ambitious goals articulated a quarter-century ago to reduce Canada’s climate-a
 
 Elsewhere, international investors and key agencies like the World Bank and International Monetary Fund now question the conventional Canadian wisdom that expanding the economy is worth any price to the environment. Bodies that report on how well different countries’ maintain their natural security have made the same link.
 
-#### From ‘A’s to ‘F’s
+### From ‘A’s to ‘F’s
 
 Such rankings are only as old as the new century. One of the earliest was completed in 2000 as a pilot project for the World Economic Forum. Combining 64 indicators, the Yale Centre for Environmental Law and Policy and Columbia University Center for International Earth Science ranked Canada 7th among 56 developed and developing countries.^12 In a more polished version the following year, Canada scored even better: third in a field of 122. ^14
 
@@ -74,7 +74,7 @@ Other assessments have reached the same unflattering conclusion: against its dev
 
 That same year the Centre for Global Development put us last in class for environmental care: 27th in a field of 27 rich, educated nations. ^48 And last year the Climate Action Network and a research partner again placed Canada at the very bottom of 58 countries whose climate protection policies they evaluated. ^357
 
-#### Not how we see ourselves
+### Not how we see ourselves
 
 Our national decline in global stewardship rankings is at odds with Canadians’ priorities over the same years as captured in opinion polls, although these also reveal that we’ve long been skeptical that our governments were up to the job.
 
