@@ -20,7 +20,7 @@ The collective scope of this legislation is impressive. But multiple assessments
  
 There is some good news: seals and whales once hunted to near extinction are recovering in all of the Pacific, Atlantic and Arctic Oceans, the Department of Fisheries and Oceans reported in 2010. ^205
  
-#### But a larger number of trends are negative.
+### But a larger number of trends are negative.
  
 According to the same assessment by federal scientists, all three oceans are becoming more acid, threatening the future of shellfish, and experiencing more exotic chemical contamination. Stifling ‘dead zones’ are appearing off our Pacific and Atlantic coasts. Toxic mercury is accumulating in the Arctic Ocean. On both the east and west coasts, commercial fish stocks have collapsed and the average size of the remaining fish has declined. Marine ‘trophic’ indices—which reflect the complexity of life present—have declined, indicating that simpler forms like worms and jelly fish are replacing higher ones like fin fish and marine mammals.
  
@@ -32,7 +32,7 @@ Federal reliance on the provinces to achieve national biodiversity goals has pro
  
 Meanwhile, many supposedly protected populations are dwindling. Migratory waterfowl (ducks and geese valued by hunters) have been well protected, but other shore, grassland and forest birds “are in major decline,” the Environment Commissioner reported. ^216 Disappearing fastest are “aerial insectivores that depend on flying insects for food.” British Columbia’s orcas, woodland and tundra caribou, and the Arctic bear that adorns Canada’s two-dollar piece are all among iconic megafauna that continue to face an uncertain future.
  
-#### Vanishing Canada
+### Vanishing Canada
  
 Entire landscapes are also disappearing, albeit mostly beyond urban notice. In the south-west Arctic, spruce forests are collapsing as the permafrost beneath them melts. ^398 A warmer, less stable climate is igniting more forest fires—that burn greater expanses of mature forest. ^397 Above the advancing northern treeline, satellites have observed lakes both forming and disappearing by the hundreds. ^399
  
@@ -49,7 +49,7 @@ Environment Canada itself has acknowledged, in communications cited by the Envir
  
 These are not new lapses. In 2002 several groups lodged a complaint with the semi-judicial North American Commission on Environmental Cooperation that Canada, then under Liberal government, was not enforcing its laws protecting migratory birds. ^417 In 2007, the Commission upheld the complaint. ^197 ^418 The government, now under Conservative management, announced it was developing a new protection program but cancelled that initiative in 2010.
  
-#### Limiting Protection
+### Limiting Protection
  
 The third modern legal leg of federal wildlife protection is the Canadian Environmental Assessment Act, created by a Progressive Conservative government in 1992. ^187 Subsequent court decisions confirmed its country-wide force, and required its assessments to consider long-term as well as immediate impacts from development. ^132 ^310 
 
