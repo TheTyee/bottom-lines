@@ -10,7 +10,7 @@ dek: "When others grade our stewardship, Canada consistently falls short of its 
 
 Nothing says ‘Canada’ quite like a scenic vista—be it Gros Morne, the Saskatchewan sky, or a whale breeching in the Salish Sea. Canadians are justly proud of the vast variety of our landscapes. Our pride and concern for our natural environment has been rock-steady over a quarter of a century. Only Swiss and Norwegian citizens are more likely than Canadians to identify the environment as their No. 1 political issue. ^355
  
-Our leaders have appeared to be in step. Regardless of party, they have regularly assured us that Canada’s natural security is well protected. Legislation has been enacted  across an impressive range of fronts, from protecting species to penalizing polluters and preventing foreseeable harm <a href="url" class="link-resource">linked resource</a>.
+Our leaders have appeared to be in step. Regardless of party, they have regularly assured us that Canada’s natural security is well protected. Legislation has been enacted  across an impressive range of fronts, from protecting species to penalizing polluters and preventing foreseeable harm <a href="#chapter/last-in-class/some-card" class="link-resource">linked resource</a>.
 
 <aside class="sidebar pull-right">
     <h1>Glossary</h1>
@@ -66,7 +66,7 @@ But more critical assessments surfaced almost at once. In the same year that Yal
 Other assessments have reached the same unflattering conclusion: against its developed peers, Canada trails. The United Nations Environment Program put us as low as 43rd in the world in environmental “vulnerability” in 2005. ^26 The business-oriented Conference Board of Canada scored us 15th among 17 countries in 2013. ^46
 
 <figure>
-    <img src="assets/geese_man.jpg" title="Canada comes in last" alt="Photo of Canada losing" /> 
+    {% image geese_man.jpg title="Canada comes in last" alt="Photo of Canada losing" %}
     <figcaption>
         Figure caption
     </figcaption> 
