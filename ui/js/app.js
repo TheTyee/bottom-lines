@@ -95,6 +95,7 @@ App.ArticleView = Backbone.View.extend({
     visible: 'false',
     card: '',
     events: {
+        "click .link-card": "showCard"
     },
     initialize: function (options) {
         var id = options.id;
@@ -137,6 +138,12 @@ App.ArticleView = Backbone.View.extend({
     addCard: function(card) {
         this.card = card;
     },
+    showCard: function(event) {
+        event.preventDefault();
+        var el = event.currentTarget;
+        var cardId = $(el).data('card');
+        App.CardsLayout.startShow(cardId);
+    },
     hide: function() {
         this.$el.hide();
         this.visible = false;
@@ -163,6 +170,11 @@ App.CardsLayout = new Backbone.Layout({
     startShow: function(cardId) {
         var card = this.getView({"id": cardId });
         card.show();
+        // TODO This is silly, fix it!
+        var currentPath = Backbone.history.fragment;
+        var base = currentPath.split('/')[0];
+        var item = currentPath.split('/')[1];
+        App.router.navigate(base + '/' + item + '/' + cardId, { trigger: false } );
     },
     showNext: function(event){
         var el = event.currentTarget;
@@ -179,7 +191,7 @@ App.CardsLayout = new Backbone.Layout({
         var currentPath = Backbone.history.fragment;
         var base = currentPath.split('/')[0];
         var item = currentPath.split('/')[1];
-        App.router.navigate(base + '/' + item + '/', { trigger: false } );
+        App.router.navigate(base + '/' + item, { trigger: false } );
     }
 });
 
