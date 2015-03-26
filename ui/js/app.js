@@ -43,6 +43,7 @@ Backbone.Layout.configure({
 // Utilities
 // ===================================================================
 
+
 // ===================================================================
 // Models
 // ===================================================================
@@ -63,6 +64,7 @@ App.CardView = Backbone.View.extend({
     initialize: function(options){
         var id = options.id;
         this.$el = $('#' + id);
+        this.modelId = id;
     },
     events: {
         "click .btn-next": "next",
@@ -70,9 +72,39 @@ App.CardView = Backbone.View.extend({
         "click .btn-close": "close",
         "click .close": "close"
     },
+    beforeRender: function() {
+    
+    },
+    afterRender: function() {
+        console.log('rendered');
+       
+        
+    },
     show: function(card){
+        var model = App.cards.get(this.modelId);
+        if ( model.get('css') && model.get('css-loaded') !== true ) {
+            var css = model.get('css');
+            console.log(css);
+            $('<link>')
+              .appendTo('head')
+              .attr({type : 'text/css', rel : 'stylesheet'})
+              .attr('href', css).done(function(){ console.log('done'); });
+            model.set("css-loaded", true);
+        }
+        if ( model.get('js') && model.get('js-loaded') !== true ) {
+            console.log(model.get('js'));
+            var js = model.get('js');
+            $.ajax({
+              url: js,
+              dataType: "script",
+              success: function(){ model.set("js-loaded", true); }
+            });
+        }
+        // If there's a draw function for this card, run it
         // If there is already an active modal
         // then toggle which modal is active
+        // TODO switch this to use models not 
+        // And this should probably happen with a listen event on the model
         var activeModal = $('.modal:visible');
         if ( activeModal.length > 0 ) {
             activeModal.modal('hide');
@@ -296,7 +328,9 @@ $(function() {
     _.each(modals, function(modal) {
         App.cards.add({
             "id": modal.id,
-            "group": $(modal).data('group')
+            "group": $(modal).data('group'),
+            "js": $(modal).data('js'),
+            "css": $(modal).data('css')
         });
     });
     // Render the cards layout
