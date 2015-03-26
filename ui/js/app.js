@@ -88,7 +88,7 @@ App.CardView = Backbone.View.extend({
             $('<link>')
               .appendTo('head')
               .attr({type : 'text/css', rel : 'stylesheet'})
-              .attr('href', css).done(function(){ console.log('done'); });
+              .attr('href', css);
             model.set("css-loaded", true);
         }
         if ( model.get('js') && model.get('js-loaded') !== true ) {
