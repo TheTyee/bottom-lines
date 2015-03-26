@@ -6,6 +6,8 @@ header_dek: "Most Species “Protected” Under Canadian Law Are Losing Ground"
 title: ""
 dek: "Canada has made strong commitments on biodiversity; fewer promises have been fully met"
 ---
+#### Canada has made strong commitments on biodiversity; fewer promises have been fully met
+
 In a Canada Day poll a couple of years ago, 83 per cent of us identified our untamed landscape as a “good” or “great” reflection of Canadian identity. [389] And surely the iconic moose and orca, the loon that adorns the dollar and its twoonie counterpart the polar bear, the old national symbol of the beaver—all speak to Canadians’ affinity for the wildlife beyond our urban limits.
  
 Our actual care for those iconic species and landscapes, let alone for lesser-known ones, reveals a quarter-century of unfulfilled good intentions however, and lengthening odds against the survival of many of our most emblematic fauna. 

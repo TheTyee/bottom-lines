@@ -25,6 +25,8 @@ asset_paths:
 collections:
   chapters:
     output: true
+  cards:
+    output: true
 
 # Project settings - URLs
 urls:
@@ -55,8 +57,8 @@ exclude:
   - Gruntfile.js
   - gemfile
   - Gemfile.lock
-  - _vendor
-  - _scripts
+  - _vendor/
+  - _scripts/
 assets:
   # jekyll-assets pipeline - currently using this
   # Pathname of the destination of generated (bundled) assets relative
@@ -89,6 +91,7 @@ assets:
     - bower_components/fullpage.js/vendors/
     - bower_components/d3/
     - bower_components/bigfoot/dist/
+    - bower_components/backbone-modal/
   js_compressor: yui
   css_compressor: yui
   cache: true

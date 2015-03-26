@@ -6,7 +6,8 @@ header_dek: "Few Advances on Canadians’ Top Three Concerns: Air, Water, and To
 title: ""
 dek: "Some familiar old threats are back, and exotic new ones are coming to light."
 ---
- 
+#### Some familiar old threats are back, and exotic new ones are coming to light.
+
 When Canadians were asked back in 1989 to name their biggest environmental concerns, the top three answers they gave were, in descending order: toxic chemicals, water quality, and air quality. [360] Four in ten were hopeful that things would improve within a decade.
  
 Two and a half decades later, toxic chemicals, water and air quality are still among Canadians’ top concerns. [362] But whether those 1989-era hopes have been realized depends on where you look. Some former threats have receded, but others have taken their place. And a few banes that once appeared to be conquered are now back and more dangerous than ever.

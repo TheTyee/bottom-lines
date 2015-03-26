@@ -3,22 +3,31 @@
 //= require jquery.js
 //= require modernizr.js
 //= require bootstrap.js
-//= require jquery.easings.min.js
-//= require jquery.slimscroll.js
-//= require jquery.fullPage.js
+// require jquery.easings.min.js
+// require jquery.slimscroll.js
+// require jquery.fullPage.js
 //= require underscore.js
 //= require backbone.js
 //= require backbone.layoutmanager.js
+//= require backbone.modal.js
+//  
+//  # Smooth scroll for intro jumps
 //= require jquery.smooth-scroll.js
 //= require jquery.fluidbox.min.js
 //= require jquery.scrollstop.js
+//  
+//  # Scroll Magic for parallax
 //= require TweenMax.js
 //= require jquery.scrollmagic.js
 // require jquery.scrollmagic.debug.js
+//  # D3 for cards
 //= require d3.js
+//  # BigFoot for footnotes
+//= require bigfoot.js
+//
+//  # Thes should be loaded by the cards, not app.js
 //= require app-timeseries.js
 //= require app-regions.js
-//= require bigfoot.js
 
 // 
 // ===================================================================
@@ -42,28 +51,78 @@ Backbone.Layout.configure({
 // Collections
 // ===================================================================
 
+App.cards   = new Backbone.Collection();
+App.chapters = new Backbone.Collection();
+
 // ===================================================================
 // Views
 // ===================================================================
 
+// Create a modal view class
+App.CardView = Backbone.View.extend({
+    initialize: function(options){
+        var id = options.id;
+        this.$el = $('#' + id);
+    },
+    events: {
+        "click .btn-next": "next",
+        "click .btn-prev": "next",
+        "click .btn-close": "close",
+        "click .close": "close"
+    },
+    show: function(card){
+        // If there is already an active modal
+        // then toggle which modal is active
+        var activeModal = $('.modal:visible');
+        if ( activeModal.length > 0 ) {
+            activeModal.modal('hide');
+            this.$el.modal('show');
+        } else { 
+            // Trigger the modal
+            this.$el.modal('show');
+        }
+    },
+    next: function(event) {
+        App.CardsLayout.showNext(event);
+    },
+    close: function(event){
+        App.CardsLayout.close(event);
+    }
+});
+
+
 App.ArticleView = Backbone.View.extend({ 
     visible: 'false',
+    card: '',
     events: {
+        "click .link-card": "showCard"
     },
     initialize: function (options) {
         var id = options.id;
         var visibility = options.visible;
+        var card = options.card;
         this.el = id;
         this.$el = $(id); 
         this.visible = visibility;
+        this.card    = card;
     },
     afterRender: function() {
+        // Handle cards experiement
+        if ( this.card ) {
+            console.log("showing a modal");
+        }
     },
     show: function() {
         this.$el.show();
         this.visible = true;
+        // Animate the article header
         $(".intro").delay(1500).animate({ opacity: 1}, 700);
+        // If we're using figures
         $(this.el + " figure a").fluidbox();
+        // Handle cards
+        if ( this.card ) {
+            App.CardsLayout.startShow( this.card );
+        }
         var parallax = this.$('.parallax');
         if (parallax.length >= 1) { 
             var duration = parallax.height() + $(window).height();
@@ -76,6 +135,15 @@ App.ArticleView = Backbone.View.extend({
             .addTo(controller);
         }
     },
+    addCard: function(card) {
+        this.card = card;
+    },
+    showCard: function(event) {
+        event.preventDefault();
+        var el = event.currentTarget;
+        var cardId = $(el).data('card');
+        App.CardsLayout.startShow(cardId);
+    },
     hide: function() {
         this.$el.hide();
         this.visible = false;
@@ -83,93 +151,49 @@ App.ArticleView = Backbone.View.extend({
     }
 }); // Articles
 
-App.CardView = Backbone.View.extend({
-    visible: false,
-    type: '',
-    events: {
-        "click button.close": function() { Backbone.history.history.back(); }
-    },
-    initialize: function (options) {
-        var id = options.id;
-        var visibility = options.visible;
-        var type = options.type;
-        this.el = id;
-        this.$el = $(id); 
-        this.visible = visibility;
-        this.type    = type;
-    },
-    show: function() {
-        this.$el.show();
-        this.visible = true;
-        if ( this.type === 'timeseries' ) {
-            if (!chart) { // Temporary fix to prevent redraw, but need re-animate
-                // Find the window dimensions
-                margins = {top: 10, right: 80, bottom: 60, left: 60};
-                width = parseInt(d3.select("article#chart-timeseries #datavis").style("width"));
-                height = parseInt(d3.select("article#chart-timeseries #datavis").style("height"));
-
-                // Setup container & chart dimensions
-                container_dimensions = {width: width, height: height},
-                chart_dimensions = {
-                    width: container_dimensions.width - margins.left - margins.right,
-                    height: container_dimensions.height - margins.top - margins.bottom
-                };
-                // Setup SVG
-                chart = d3.select("article#chart-timeseries #datavis")
-                .append("svg")
-                .attr("width", container_dimensions.width)
-                .attr("height", container_dimensions.height)
-                .append("g")
-                .attr("transform", "translate(" + margins.left + "," + margins.top + ")")
-                .attr("id","chart");
-
-                d3.csv("/data/data.csv", function(d) {
-                    return {
-                        year: new Date(+d.Year, 0, 1), // convert "Year" column to Date
-                        ghgs: +d.GHGs,
-                        pop: +d.Population,
-                        kyoto: +d.Kyoto
-                    };
-                }, drawTime );
-            }
-        } else if ( this.type === 'region' ) {
-            if (!map) { // Temporary fix to prevent redraw, but need re-animate
-                // Find the window dimensions
-                margins = {top: 10, right: 80, bottom: 60, left: 60};
-                width = parseInt(d3.select("article#chart-region #datavis").style("width"));
-                height = parseInt(d3.select("article#chart-region #datavis").style("height"));
-
-                // Setup container & chart dimensions
-                container_dimensions = {width: width, height: height},
-                chart_dimensions = {
-                    width: container_dimensions.width - margins.left - margins.right,
-                    height: container_dimensions.height - margins.top - margins.bottom
-                };
-                // Setup SVG
-                map = d3.select("article#chart-region #datavis")
-                .append("svg")
-                .attr("width", container_dimensions.width)
-                .attr("height", container_dimensions.height)
-                .append("g")
-                .attr("transform", "translate(" + margins.left + "," + margins.top + ")")
-                .attr("id","map");
-
-                d3.json("/data/data.geojson", function(err, data) { 
-                    drawMap(data);
-                });
-            }
-        }
-    },
-    hide: function() {
-        this.$el.hide();
-        this.visible = false;
-    }
-}); // Data cards
-
-
 // ===================================================================
 // Layouts
 // ===================================================================
+
+App.CardsLayout = new Backbone.Layout({
+    collection: App.cards,
+    el: '#modals',
+    views: {},
+    initialize: function() {},
+    afterRender: function() {
+    },
+    beforeRender: function() {
+        this.collection.each(function(model) {
+            this.insertView(new App.CardView({ "id": model.get('id') }));
+        }, this);
+    },
+    startShow: function(cardId) {
+        var card = this.getView({"id": cardId });
+        card.show();
+        // TODO This is silly, fix it!
+        var currentPath = Backbone.history.fragment;
+        var base = currentPath.split('/')[0];
+        var item = currentPath.split('/')[1];
+        App.router.navigate(base + '/' + item + '/' + cardId, { trigger: false } );
+    },
+    showNext: function(event){
+        var el = event.currentTarget;
+        var cardId = $(el).data('next');
+        this.startShow(cardId);
+        // TODO This is silly, fix it!
+        var currentPath = Backbone.history.fragment;
+        var base = currentPath.split('/')[0];
+        var item = currentPath.split('/')[1];
+        App.router.navigate(base + '/' + item + '/' + cardId, { trigger: false } );
+    },
+    close: function (event) {
+        // TODO This is silly, fix it!
+        var currentPath = Backbone.history.fragment;
+        var base = currentPath.split('/')[0];
+        var item = currentPath.split('/')[1];
+        App.router.navigate(base + '/' + item, { trigger: false } );
+    }
+});
 
 App.Layout = new Backbone.Layout({
     // Attach the Layout to the main container.
@@ -182,13 +206,14 @@ App.Layout = new Backbone.Layout({
         "climate": new App.ArticleView({id: '#climate'}),
         "environment": new App.ArticleView({id: '#environment'}),
         "about": new App.ArticleView({id: '#about'}),
-        "chart-timeseries": new App.CardView({id: '#chart-timeseries', type: 'timeseries'}),
-        "chart-region": new App.CardView({id: '#chart-region', type: 'region' })
+        //"chart-timeseries": new App.CardView({id: '#chart-timeseries', type: 'timeseries'}),
+        //"chart-region": new App.CardView({id: '#chart-region', type: 'region' })
     },
     initialize: function () {
         var self = this;
     },
     afterRender: function() {
+        // Set up the smooth scrool for the intros
         $('a.smooth').smoothScroll({
             speed: 1000,
         });
@@ -214,6 +239,7 @@ App.Router = Backbone.Router.extend({
     routes: {
         '': 'start',
         'chapter(/:name)': 'displayChapter',
+        'chapter/:name/:card' : 'displayChapterWithCard',
         'card(/:name)': 'displayCard',
         '*default': 'defaultRoute'
     },
@@ -226,7 +252,20 @@ App.Router = Backbone.Router.extend({
         var currentView = App.Layout.getView({ visible: true });
         var nextView = App.Layout.getView(name);
         if ( nextView ) {
+            currentView.hide();            
+            nextView.show();
+            window.scrollTo(0, 0); // Yuck!
+        } else {
+            console.log('No matching chapter');
+        }
+    },
+    displayChapterWithCard: function(name, card) {
+        console.log('Showing chapter: ' + name + ' with card ' + card );
+        var currentView = App.Layout.getView({ visible: true });
+        var nextView = App.Layout.getView(name);
+        if ( nextView ) {
             currentView.hide();
+            nextView.addCard(card);            
             nextView.show();
             window.scrollTo(0, 0); // Yuck!
         } else {
@@ -251,9 +290,21 @@ App.Router = Backbone.Router.extend({
 });
 
 $(function() {
+    // Find all the modals in the page
+    var modals = $('.modal');
+    // Add them to a collection for easy management
+    _.each(modals, function(modal) {
+        App.cards.add({
+            "id": modal.id,
+            "group": $(modal).data('group')
+        });
+    });
+    // Render the cards layout
+    App.CardsLayout.render();
     // Start the app
     App.router = new App.Router();
     Backbone.history.start();
+    // Enable footnotes
     $.bigfoot({
         actionOriginalFN: "ignore",
         useFootnoteOnlyOnce: false

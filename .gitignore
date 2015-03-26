@@ -10,3 +10,4 @@ CLIPS.md
 *.lock
 local
 cpanfile.snapshot
+SNIPS.txt
