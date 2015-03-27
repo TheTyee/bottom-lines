@@ -48,7 +48,7 @@ function draw(data) {
         .domain([low_year,high_year]);
     percent_scale = d3.scale.linear()
         .range([chart_dimensions.height, 0])
-        .domain([ghgs[0]-50,ghgs[1]+10]);
+        .domain([ghgs[0]-100,ghgs[1]+10]);
 
     // Setup axis
     time_axis = d3.svg.axis()
@@ -75,8 +75,8 @@ function draw(data) {
     d3.select(".y.axis")
     .append("text")
     .attr("text-anchor","middle")
-    .text("GHGs")
-    .attr("x", -chart_dimensions.height/2)
+    .text("Total greenhouse gas emissions")
+    .attr("x", -chart_dimensions.height/3)
     .attr("y", -40)
     .attr("transform", "rotate(-90)");
 
@@ -131,7 +131,7 @@ function draw(data) {
         d3.select("text#ghgs").remove();
         d3.select("#chart")
         .append("text")
-        .text(d.ghgs + "TK")
+        .text(d.ghgs + " megatonnes of C02 equivalent")
         .attr("x", time_scale(d.year) + 15)
         .attr("y", percent_scale(d.ghgs) - 15)
         .attr("id", "ghgs");
