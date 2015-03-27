@@ -76,15 +76,12 @@ App.CardView = Backbone.View.extend({
     
     },
     afterRender: function() {
-        console.log('rendered');
-       
         
     },
     show: function(card){
         var model = App.cards.get(this.modelId);
         if ( model.get('css') && model.get('css-loaded') !== true ) {
             var css = model.get('css');
-            console.log(css);
             $('<link>')
               .appendTo('head')
               .attr({type : 'text/css', rel : 'stylesheet'})
@@ -92,7 +89,6 @@ App.CardView = Backbone.View.extend({
             model.set("css-loaded", true);
         }
         if ( model.get('js') && model.get('js-loaded') !== true ) {
-            console.log(model.get('js'));
             var js = model.get('js');
             $.ajax({
               url: js,
