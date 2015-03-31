@@ -6,7 +6,7 @@
 var csv_data;
 
 // Find the window dimensions
-var margins = {top: 10, right: 80, bottom: 60, left: 60};
+var margins = {top: 10, right: 10, bottom: 30, left: 30};
 var width = parseInt(d3.select("#better-then-worse-datavis").style("width"));
 height = parseInt(d3.select("#better-then-worse-datavis").style("height"));
 
@@ -111,8 +111,8 @@ function draw(data) {
           .attr("y2", percent_scale(kyoto_target)); // equiv of 550
       d3.select(".k").append("text")
         .text("Kyoto target (550 mt)")
-        .attr("x", time_scale(kyoto_year) - 10)
-        .attr("y", percent_scale(kyoto_target ));
+        .attr("x", time_scale(high_year))
+        .attr("y", percent_scale(kyoto_target)-6);
 
     // Add line for Coppenhagen target (611 mt)
     var cop_target = 611;
@@ -126,8 +126,8 @@ function draw(data) {
           .attr("y2", percent_scale(cop_target)); // equiv of 611
       d3.select(".cop").append("text")
         .text("Copenhagen target (611 mt)")
-        .attr("x", time_scale(cop_year) - 10)
-        .attr("y", percent_scale(cop_target));
+        .attr("x", time_scale(high_year))
+        .attr("y", percent_scale(cop_target)-6);
 
     // Add a group for the circles
     var circles = d3.select("#chart");
