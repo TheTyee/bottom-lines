@@ -2,9 +2,9 @@
 layout: datatable
 ---
 
-#### Some heading
+### Some heading
 
-##### Some sub-heading
+#### Some sub-heading
 
 This data set was assembled to inform the writing of Bottom Lines [LINK], a research project by the Tyee Solutions Society. It is made available here for the interest and utility of other researchers.
 
