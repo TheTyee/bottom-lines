@@ -57,8 +57,9 @@ exclude:
   - Gruntfile.js
   - gemfile
   - Gemfile.lock
-  - _vendor/
-  - _scripts/
+  - _vendor
+  - _scripts
+  - local
 assets:
   # jekyll-assets pipeline - currently using this
   # Pathname of the destination of generated (bundled) assets relative
