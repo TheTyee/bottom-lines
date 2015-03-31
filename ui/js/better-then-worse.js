@@ -166,8 +166,8 @@ function draw(data) {
         d3.select("text#ghgs").remove();
         d3.select("#chart")
             .append("text")
-            .text(d.ghgs + " megatonnes of C02 equivalent")
-            .attr("x", time_scale(d.year) + 15)
+            .text(d.ghgs + " mt (" + d.year.getFullYear() + ")")
+            .attr("x", time_scale(d.year) + 30)
             .attr("y", percent_scale(d.ghgs) - 15)
             .attr("id", "ghgs");
     });
@@ -203,7 +203,7 @@ function draw(data) {
             .domain([low_year,high_year]);
         percent_scale = d3.scale.linear()
             .range([chart_dimensions.height, 0])
-            .domain([ghgs[0]-50,ghgs[1]+10]);
+            .domain([ghgs[0]-100,ghgs[1]+10]);
 
         // Setup axis
         time_axis = d3.svg.axis()
@@ -226,7 +226,24 @@ function draw(data) {
         chart.selectAll('.line')
             .datum(data)
             .attr("d", line);
-        // TODO update the Kyoto & Cop marks too!
+    
+        // Redraw Kyoto & Cop markers 
+        chart.select('.k.axis line')
+            .attr("x1", time_scale(kyoto_year)) // 1997
+            .attr("x2", time_scale(high_year)) // end of range
+            .attr("y1", percent_scale(kyoto_target)) // equiv of 550
+            .attr("y2", percent_scale(kyoto_target)); // equiv of 550
+        chart.select(".k.axis text")
+            .attr("x", time_scale(high_year))
+            .attr("y", percent_scale(kyoto_target)-6);
+        chart.select('.cop.axis line')
+            .attr("x1", time_scale(cop_year)) // 2009
+            .attr("x2", time_scale(high_year)) // end of range
+            .attr("y1", percent_scale(cop_target)) // equiv of 611
+            .attr("y2", percent_scale(cop_target)); // equiv of 611
+        chart.select('.cop.axis text')
+            .attr("x", time_scale(high_year))
+            .attr("y", percent_scale(cop_target)-6);
 
         chart.selectAll('.circle')
             .data(data)
