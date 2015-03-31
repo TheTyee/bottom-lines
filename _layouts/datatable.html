@@ -3,6 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+{% stylesheet dataTables.bootstrap.css %}
 {% include head.html %}
   <body class="{{ page.layout }}" id="{{ page.slug | 'front' }}">
     <!--[if lt IE 7]>
@@ -13,15 +14,12 @@
     </noscript>
 {% include header.html %}
 
-<div id="content">
+<div id="content" class="container">
 {{ content }}
 </div>
-<div id="modals">
-</div>
-{% include cards.html %}
-{% include footnotes.html %}
 {% include footer.html %}
 {% include footer_scripts.html %}
-{% javascript app.js %}
+{% javascript datatable.js %}
+{% javascript dataTables.bootstrap.js %}
     </body>
 </html>
