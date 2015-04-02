@@ -9,7 +9,6 @@
 //= require underscore.js
 //= require backbone.js
 //= require backbone.layoutmanager.js
-//= require backbone.modal.js
 //  
 //  # Smooth scroll for intro jumps
 //= require jquery.smooth-scroll.js
@@ -73,27 +72,27 @@ App.CardView = Backbone.View.extend({
         "click .close": "close"
     },
     beforeRender: function() {
-    
+
     },
     afterRender: function() {
-        
+
     },
     show: function(card){
         var model = App.cards.get(this.modelId);
         if ( model.get('css') && model.get('css-loaded') !== true ) {
             var css = model.get('css');
             $('<link>')
-              .appendTo('head')
-              .attr({type : 'text/css', rel : 'stylesheet'})
-              .attr('href', css);
+            .appendTo('head')
+            .attr({type : 'text/css', rel : 'stylesheet'})
+            .attr('href', css);
             model.set("css-loaded", true);
         }
         if ( model.get('js') && model.get('js-loaded') !== true ) {
             var js = model.get('js');
             $.ajax({
-              url: js,
-              dataType: "script",
-              success: function(){ model.set("js-loaded", true); }
+                url: js,
+                dataType: "script",
+                success: function(){ model.set("js-loaded", true); }
             });
         }
         // If there's a draw function for this card, run it
@@ -196,13 +195,23 @@ App.CardsLayout = new Backbone.Layout({
         }, this);
     },
     startShow: function(cardId) {
-        var card = this.getView({"id": cardId });
-        card.show();
-        // TODO This is silly, fix it!
-        var currentPath = Backbone.history.fragment;
-        var base = currentPath.split('/')[0];
-        var item = currentPath.split('/')[1];
-        App.router.navigate(base + '/' + item + '/' + cardId, { trigger: false } );
+        var self = this;
+        // This is a terrible hack for an async
+        // issue that I don't have time to solve right now
+        var check = function() { 
+            var card = self.getView({"id": cardId });
+            if ( card ) {
+                card.show();
+                // TODO This is silly, fix it!
+                var currentPath = Backbone.history.fragment;
+                var base = currentPath.split('/')[0];
+                var item = currentPath.split('/')[1];
+                App.router.navigate(base + '/' + item + '/' + cardId, { trigger: false } );
+            } else {
+                setTimeout(check, 1000);
+            }
+        }
+        check();
     },
     showNext: function(event){
         var el = event.currentTarget;
@@ -253,15 +262,15 @@ App.Layout = new Backbone.Layout({
         //// Paint it all green when scrolling stops.
         //$('header.site-header').css({display: "block"});
         //});
-    }
-});
+        }
+    });
 
-// ===================================================================
-// Router
-// ===================================================================
+    // ===================================================================
+    // Router
+    // ===================================================================
 
-App.Router = Backbone.Router.extend({
-    initialize: function() { 
+    App.Router = Backbone.Router.extend({
+        initialize: function() { 
         App.Layout.render();
     },
     routes: {
@@ -315,28 +324,29 @@ App.Router = Backbone.Router.extend({
     defaultRoute: function() {
         console.log("404");
     }
-});
+    });
 
-$(function() {
-    // Find all the modals in the page
-    var modals = $('.modal');
-    // Add them to a collection for easy management
-    _.each(modals, function(modal) {
-        App.cards.add({
-            "id": modal.id,
-            "group": $(modal).data('group'),
-            "js": $(modal).data('js'),
-            "css": $(modal).data('css')
+    $(function() {
+        // Find all the modals in the page
+        var modals = $('.modal');
+        // Add them to a collection for easy management
+        _.each(modals, function(modal) {
+            console.log(modal.id);
+            App.cards.add({
+                "id": modal.id,
+                "group": $(modal).data('group'),
+                "js": $(modal).data('js'),
+                "css": $(modal).data('css')
+            });
+        });
+        // Render the cards layout
+        App.CardsLayout.render();
+        // Start the app
+        App.router = new App.Router();
+        Backbone.history.start();
+        // Enable footnotes
+        $.bigfoot({
+            actionOriginalFN: "ignore",
+            useFootnoteOnlyOnce: false
         });
     });
-    // Render the cards layout
-    App.CardsLayout.render();
-    // Start the app
-    App.router = new App.Router();
-    Backbone.history.start();
-    // Enable footnotes
-    $.bigfoot({
-        actionOriginalFN: "ignore",
-        useFootnoteOnlyOnce: false
-    });
-});
