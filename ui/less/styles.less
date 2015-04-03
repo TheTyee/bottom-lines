@@ -68,6 +68,9 @@ h4 {
   margin: 0;
   padding: 0;
 }
+.lightface {
+  font-weight: 300;
+}
 /* ==========================================================================
 Layout
 ========================================================================== */
@@ -83,6 +86,8 @@ header.site-header nav {
 button.navbar-toggle {
   background: #2E569C;
   border: none;
+  float: none;
+  margin-left: 10px;
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
@@ -134,19 +139,19 @@ h3 {
   color: #2075C7;
   font-family: "adelle", serif;
   font-style: normal;
-  font-weight: 300;
-  font-size: 48px;
-  line-height: 48px;
-  padding-top: 0px;
-  padding-bottom: 15px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37.5px;
+  padding-top: 45px;
+  padding-bottom: 0px;
 }
 h4 {
   color: #2075C7;
   font-family: "adelle", serif;
   font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 40px;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 30px;
   padding-top: 15px;
   padding-bottom: 0px;
 }
@@ -160,11 +165,12 @@ h5 {
   padding-top: 30px;
 }
 blockquote {
-    padding: 0px 20px;
-    margin: 30px 0px 15px;
-    font-size: 24px;
-    line-height: 35px;
-    border-left: 5px solid #EEE;
+  padding: 0px 0px 0 30px;
+  margin: 30px 0px 15px 0px;
+  color: #555;
+  font-size: 21px;
+  line-height: 30px;
+  border-left: 0px solid #EEE;
 }
 blockquote p {
   padding-top: 0px;
@@ -174,11 +180,14 @@ img {
   height: auto;
 }
 .longform {
-  padding-top: 100px;
+  padding-top: 8px;
 }
 header.fullscreen {
   background-size: cover;
   background-position: center;
+  min-height: 100vh;
+}
+.title_block {
 }
 .intro {
   opacity: 0;
@@ -189,20 +198,22 @@ header.fullscreen {
   font-family: "adelle", serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 100px;
-  line-height: 90px;
-  padding-top: 200px;
-  padding-bottom: 15px;
+  font-size: 60px;
+  line-height: 64px;
+  padding-top: 45px;
+  padding-bottom: 7.5px;
+  text-shadow: 0px 0px 3px rgba(0,0,0,0.25);
 }
 .intro h2 {
   color: #C7E8FF;
   font-family: "adelle", serif;
   font-style: normal;
-  font-weight: 100;
-  font-size: 33px;
-  line-height: 45px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
   padding-top: 5px;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.65);
 }
 .intro p {
   color: #C7E8FF;
@@ -210,9 +221,21 @@ header.fullscreen {
 .intro .next {
   color: #ABDCFF;
   font-size: 5rem;
-  padding-top: 30px;
+  padding-top: 15px;
   padding-bottom: 15px;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
 }
+
+aside {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding: 20px 45px 15px 45px;
+  border-top: 1px solid #959595;
+  border-bottom: 1px solid #959595;
+}
+
 aside h1 {
   color: #4D4D4D;
   font-family: "adelle", serif;
@@ -227,6 +250,10 @@ aside * {
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
+}
+figure {
+    margin-top: 30px;
+  margin-bottom: 15px;
 }
 figcaption {
   color: #333;
@@ -257,7 +284,7 @@ section.parallax h3 {
 footer {
   background: #2e569c;
   color: #ffffff;
-  height: 70px;
+  min-height: 70px;
   margin-top: 40px;
   padding-top: 18px;
 }
@@ -265,14 +292,15 @@ footer a:link,
 footer a:hover,
 footer a:visited {
   color: #fff;
-  font-family: "adelle", serif;
+  ffont-family: "adelle-sans", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: .5px;
   color: #ffffff;
 }
 footer nav.chapter {
-  width: 45%;
+  /* width: 45%; */
 }
 footer nav.chapter-previous {
   float: left;
@@ -281,7 +309,12 @@ footer nav.chapter-previous {
 footer nav.chapter-next {
   float: right;
   text-align: right;
+  padding-right: 15px;
 }
+footer nav.chapter-next {
+
+}
+
 article.card {
   padding-top: 100px;
 }
@@ -312,7 +345,7 @@ article.card h2 {
   /* top: -70px; */
 }
 .social-block {
-  top: 35px;
+  top: 0px;
 }
 .intro .social-block span {
   filter: alpha(opacity=93);
@@ -499,6 +532,16 @@ AG's media queries to be merged
     padding-top: 30px;
     padding-bottom: 15px;
   }
+  aside {
+    float: right !important;
+    position: relative;
+    left: 60px;
+    padding-top: 22px;
+    margin-left: -10px;
+    padding-bottom: 15px;
+    padding-left: 3rem;
+  }
+
   .pull-left {
     position: relative;
     left: -60px;

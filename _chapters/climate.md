@@ -16,7 +16,7 @@ The subject was well on Canadians’ radar a quarter century ago. Polled in 1989
  
 That said, both Canadians’ acceptance of the scientific consensus that human activity is a leading factor in altering the climate, and their sense of how urgent it is to respond, have drifted downward in the past decade. Surveyed in 2007, 64.6 per cent of us agreed on a human role in climate change; 53.9 per cent thought it advisable to act sooner rather than later to contain its most dangerous implications. ^358 By 2013, agreement on a human contribution to climate change had slipped eight points to 56.4 per cent; support for early action had fallen below 45 per cent. ^419
  
-#### Out front back in the day
+### Out front back in the day
  
 Prime Minister Brian Mulroney was among the leaders of the world’s seven largest economies who called from their 1989 summit meeting in Paris for “common efforts to limit emissions of carbon dioxide." ^227 The previous year, Canada had hosted an international meeting that proposed a global goal of reducing human CO2 emissions by 20 percent by 2005. Soon after the Paris summit, Canada joined 59 other countries in endorsing that objective. ^228
  
@@ -46,7 +46,7 @@ The issue has created an intangible impediment to other national objectives, suc
  
 The Intergovernmental Panel on Climate Change warned again late last year that humanity must achieve “stringent” reductions in greenhouse gas emissions, or face “irreversible and dangerous impacts.” ^280 World leaders will meet in Paris again this year, to consider new national reduction commitments.
  
-#### Costs becoming clearer
+### Costs becoming clearer
  
 Meanwhile, the cost of climate instability has come into sharper focus over 25 years. A report released with little fanfare by Natural Resources Canada early in 2014 warned that some livelihoods will no longer be “feasible and/or cost-effective” in the near future. ^288 Indeed, it appeared to endorse a fatalistic approach for some: selling “last chance tourism,” to witness wildlife and landscapes before they disappear.
  
