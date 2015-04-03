@@ -74,7 +74,7 @@ Other assessments have reached the same unflattering conclusion: against its dev
 
 That same year the Centre for Global Development put us last in class for environmental care: 27th in a field of 27 rich, educated nations. ^48 And last year the Climate Action Network and a research partner again placed Canada at the very bottom of 58 countries whose climate protection policies they evaluated. ^357
 
-### Not how we see ourselves and more
+### Not how we see ourselves xxx xxxx
 
 Our national decline in global stewardship rankings is at odds with Canadians’ priorities over the same years as captured in opinion polls, although these also reveal that we’ve long been skeptical that our governments were up to the job.
 
