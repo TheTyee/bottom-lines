@@ -288,12 +288,19 @@ section.parallax h3 {
   font-weight: 700;
 }
 footer {
-  background: #2e569c;
+  background: #2e569c url("/assets/fog.jpg") no-repeat fixed 0% bottom ;
+  background-size: 100% auto;
   color: #ffffff;
-  min-height: 70px;
+  min-height: 120px;
   margin-top: 40px;
   padding-top: 18px;
 }
+footer:after {
+content: "";
+display: table;
+clear: both;
+}
+
 footer a:link,
 footer a:hover,
 footer a:visited {
@@ -316,9 +323,14 @@ footer nav.chapter-next {
   float: right;
   text-align: right;
   padding-right: 15px;
+  padding-bottom: 15px;
 }
-footer nav.chapter-next {
-
+.chapter-next-label {
+  padding-right: 27px;
+}
+.chapter-next-label:after {
+  content:"\a";
+  white-space: pre;
 }
 
 article.card {
@@ -361,6 +373,10 @@ article.card h2 {
     background: url("/assets/graph.png") 4px no-repeat #e3e3e3;
     padding: 3px 4px 0px 20px;
     color: #333;
+}
+.linebreak:after {
+  content:"\a";
+  white-space: pre;
 }
 
 /* Module: DataTables */
