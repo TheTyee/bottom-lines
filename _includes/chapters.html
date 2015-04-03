@@ -16,7 +16,7 @@
                             <span class='share-button share-email-large'></span>
                         </div>
                         <div class='title_block'>
-                            <h1>{{ chapter.header_title }} test</h1>
+                            <h1>{{ chapter.header_title }}</h1>
                             <h2>{{ chapter.header_dek }}</h2>
                             <div class="center-block" align="center"><a class="smooth" href="#{{ chapter.id }}-longform"><i class="next glyphicon glyphicon-chevron-down"></i></a></div>
                         </div>
@@ -42,27 +42,20 @@
         </div>
     </section>
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="slide-text col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-                    <nav class="chapter chapter-previous">
-                        &nbsp;
-                    </nav>
+        
 {% assign current = forloop.index %}
 {% assign next = chapters_sorted[current] %}
 {% if next %}
 
                     <nav class="chapter chapter-next">
-                        <a href="/#chapter/{{ next.id }}">Next: {{ next.header_title }} &raquo;</a>
+                        <a href="/#chapter/{{ next.id }}"><span class="lightface chapter-next-label">Next Chapter</span> {{ next.header_title }} <span class="glyphicon glyphicon-chevron-right"></span></a>
                     </nav>
 {% else %}
                     <nav class="chapter chapter-next">
-                        <a href="/#chapter/intro">Back to introduction &raquo;</a>
+                        <a href="/#chapter/intro">Back to introduction <span class="glyphicon glyphicon-chevron-right"></span></a>
                     </nav>
 {% endif %}
-                </div>
-            </div>
-        </div>
+                
     </footer>
 </article>
 {% endfor %}

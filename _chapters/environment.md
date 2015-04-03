@@ -30,7 +30,7 @@ Our peers and trading partners are moving beyond the outdated perspective that e
 
 Some of these suggest practical steps for Canadians to consider, in order to reverse the erosion of our environmental advantage.
 
-#### Standards and accountability
+### Standards and accountability
 
 It may be axiomatic that it’s impossible to manage what you don’t measure. Yet a recurrent complaint among experts is that Canada lacks the consistent and timely reporting of critical ecological variables, from snow depth to species populations, needed to support sound decisions. In the words of a joint federal-provincial study in 2010: "Information critical to the assessment of ecosystem health is missing." ^414
 
