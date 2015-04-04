@@ -14,6 +14,9 @@
 //= require jquery.smooth-scroll.js
 //= require jquery.fluidbox.min.js
 //= require jquery.scrollstop.js
+//
+//  # Slideout for menu
+//= require slideout.js
 //  
 //  # Scroll Magic for parallax
 //= require TweenMax.js
@@ -210,7 +213,7 @@ App.CardsLayout = new Backbone.Layout({
             } else {
                 setTimeout(check, 1000);
             }
-        }
+        };
         check();
     },
     showNext: function(event){
@@ -348,5 +351,11 @@ App.Layout = new Backbone.Layout({
         $.bigfoot({
             actionOriginalFN: "ignore",
             useFootnoteOnlyOnce: false
+        });
+        App.slideout = new Slideout({
+            'panel': document.getElementById('panel'),
+            'menu': document.getElementById('menu'),
+            'padding': 256,
+            'tolerance': 70
         });
     });
