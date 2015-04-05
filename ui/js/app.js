@@ -61,6 +61,24 @@ App.chapters = new Backbone.Collection();
 // Views
 // ===================================================================
 
+App.HamburgerNavView = Backbone.View.extend({
+    el: 'nav.hamburger',
+    $el: $('nav.hamburger'),
+    initialize: function(options){
+    },
+    events: {
+        "click .button": "toggle",
+    },
+    beforeRender: function() {
+
+    },
+    afterRender: function() {
+
+    },
+    toggle: function(event) {
+        App.slideout.toggle();
+    }
+});
 // Create a modal view class
 App.CardView = Backbone.View.extend({
     initialize: function(options){
@@ -248,6 +266,7 @@ App.Layout = new Backbone.Layout({
         "about": new App.ArticleView({id: '#about'}),
         //"chart-timeseries": new App.CardView({id: '#chart-timeseries', type: 'timeseries'}),
         //"chart-region": new App.CardView({id: '#chart-region', type: 'region' })
+        "nav.hamburger": new App.HamburgerNavView()
     },
     initialize: function () {
         var self = this;
@@ -257,13 +276,12 @@ App.Layout = new Backbone.Layout({
         $('a.smooth').smoothScroll({
             speed: 1000,
         });
-        // If we want to hide the nav on scroll.
+        // If we want to hide the hamburger nav on scroll.
+        // Doesn't work nicely on mobile, however...
         //$(window).on("scrollstart", function() {
-        //$('header.site-header').css({display: "none"});
-        //})
-        //.on("scrollstop", function() {
-        //// Paint it all green when scrolling stops.
-        //$('header.site-header').css({display: "block"});
+            //$('nav.hamburger').css({display: "none"});
+            //}).on("scrollstop", function() {
+        //$('nav.hamburger').css({display: "block"});
         //});
         }
     });
@@ -287,11 +305,15 @@ App.Layout = new Backbone.Layout({
         console.log('Routing started');
         this.navigate("chapter/intro", {trigger: true});
     },
+    // TODO Remove the duplication from these two routes:
     displayChapter: function(name) {
         console.log('Showing chapter: ' + name);
         var currentView = App.Layout.getView({ visible: true });
         var nextView = App.Layout.getView(name);
         if ( nextView ) {
+            if ( App.slideout.isOpen() === true ) {
+                App.slideout.close();
+            }
             currentView.hide();            
             nextView.show();
             window.scrollTo(0, 0); // Yuck!
@@ -304,6 +326,9 @@ App.Layout = new Backbone.Layout({
         var currentView = App.Layout.getView({ visible: true });
         var nextView = App.Layout.getView(name);
         if ( nextView ) {
+            if ( App.slideout.isOpen() === true ) {
+                App.slideout.close();
+            }
             currentView.hide();
             nextView.addCard(card);            
             nextView.show();
@@ -342,20 +367,21 @@ App.Layout = new Backbone.Layout({
                 "css": $(modal).data('css')
             });
         });
-        // Render the cards layout
-        App.CardsLayout.render();
-        // Start the app
-        App.router = new App.Router();
-        Backbone.history.start();
         // Enable footnotes
         $.bigfoot({
             actionOriginalFN: "ignore",
             useFootnoteOnlyOnce: false
         });
+        // Enable the slideout menu
         App.slideout = new Slideout({
             'panel': document.getElementById('panel'),
             'menu': document.getElementById('menu'),
             'padding': 256,
             'tolerance': 70
         });
+        // Render the cards layout
+        App.CardsLayout.render();
+        // Start the app
+        App.router = new App.Router();
+        Backbone.history.start();
     });
