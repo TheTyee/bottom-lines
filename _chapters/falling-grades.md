@@ -12,7 +12,7 @@ Nothing says ‘Canada’ quite like a scenic vista—be it Gros Morne, the Sask
  
 Our leaders have appeared to be in step. Regardless of party, they have regularly assured us that Canada’s natural security is well protected. Legislation has been enacted  across an impressive range of fronts, from protecting species to penalizing polluters and preventing foreseeable harm <a href="#" data-card="better-then-worse" class="link-resource link-card">linked resource</a>.
 
-<aside class="sidebar">
+<aside class="default sidebar">
     <h1>Glossary</h1>
     <dl>
         <dt>Lorem</dt>
@@ -41,7 +41,7 @@ The consequences of bi-partisan neglect are now becoming apparent. Many supposed
 
 Ambitious goals articulated a quarter-century ago to reduce Canada’s climate-altering greenhouse gas emissions have slipped by unmet. Our contributions to climate change have reversed a brief decline and are now again trending upward, even as its manifestations take a growing toll on livelihoods and structures.
 
-<aside class="">
+<aside class="default">
     <a href="http://placehold.it/1000x1000" title="">
         <img src="http://placehold.it/200x200" title="" alt="" />
     </a> 
