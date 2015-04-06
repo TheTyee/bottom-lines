@@ -167,6 +167,7 @@ App.ArticleView = Backbone.View.extend({
         $(".intro").delay(1500).animate({ opacity: 1}, 700);
         // If we're using figures
         $(this.el + " figure a").fluidbox();
+        $(this.el + " aside a").fluidbox();
         // Handle cards
         if ( this.card ) {
             App.CardsLayout.startShow( this.card );
