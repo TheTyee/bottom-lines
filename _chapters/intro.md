@@ -6,8 +6,14 @@ dek: "Our review covered Canada’s record on water, land and air, as well as sp
 ---
 #### Our review covered Canada’s record on water, land and air, as well as species, ecosystems and climate change.
 
-In this era of stressed ecologies and climate instability, Canadians should be able to count on the world’s second-largest landscape for resilient natural security: a healthy environment to support both our well-being and our prosperity long into the future. But can we?
+Canada enjoys the world’s second-largest landscape. Surely we can count on it for natural security: a healthy environment to support our well-being and prosperity long into the future. But can we?
  
-We reviewed the facts over a quarter century of federal environmental stewardship. Here, you can explore the record several different ways. The following pages tell the story of what Canadians have said they value most, and what worries them most, in our natural environment, as well as how our various governments have responded over the 25 year since 1989 and how effective those responses have been according to a wide variety of independent assessments. Throughout, you’ll find info-graphics and interactive text features that drill down deeper into particular subjects, from climate change to threatened species to economic impacts. Here and at the end of the text, you’ll also find the entire record of Canada’s environmental history over the period we reviewed—the key events, the important legislation and the report-cards scoring our standing in the world, along with much more—contained in six critical chronologies.
+We reviewed the facts over a quarter century. We looked at how governments led by five Prime Ministers and three political parties over twenty five years--from 1989 to 2014--have cared for the ecological assets that support Canada’s wealth and health. We sought original documents and independent reports, and ignored political spin. 
+
+And here’s the Bottom Line: Canada’s natural security has been deeply degraded. Our review found persistent failures to meet environmental goals set in law or accepted under international treaties. Meanwhile, audits have revealed declines in the biodiversity that underwrites our natural security in every part of Canada, along with new as well as resurgent old threats to our health. 
+
+The other clear lesson: the idea that natural security has to be sacrificed for prosperity is contradicted by the record. The facts reveal the very large contribution that thriving ecosystems make to our local and national economies beyond their deep values as treasured landscapes and iconic wildlife.
  
-And the bottom line? Our review has revealed bi-partisan failures to meet Canada’s legal and international commitments, and a continuing decline of the healthy biodiversity that ensures our natural security. What’s also become clear is that the economic arguments used to rationalize our negligent stewardship are out of step with the growing awareness of just how much thriving ecosystems contribute to our national wealth and individual health, as well as deeply valued landscapes and Canadian wild life.
+The next few pages tell the story in words, pictures and info-graphics that drill down into particular subjects. There’s more information hidden in the footnotes.[^1] [And here you’ll find absolutely everything we found out in a searchable file](/references).
+
+[^1]: Inside each footnote like this you will find additional information.
