@@ -4,7 +4,7 @@ layout: datatable
 
 ### Just the Facts
 
-This data set was assembled to inform [Bottom Lines](http://bottomlines.tyeesolutions.org), a research project by the Tyee Solutions Society. For more details scroll down or click here.
+This data set was assembled to inform [Bottom Lines](http://bottomlines.tyeesolutions.org), a research project by the Tyee Solutions Society. For more details scroll down or [click here](/references/#methods).
 
 #### References 
 
@@ -66,3 +66,9 @@ This information was assembled and reported with strict, non-partisan neutrality
 The underlying research and data collection for this project was done by Tyee Solutions Society in collaboration with the University of Victoria Environmental Law Centre and Tides Canada Initiatives, with the intent of making it freely available to any individual or organization who might find it useful.
 
 If you would like to contribute to maintaining and expanding this database, please let us know TK. 
+
+
+
+
+
+
