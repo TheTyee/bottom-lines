@@ -36,14 +36,23 @@ my $html = <<'END';
 END
 
 for my $ref ( @$rows ) {
-    next unless $ref->{'ID'} && $ref->{'text'};
+    next unless $ref->{'ID'} && $ref->{'Fulltext'};
     my $id   = $ref->{'ID'};
-    my $text = $ref->{'text'};
+    my $text = $ref->{'Fulltext'};
+    my $source = $ref->{'Source'};
+    if ( $source ) {
     $html .= <<"END_MSG";
         <li class="footnote" id="fn:$id">
-            <p>$text<a href="#fnref:$id" title="return to article"> ↩</a><p>
+            <p>$text (<a href="$source">Visit source</a>)<a href="#fnref:$id" title="return to article"> ↩</a><p>
         </li>
 END_MSG
+    } else {
+    $html .= <<"END_MSG";
+        <li class="footnote" id="fn:$id">
+            <p>$text <a href="#fnref:$id" title="return to article"> ↩</a><p>
+        </li>
+END_MSG
+    }
 }
 
 $html .= <<'END';
