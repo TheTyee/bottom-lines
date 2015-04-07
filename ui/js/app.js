@@ -412,6 +412,6 @@ App.Layout = new Backbone.Layout({
         Backbone.history.start();
         // Set the menu div to visible now
         setTimeout(function(){
-            $("#menu").show();
+            $("#menu").removeClass("hidden");
         }, 1000);
     });
