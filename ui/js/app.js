@@ -175,13 +175,18 @@ App.ArticleView = Backbone.View.extend({
         }
     },
     show: function() {
+        // TODO re-work the modal-finding stuff
+        var activeModal = $('.modal:visible');
+        if ( activeModal.length > 0 ) {
+            activeModal.modal('hide');
+        };
         this.$el.show();
         this.visible = true;
         // Animate the article header
         $(".intro").delay(1500).animate({ opacity: 1}, 700);
         // If we're using figures
-        $(this.el + " figure a").fluidbox();
-        $(this.el + " aside a").fluidbox();
+        $(this.el + " figure.fluidbox a").fluidbox();
+        $(this.el + " aside.fluidbox a").fluidbox();
         // Handle cards
         if ( this.card ) {
             App.CardsLayout.startShow( this.card );
@@ -385,7 +390,7 @@ App.Layout = new Backbone.Layout({
         var modals = $('.modal');
         // Add them to a collection for easy management
         _.each(modals, function(modal) {
-            console.log(modal.id);
+            //console.log(modal.id);
             App.cards.add({
                 "id": modal.id,
                 "group": $(modal).data('group'),
