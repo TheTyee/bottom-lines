@@ -410,4 +410,8 @@ App.Layout = new Backbone.Layout({
         // Start the app
         App.router = new App.Router();
         Backbone.history.start();
+        // Set the menu div to visible now
+        setTimeout(function(){
+            $("#menu").show();
+        }, 1000);
     });

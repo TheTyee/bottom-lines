@@ -40,6 +40,8 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 30px;
+  width: 100%;
+  height: 100%;
 }
 p {
   margin: 0;
@@ -156,6 +158,16 @@ nav.hamburger.persistent {
 }
 
 ///* Module: Slideout panel */
+
+
+.slideout-menu h2, .slideout-menu h3, .slideout-menu a {
+    color: white;
+}
+.slideout-menu hr {
+    width: 75%;
+}
+
+.menu,
 .slideout-menu {
   background: #2C539E;
   color: white;
@@ -165,23 +177,16 @@ nav.hamburger.persistent {
   top: 0;
   bottom: 0;
   right: 0;
-  z-index: 1;
+  z-index: 0;
   width: 256px;
-  overflow-y: auto;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   display: none;
 }
 
-.slideout-menu h2, .slideout-menu h3, .slideout-menu a {
-    color: white;
-}
-
-.slideout-menu hr {
-    width: 75%;
-}
-
+.panel,
 .slideout-panel {
-  position:relative;
+  position: relative;
   z-index: 1;
 }
 
@@ -192,7 +197,7 @@ nav.hamburger.persistent {
 }
 
 .slideout-open .slideout-menu {
-  display: block !important;
+  display: block;
 }
 
 body.datatable #content {
