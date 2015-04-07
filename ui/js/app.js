@@ -16,7 +16,7 @@
 //= require jquery.scrollstop.js
 //
 //  # Slideout for menu
-//= require slideout.js
+//= require slideout.min.js
 //  
 //  # Scroll Magic for parallax
 //= require TweenMax.js
@@ -88,9 +88,10 @@ App.CardView = Backbone.View.extend({
     },
     events: {
         "click .btn-next": "next",
-        "click .btn-prev": "next",
+        "click .btn-prev": "prev",
         "click .btn-close": "close",
-        "click .close": "close"
+        "click .close": "close",
+        "keydown" : "control"
     },
     beforeRender: function() {
 
@@ -133,8 +134,21 @@ App.CardView = Backbone.View.extend({
     next: function(event) {
         App.CardsLayout.showNext(event);
     },
+    prev: function(event) {
+        App.CardsLayout.showPrev(event);
+    },
     close: function(event){
         App.CardsLayout.close(event);
+    },
+    control: function(event) {
+        switch (event.keyCode) {
+            case 37:
+                this.prev(event);
+                break;
+            case 39:
+                this.next(event);
+                break;
+        }
     }
 });
 
@@ -244,6 +258,17 @@ App.CardsLayout = new Backbone.Layout({
         var base = currentPath.split('/')[0];
         var item = currentPath.split('/')[1];
         App.router.navigate(base + '/' + item + '/' + cardId, { trigger: false } );
+    },
+    showPrev: function(event) {
+        var el = event.currentTarget;
+        var cardId = $(el).data('prev');
+        this.startShow(cardId);
+        // TODO This is silly, fix it!
+        var currentPath = Backbone.history.fragment;
+        var base = currentPath.split('/')[0];
+        var item = currentPath.split('/')[1];
+        App.router.navigate(base + '/' + item + '/' + cardId, { trigger: false } );
+
     },
     close: function (event) {
         // TODO This is silly, fix it!
