@@ -1,7 +1,7 @@
 {% assign cards = site.cards %}
 {% assign cards_sorted = cards | sort: 'card_number' %}
 {% for card in cards_sorted %}
-<div class="modal {{ card.group }}" id="{{ card.id }}" data-group="{{card.group}}" data-js="{% if card.js %}{{ card.js | asset_path }}{% endif %}" data-css="{% if card.css %}{{ card.css | asset_path }}{% endif %}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal {{ card.group }}" id="{{ card.id }}" data-group="{{card.group}}" data-next="{{ card.next}}" data-prev="{{ card.prev }}" data-js="{% if card.js %}{{ card.js | asset_path }}{% endif %}" data-css="{% if card.css %}{{ card.css | asset_path }}{% endif %}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -9,12 +9,12 @@
         <h4 class="modal-title" id="myModalLabel">{{ card.title }}</h4>
       </div>
       <div class="modal-body">
-          <p class="lead">{{ card.dek }}</p>
+          {% if card.dek %}<p class="lead">{{ card.dek }}</p>{% endif %}
           {{ card.content }}
       </div>
       <div class="modal-footer">
         {% if card.prev %}
-        <button type="button" class="btn btn-primary btn-prev" data-next="{{ card.prev }}">Previous</button>
+        <button type="button" class="btn btn-primary btn-prev" data-prev="{{ card.prev }}">Previous</button>
         {% endif %}
         {% if card.next %}
         <button type="button" class="btn btn-primary btn-next" data-next="{{ card.next }}">Next</button>
