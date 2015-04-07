@@ -1,7 +1,7 @@
 ---
 id: styleguide 
 chapter_number: 100
-header_title: "Styleguide"
+header_title: "Style<br />guide"
 header_dek: "Twenty-five years of active lawmaking has not halted the decline of Canada’s ecosystems or environmental standing."
 title: ""
 dek: "When others grade our stewardship, Canada consistently falls short of its citizens’ aspirations"
@@ -28,7 +28,7 @@ Significantly, as the value of the security these natural systems provide has co
  
 We examined the actions that Canada’s governments—of differing political stripes—have taken to protect and secure the environment since 1989, as well as the global context of those actions. Over the 25-year period to 2014, we found that state-of-the-art legislation to protect biodiversity, the safety of air and water, and critical natural systems, has never been fully implemented or effectively enforced. Numerous mandated goals remain unmet.
  
-<figure class="">
+<figure class="fluidbox">
     <a href="http://placehold.it/1000x1000" title="">
         <img src="http://placehold.it/200x200" title="" alt="" />
     </a> 
@@ -41,7 +41,7 @@ The consequences of bi-partisan neglect are now becoming apparent. Many supposed
 
 Ambitious goals articulated a quarter-century ago to reduce Canada’s climate-altering greenhouse gas emissions have slipped by unmet. Our contributions to climate change have reversed a brief decline and are now again trending upward, even as its manifestations take a growing toll on livelihoods and structures.
 
-<aside class="default">
+<aside class="fluidbox default">
     <a href="http://placehold.it/1000x1000" title="">
         <img src="http://placehold.it/200x200" title="" alt="" />
     </a> 

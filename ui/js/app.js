@@ -163,8 +163,8 @@ App.ArticleView = Backbone.View.extend({
         var id = options.id;
         var visibility = options.visible;
         var card = options.card;
-        this.el = id;
-        this.$el = $(id); 
+        this.el = '#' + id;
+        this.$el = $(this.el); 
         this.visible = visibility;
         this.card    = card;
     },
@@ -179,7 +179,7 @@ App.ArticleView = Backbone.View.extend({
         var activeModal = $('.modal:visible');
         if ( activeModal.length > 0 ) {
             activeModal.modal('hide');
-        };
+        }
         this.$el.show();
         this.visible = true;
         // Animate the article header
@@ -286,17 +286,17 @@ App.CardsLayout = new Backbone.Layout({
 
 App.Layout = new Backbone.Layout({
     // Attach the Layout to the main container.
+    collection: App.chapters,
     el: "body",
+    beforeRender: function() {
+        // Automatically add any chapter models as sub-views
+        this.collection.each(function(model) {
+            this.insertView(model.get('id'), new App.ArticleView({ "id": model.get('id') }));
+        }, this);
+        var intro = App.Layout.getView({"id": "intro"});
+        intro.visible = true;
+    },
     views: {
-        "intro": new App.ArticleView({id: '#intro', visible: true }), // Start with Chapter One
-        "last-in-class": new App.ArticleView({id: '#last-in-class' }), // Start with Chapter One
-        "air-and-water": new App.ArticleView({id: '#air-and-water'}),
-        "species": new App.ArticleView({id: '#species'}),
-        "climate": new App.ArticleView({id: '#climate'}),
-        "environment": new App.ArticleView({id: '#environment'}),
-        "about": new App.ArticleView({id: '#about'}),
-        //"chart-timeseries": new App.CardView({id: '#chart-timeseries', type: 'timeseries'}),
-        //"chart-region": new App.CardView({id: '#chart-region', type: 'region' })
         "nav.hamburger": new App.HamburgerNavView()
     },
     initialize: function () {
@@ -323,7 +323,6 @@ App.Layout = new Backbone.Layout({
 
     App.Router = Backbone.Router.extend({
         initialize: function() { 
-        App.Layout.render();
     },
     routes: {
         '': 'start',
@@ -386,11 +385,17 @@ App.Layout = new Backbone.Layout({
     });
 
     $(function() {
+        // Find all the articles in the page
+        var articles = $('article');
+        _.each(articles, function(article) {
+            App.chapters.add({
+                "id": article.id,
+            });
+        });
         // Find all the modals in the page
         var modals = $('.modal');
         // Add them to a collection for easy management
         _.each(modals, function(modal) {
-            //console.log(modal.id);
             App.cards.add({
                 "id": modal.id,
                 "group": $(modal).data('group'),
@@ -414,7 +419,9 @@ App.Layout = new Backbone.Layout({
         App.CardsLayout.render();
         // Start the app
         App.router = new App.Router();
-        Backbone.history.start();
+        App.Layout.render().then(function() {
+            Backbone.history.start();
+        });
         // Set the menu div to visible now
         setTimeout(function(){
             $("#menu").removeClass("hidden");
