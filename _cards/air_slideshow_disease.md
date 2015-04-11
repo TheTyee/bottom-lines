@@ -1,0 +1,15 @@
+---
+id: disease
+title: "On Risk of Disease"
+dek: "‘No national surveillance system for waterborne disease.’"
+group: "measurement"
+card_number: 8
+next: biodiversity
+prev: great-lakes
+---
+
+> “It is extremely difficult to quantify the level of risk associated with drinking water because of the challenges associated with acquiring accurate, systematic and timely information on important indicators of drinking water health such as waterborne disease outbreaks, hospitalization rates and operator violations. For example, Health Canada does not publicly report the number of drinking water advisories across Canada with the exception of on First Nations reserves. Surprisingly, there is no national surveillance system for waterborne disease outbreaks and we lack a standardized approach to collect this type of information.”
+
+> — <cite>[Walter and Duncan Gordon Foundation, May 2010][1]</cite>
+
+[1]:http://www.ecojustice.ca/publications/reports/seeking-water-justice/attachment
