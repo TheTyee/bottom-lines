@@ -257,23 +257,26 @@ App.CardsLayout = new Backbone.Layout({
     showNext: function(event){
         var el = event.currentTarget;
         var cardId = $(el).data('next');
-        this.startShow(cardId);
-        // TODO This is silly, fix it!
-        var currentPath = Backbone.history.fragment;
-        var base = currentPath.split('/')[0];
-        var item = currentPath.split('/')[1];
-        App.router.navigate(base + '/' + item + '/' + cardId, { trigger: false } );
+        if ( cardId ) {
+            this.startShow(cardId);
+            // TODO This is silly, fix it!
+            var currentPath = Backbone.history.fragment;
+            var base = currentPath.split('/')[0];
+            var item = currentPath.split('/')[1];
+            App.router.navigate(base + '/' + item + '/' + cardId, { trigger: false } );
+        }
     },
     showPrev: function(event) {
         var el = event.currentTarget;
         var cardId = $(el).data('prev');
+        if ( cardId ) {
         this.startShow(cardId);
-        // TODO This is silly, fix it!
-        var currentPath = Backbone.history.fragment;
-        var base = currentPath.split('/')[0];
-        var item = currentPath.split('/')[1];
-        App.router.navigate(base + '/' + item + '/' + cardId, { trigger: false } );
-
+            // TODO This is silly, fix it!
+            var currentPath = Backbone.history.fragment;
+            var base = currentPath.split('/')[0];
+            var item = currentPath.split('/')[1];
+            App.router.navigate(base + '/' + item + '/' + cardId, { trigger: false } );
+        }
     },
     close: function (event) {
         // TODO This is silly, fix it!
