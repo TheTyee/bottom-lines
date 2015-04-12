@@ -13,4 +13,4 @@ government information service must make information readily accessible to the p
 
 > — <cite>[The Canadian Environmental Law Association, Canadian Institute for Environmental Law and Policy, EcoJustice (formerly Sierra Legal), Environmental Defence, Great Lakes United, Sierra Club of/du Canada, September 2007][1]</cite>
 
-[1]:http://www.conferenceboard.ca/e-library/abstract.aspx?did=1993
+[1]:TK

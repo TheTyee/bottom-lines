@@ -15,8 +15,8 @@ prev: flood-risk
 </script>
 
 
-> A lack of information … creates wariness about initiating comprehensive [conservation] programs, and limits the effectiveness of such programs when they are attempted. Up-to-date, detailed and consistent data on urban water use is required to help understand urban water use levels and trends, and to evaluate programs across the country.
+> "A lack of information … creates wariness about initiating comprehensive [conservation] programs, and limits the effectiveness of such programs when they are attempted. Up-to-date, detailed and consistent data on urban water use is required to help understand urban water use levels and trends, and to evaluate programs across the country."
 
 > — <cite>[POLIS Project on Ecological Governance, May 2005][1]</cite>
 
-[1]:http://www.polisproject.org/files/pub_database/watershed.pdf
+[1]:https://www.documentcloud.org/documents/1845775-watershed.html#document/p93/a213233
