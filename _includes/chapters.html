@@ -46,16 +46,21 @@
 {% assign current = forloop.index %}
 {% assign next = chapters_sorted[current] %}
 {% if next %}
-
+{% if next.id != 'styleguide' %}
                     <nav class="chapter chapter-next">
                         <a href="/#chapter/{{ next.id }}"><span class="lightface chapter-next-label">Next Chapter</span> {{ next.header_title }} <span class="glyphicon glyphicon-chevron-right"></span></a>
                     </nav>
+
 {% else %}
                     <nav class="chapter chapter-next">
                         <a href="/#chapter/intro">Back to introduction <span class="glyphicon glyphicon-chevron-right"></span></a>
                     </nav>
 {% endif %}
-                
+{% else %}
+                    <nav class="chapter chapter-next">
+                        <a href="/#chapter/intro">Back to introduction <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </nav>
+{% endif %}
     </footer>
 </article>
 {% endfor %}
