@@ -1,7 +1,7 @@
 ---
 id: water-use
-title: "On Urban Water Use"
-dek: "No ‘up-to-date, detailed and consistent data.’"
+title: "Can’t Fix What We Don’t Measure"
+dek: "On Urban Water Use: No ‘up-to-date, detailed and consistent data.’"
 group: "measurement"
 card_number: 3
 next: water-quality

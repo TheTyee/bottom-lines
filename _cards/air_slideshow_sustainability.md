@@ -1,7 +1,7 @@
 ---
 id: sustainability
-title: "On Sustainability"
-dek: "Canada’s water usage question mark."
+title: "Can’t Fix What We Don’t Measure"
+dek: "On Sustainability: Canada’s water usage question mark."
 group: "measurement"
 card_number: 10
 next: enforcement

@@ -1,7 +1,7 @@
 ---
 id: management 
-title: "On Water Management"
-dek: "Decisions without data? Priorities and budgets ‘need to be set.’"
+title: "Can’t Fix What We Don’t Measure"
+dek: "On Water Management: Decisions without data? Priorities and budgets ‘need to be set.’"
 group: "measurement"
 card_number: 6
 next: great-lakes

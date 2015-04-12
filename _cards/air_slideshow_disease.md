@@ -1,7 +1,7 @@
 ---
 id: disease
-title: "On Risk of Disease"
-dek: "‘No national surveillance system for waterborne disease.’"
+title: "Can’t Fix What We Don’t Measure"
+dek: "On Risk of Disease: ‘No national surveillance system for waterborne disease.’"
 group: "measurement"
 card_number: 8
 next: biodiversity

@@ -1,7 +1,7 @@
 ---
 id: water-quality
-title: "Drinking Water Quality"
-dek: "Need registry of drinking water ‘threats, trends and indicators.’"
+title: "Can’t Fix What We Don’t Measure"
+dek: "Drinking Water Quality: Need registry of drinking water ‘threats, trends and indicators.’"
 group: "measurement"
 card_number: 4
 next: quality-vs-quantity

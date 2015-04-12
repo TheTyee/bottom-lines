@@ -1,7 +1,7 @@
 ---
 id: great-lakes
-title: "On The Great Lakes"
-dek: "A call for transparency and public accessibility."
+title: "Can’t Fix What We Don’t Measure"
+dek: "On The Great Lakes: A call for transparency and public accessibility."
 group: "measurement"
 card_number: 7
 next: disease

@@ -1,7 +1,7 @@
 ---
 id: quality-vs-quantity
-title: "On Quality vs. Quantity"
-dek: "A water monitoring imbalance breeds inconsistency, says probe."
+title: "Can’t Fix What We Don’t Measure"
+dek: "On Quality vs. Quantity: A water monitoring imbalance breeds inconsistency, says probe."
 group: "measurement"
 card_number: 5
 next: management 

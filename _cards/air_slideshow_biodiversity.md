@@ -1,7 +1,7 @@
 ---
 id: biodiversity
-title: "On Biodiversity"
-dek: "Monitoring incomplete in many areas."
+title: "Can’t Fix What We Don’t Measure"
+dek: "On Biodiversity: Monitoring incomplete in many areas."
 group: "measurement"
 card_number: 9
 next: sustainability

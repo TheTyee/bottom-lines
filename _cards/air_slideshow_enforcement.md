@@ -1,7 +1,7 @@
 ---
 id: enforcement
-title: "On Enforcement"
-dek: "‘Gaping holes’ in violation records."
+title: "Can’t Fix What We Don’t Measure"
+dek: "On Enforcement: ‘Gaping holes’ in violation records."
 group: "measurement"
 card_number: 11
 prev: sustainability
