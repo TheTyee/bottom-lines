@@ -12,6 +12,17 @@ Nothing says ‘Canada’ quite like a scenic vista—be it Gros Morne, the Sask
  
 Our leaders have appeared to be in step. Regardless of party, they have regularly assured us that Canada’s natural security is well protected. Legislation has been enacted  across an impressive range of fronts, from protecting species to penalizing polluters and preventing foreseeable harm.
 
+<aside class="default">
+    <a data-card="laws-intro" class="link-card" href="#" title="">
+        <img src="http://placehold.it/200x200&text=Graphic+TK" title="" alt="" />
+    </a> 
+    <figcaption>
+        <strong>Canada’s Environmental Protection Laws Then and Now</strong>
+        <br />
+        See which legislative gems of the ‘80s and ‘90s haven’t aged well.
+    </figcaption> 
+</aside>
+
 Yet independent assessments and a candid account of our history tell quite a different story. Much of this country’s original wealth was created by logging forests for timber, breaking native prairie for grain fields, and blasting minerals from hard rock. The idea that environmental loss is a regrettable but necessary price for prosperity has been deeply engrained. Last year, the Prime Minister argued against additional measures to preserve a stable climate by saying, “No country is going to take actions that are going to deliberately destroy jobs and growth in their country.”
  
 That this conventional wisdom is wrong is one of the clearest signals to emerge from the past quarter-century. To the contrary, a growing body of evidence reveals the very large economic benefits that flow from healthy ecosystems, and the correspondingly high cost of their loss or disruption.
@@ -29,6 +40,18 @@ Elsewhere, international investors and key agencies like the World Bank and Inte
 ### From ‘A’s to ‘F’s
 
 Such rankings are only as old as the new century. One of the earliest was completed in 2000 as a pilot project for the World Economic Forum. Combining 64 indicators, the Yale Centre for Environmental Law and Policy and Columbia University Center for International Earth Science ranked Canada 7th among 56 developed and developing countries.^12 In a more polished version the following year, Canada scored even better: third in a field of 122. ^14
+
+<aside class="default">
+    <a data-card="reportcard-intro" class="link-card" href="#" title="">
+        {% image report-card.png [autosize] %}
+    </a> 
+    <figcaption>
+
+        <strong>Canada’s Environment Report Card</strong>
+        <br />
+        Here’s how the enviro-commissioner graded 25 years of federal actions.
+    </figcaption> 
+</aside>
 
 But more critical assessments surfaced almost at once. In the same year that Yale and Columbia placed Canada third in the world, researchers at the University of Victoria called Canada’s environmental record, “one of the poorest of the industrialized countries." ^16 In follow-up comparisons, the same team ranked Canada 28th among 30 wealthy countries in 2005, and 24th of 25 in 2010. ^25 ^35
 
