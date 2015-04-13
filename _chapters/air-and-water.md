@@ -8,11 +8,23 @@ dek: "Some familiar old threats are back, and exotic new ones are coming to ligh
 ---
 #### Some familiar old threats are back, and exotic new ones are coming to light.
 
-When Canadians were asked back in 1989 to name their biggest environmental concerns, the top three answers they gave were, in descending order: toxic chemicals, water quality, and air quality. [360] Four in ten were hopeful that things would improve within a decade.
+When Canadians were asked back in 1989 to name their biggest environmental concerns, the top three answers they gave were, in descending order: toxic chemicals, water quality, and air quality. ^360 Four in ten were hopeful that things would improve within a decade.
  
-Two and a half decades later, toxic chemicals, water and air quality are still among Canadians’ top concerns. [362] But whether those 1989-era hopes have been realized depends on where you look. Some former threats have receded, but others have taken their place. And a few banes that once appeared to be conquered are now back and more dangerous than ever.
+Two and a half decades later, toxic chemicals, water and air quality are still among Canadians’ top concerns. ^362 But whether those 1989-era hopes have been realized depends on where you look. Some former threats have receded, but others have taken their place. And a few banes that once appeared to be conquered are now back and more dangerous than ever.
  
 An example is blue-green algae—a type of primitive phyto-plankton.  These can be dangerous as well as unsightly: when blue-green algae die and break down they release potent neuro and hepato-toxins, destructive to nerve and liver systems respectively. Contact can produce headaches, fever, abdominal pain, nausea and death. ^363
+
+<aside class="default">
+    <a data-card="groundwater" class="link-card" href="#" title="">
+        {% image microscope.png [autosize] %}
+    </a> 
+    <figcaption>
+
+        <strong>Can’t Fix What We Don’t Measure</strong>
+        <br />
+        Two decades summarized from 11 reports
+    </figcaption> 
+</aside>
  
 The primary cause of their summertime ‘blooms’ in lakes, oceans and rivers is an over-abundance of dissolved phosphorus and nitrogen—ingredients in farm and garden fertilizers that have the same powerful effect in the wild, ‘fertilizing’ the rapid growth of aquatic algae. The organisms flourish particularly well in water bodies depleted and warmed by a changing climate.
  
