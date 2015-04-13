@@ -1,7 +1,7 @@
 ---
 id: better-then-worse
 title: "Is Canada Meeting its Climate Commitments?"
-dek: "After 2004 carbon emissions went down, then up."
+dek: "After 2007 carbon emissions went down, then up."
 group: "climate"
 card_number: 1
 js: better-then-worse.js
