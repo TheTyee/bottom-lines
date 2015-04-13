@@ -8,7 +8,7 @@ dek: "Canada has made strong commitments on biodiversity; fewer promises have be
 ---
 #### Canada has made strong commitments on biodiversity; fewer promises have been fully met
 
-In a Canada Day poll a couple of years ago, 83 per cent of us identified our untamed landscape as a “good” or “great” reflection of Canadian identity. [389] And surely the iconic moose and orca, the loon that adorns the dollar and its twoonie counterpart the polar bear, the old national symbol of the beaver—all speak to Canadians’ affinity for the wildlife beyond our urban limits.
+In a Canada Day poll a couple of years ago, 83 per cent of us identified our untamed landscape as a “good” or “great” reflection of Canadian identity. ^389 And surely the iconic moose and orca, the loon that adorns the dollar and its twoonie counterpart the polar bear, the old national symbol of the beaver—all speak to Canadians’ affinity for the wildlife beyond our urban limits.
 
 
 <figure class="default">
@@ -26,7 +26,7 @@ Six major and several minor federal laws have been enacted to protect Canada’s
  
 Three more laws of importance were added over the last quarter century. The Canadian Environmental Protection Act, passed in 1988, came into effect in 1989; it consolidated federal powers to control air, water or ocean pollution. ^112 An Environmental Assessment Act, added in 1992, was intended to anticipate and prevent harm to ecosystems from human development. ^187 And in 2002 a Species at Risk Act promised to restore struggling wildlife populations. ^194 Other legislation provided for Marine Conservation Areas, the protection of migratory birds, controls on the use of pesticides, and penalties for offenses under all of these laws.
  
-The collective scope of this legislation is impressive. But multiple assessments have concluded that it is failing across the board. [35, 46, 48] Many of Canada’s most significant landscapes and species are more endangered now than at the start of the period we reviewed. ^214
+The collective scope of this legislation is impressive. But multiple assessments have concluded that it is failing across the board. ^35 ^46 ^48 Many of Canada’s most significant landscapes and species are more endangered now than at the start of the period we reviewed. ^214
  
 There is some good news: seals and whales once hunted to near extinction are recovering in all of the Pacific, Atlantic and Arctic Oceans, the Department of Fisheries and Oceans reported in 2010. ^205
  
