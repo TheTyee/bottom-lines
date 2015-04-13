@@ -43,7 +43,7 @@ Such rankings are only as old as the new century. One of the earliest was comple
 
 <aside class="default">
     <a data-card="reportcard-intro" class="link-card" href="#" title="">
-        {% image report-card.png [autosize] %}
+        {% image report-card.png %}
     </a> 
     <figcaption>
 

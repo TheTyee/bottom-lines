@@ -16,7 +16,7 @@ An example is blue-green algae—a type of primitive phyto-plankton.  These can 
 
 <aside class="default">
     <a data-card="groundwater" class="link-card" href="#" title="">
-        {% image microscope.png [autosize] %}
+        {% image microscope.png %}
     </a> 
     <figcaption>
 
