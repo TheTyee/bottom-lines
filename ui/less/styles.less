@@ -119,10 +119,10 @@ button.navbar-toggle {
 }
 .nav-label {
   color: #C7E8FF;
-  padding: 10px 15px 10px 15px;
+  padding: 17px 15px 10px 15px;
   font-size: 13px;
   line-height: 20px;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -163,6 +163,12 @@ nav.hamburger.persistent {
   padding-left: 30px;
 }
 
+.slideout-menu .nav > li > a:link {color: #FFF;}
+.slideout-menu .nav > li > a:visited {color: #FFF;}
+.slideout-menu .nav > li > a:hover {color: #FFF; text-decoration: underline; background-color: transparent;}
+.slideout-menu .nav > li > a:active {color: #74A4C7;}
+.slideout-menu .nav > li > a:focus {background-color: transparent;}
+
 ///* Module: Slideout panel */
 
 
@@ -170,14 +176,14 @@ nav.hamburger.persistent {
     color: white;
 }
 .slideout-menu hr {
-    width: 75%;
+    width: 100%;
 }
 
 .menu,
 .slideout-menu {
   background: #2C539E;
   color: white;
-  padding: 60px 30px 0px 10px;
+  padding: 60px 30px 0px 25px;
   position: fixed;
   left: 0;
   top: 0;
@@ -204,6 +210,22 @@ nav.hamburger.persistent {
 
 .slideout-open .slideout-menu {
   display: block;
+}
+
+.slideout-menu h2 {
+  font-weight: 600;
+}
+
+.slideout-menu .nav-label {
+  color: #7FB5DC;
+}
+
+.slideout-menu .nav > li {
+  padding:0 0 5px 0;
+}
+
+.slideout-menu .nav > li > a {
+  padding:0;
 }
 
 body.datatable #content {
@@ -604,10 +626,6 @@ AG's media queries to be merged
     border: none;
     border-bottom: none;
     z-index: -1;
-  }
-  .nav-label {
-    padding-top: 17px;
-    font-weight: 400;
   }
   .navbar-inverse .navbar-nav > li > a {
     font-weight: 100;
