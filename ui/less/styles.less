@@ -119,12 +119,15 @@ button.navbar-toggle {
 }
 .nav-label {
   color: #C7E8FF;
-  padding: 10px 15px 10px 15px;
+  padding: 17px 15px 10px 15px;
   font-size: 13px;
   line-height: 20px;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+.navbar li {
+    padding-right: 15px;
 }
 .navbar ul li a {
   color: #C7E8FF;
@@ -163,6 +166,12 @@ nav.hamburger.persistent {
   padding-left: 30px;
 }
 
+.slideout-menu .nav > li > a:link {color: #FFF;}
+.slideout-menu .nav > li > a:visited {color: #FFF;}
+.slideout-menu .nav > li > a:hover {color: #FFF; text-decoration: underline; background-color: transparent;}
+.slideout-menu .nav > li > a:active {color: #74A4C7;}
+.slideout-menu .nav > li > a:focus {background-color: transparent;}
+
 ///* Module: Slideout panel */
 
 
@@ -170,14 +179,15 @@ nav.hamburger.persistent {
     color: white;
 }
 .slideout-menu hr {
-    width: 75%;
+    width: 100%;
+    margin-top: 9px;
 }
 
 .menu,
 .slideout-menu {
   background: #2C539E;
   color: white;
-  padding: 60px 30px 0px 10px;
+  padding: 10px 30px 0px 55px;
   position: fixed;
   left: 0;
   top: 0;
@@ -204,6 +214,27 @@ nav.hamburger.persistent {
 
 .slideout-open .slideout-menu {
   display: block;
+}
+
+.slideout-menu h2 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.slideout-menu .nav-label {
+  color: #7FA4DB;
+}
+
+.slideout-menu .nav > li {
+  padding:0 0 5px 0;
+}
+
+.slideout-menu .nav > li > a {
+  padding:0;
+}
+
+ul.secondary {
+  font-style: italic;
 }
 
 body.datatable #content {
@@ -271,12 +302,18 @@ header.fullscreen {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+  
 }
+
 .title_block {
 }
 .intro {
   opacity: 0;
   padding-top: 10%;
+}
+#intro .intro {
+  opacity: 0;
+  padding-top: 50px;
 }
 .intro h1 {
   color: #FFF;
@@ -285,10 +322,11 @@ header.fullscreen {
   font-weight: 800;
   font-size: 60px;
   line-height: 64px;
-  padding-top: 45px;
+  padding-top: 30px;
   padding-bottom: 7.5px;
   text-shadow: 0px 0px 3px rgba(0,0,0,0.25);
 }
+
 .intro h2 {
   color: #C7E8FF;
   font-family: "adelle", serif;
@@ -368,13 +406,40 @@ section.parallax h3 {
   font-weight: 700;
 }
 footer {
-  background: #2e569c url("/assets/fog.jpg") no-repeat fixed 0% bottom ;
-  background-size: 100% auto;
   color: #ffffff;
   min-height: 120px;
   margin-top: 40px;
   padding-top: 18px;
 }
+#intro footer {
+  background: #2e569c url("/assets/runners.jpg") no-repeat fixed 0% bottom;
+  background-size: auto 100vh;
+}
+#last-in-class footer {
+  background: #2e569c url("/assets/fog.jpg") no-repeat fixed 0% bottom ;
+  background-size: auto 100vh;
+}
+#air-and-water footer {
+  background: #2e569c url("/assets/skull.jpg") no-repeat fixed 0% bottom ;
+  background-size: auto 100vh;
+}
+#species footer {
+  background: #2e569c url("/assets/leaf.jpg") no-repeat fixed 0% bottom ;
+  background-size: auto 100vh;
+}
+#climate footer {
+  background: #2e569c url("/assets/earth.jpg") no-repeat fixed 0% bottom ;
+  background-size: auto 100vh;
+}
+#environment footer {
+  background: #2e569c url("/assets/leaf-on-wood.jpg") no-repeat fixed 0% bottom ;
+  background-size: auto 100vh;
+}
+#about footer {
+  background: #2e569c url("/assets/1-dock-shutterstock_127444943-ag-3.jpg") no-repeat fixed 0% bottom ;
+  background-size: 100vw auto;
+}
+
 footer:after {
 content: "";
 display: table;
@@ -537,6 +602,15 @@ Progressively enhance for larger screens
 /* ==========================================================================
 AG's media queries to be merged
 ========================================================================== */
+
+/* Special exception of extra-extra-small devices (e.g. iphone5, less than 380px) */
+@media (max-width: 380px) {
+    .intro h1 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+}
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
@@ -571,10 +645,6 @@ AG's media queries to be merged
     border: none;
     border-bottom: none;
     z-index: -1;
-  }
-  .nav-label {
-    padding-top: 17px;
-    font-weight: 400;
   }
   .navbar-inverse .navbar-nav > li > a {
     font-weight: 100;
