@@ -12,13 +12,22 @@
     <noscript id="js-warning">
     This page requires Javascript. Your browser either doesn't support JavaScript or you have it turned off. Please enable JavaScript before you proceed.
     </noscript>
-{% include header.html %}
+<nav class="hamburger persistent">
+    <div class="button" title="Navigation">
+        <i class="glyphicon glyphicon-align-justify"></i>
+    </div>
+</nav>
+<div id="panel">
+    {% include header.html %}
 
-<div id="content" class="container">
-{{ content }}
+    <div id="content" class="container">
+    {{ content }}
+    </div>
 </div>
 {% include footer.html %}
 {% include footer_scripts.html %}
+{% include menu.html %}
+{% javascript global.js %}
 {% javascript datatable.js %}
 {% javascript dataTables.bootstrap.js %}
     </body>

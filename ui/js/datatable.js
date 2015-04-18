@@ -1,6 +1,3 @@
-//= require jquery.js
-//= require modernizr.js
-//= require bootstrap.js
 //= require jquery.dataTables.js
 
 // Add any data table occurences here
