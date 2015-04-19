@@ -29,7 +29,8 @@
     "jquery-scrollstop": "~1.1.0",
     "bigfoot": "~2.1.1",
     "datatables": "~1.10.5",
-    "slideout": "https://github.com/mango/slideout.git#~0.1.5"
+    "slideout": "https://github.com/mango/slideout.git#~0.1.5",
+    "leaflet": "~0.7.3"
   },
   "resolutions": {
     "jquery": "~1.11.0"
