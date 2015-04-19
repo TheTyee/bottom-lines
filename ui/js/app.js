@@ -1,36 +1,21 @@
 /* App JS */
-// Libraries concatenated & compressed by by jekyll-assets pipeline
-//= require jquery.js
-//= require modernizr.js
-//= require bootstrap.js
-// require jquery.easings.min.js
-// require jquery.slimscroll.js
-// require jquery.fullPage.js
+// # Libraries concatenated & compressed by by jekyll-assets pipeline
 //= require underscore.js
 //= require backbone.js
 //= require backbone.layoutmanager.js
 //  
-//  # Smooth scroll for intro jumps
+// # Smooth scroll for intro jumps
 //= require jquery.smooth-scroll.js
 //= require jquery.fluidbox.min.js
 //= require jquery.scrollstop.js
 //
-//  # Slideout for menu
-//= require slideout.min.js
 //  
-//  # Scroll Magic for parallax
+// # Scroll Magic for parallax
 //= require TweenMax.js
 //= require jquery.scrollmagic.js
 // require jquery.scrollmagic.debug.js
 //  # D3 for cards
 //= require d3.js
-//  # BigFoot for footnotes
-//= require bigfoot.js
-//
-//  # Thes should be loaded by the cards, not app.js
-//= require app-timeseries.js
-//= require app-regions.js
-
 // 
 // ===================================================================
 // Configuration
@@ -61,24 +46,6 @@ App.chapters = new Backbone.Collection();
 // Views
 // ===================================================================
 
-App.HamburgerNavView = Backbone.View.extend({
-    el: 'nav.hamburger',
-    $el: $('nav.hamburger'),
-    initialize: function(options){
-    },
-    events: {
-        "click .button": "toggle",
-    },
-    beforeRender: function() {
-
-    },
-    afterRender: function() {
-
-    },
-    toggle: function(event) {
-        App.slideout.toggle();
-    }
-});
 // Create a modal view class
 App.CardView = Backbone.View.extend({
     initialize: function(options){
@@ -114,13 +81,26 @@ App.CardView = Backbone.View.extend({
             $.ajax({
                 url: js,
                 dataType: "script",
-                success: function(){ model.set("js-loaded", true); }
+                success: function(){ 
+                    model.set("js-loaded", true);
+                    // If there's a function for this card, run it w/ args
+                    if ( model.get('function') ) {
+                        var args = model.get('arguments').split(', ');
+                        argsObject = {};
+                        if( typeof args === 'object') {
+                           _.each(args, function(arg) {
+                              var c = arg.split(':');
+                              argsObject[c[0]] = c[1];
+                           });
+                        }
+                        window[model.get('function')](argsObject);
+                    }
+                }
             });
         }
-        // If there's a draw function for this card, run it
         // If there is already an active modal
         // then toggle which modal is active
-        // TODO switch this to use models not 
+        // TODO switch this to use models
         // And this should probably happen with a listen event on the model
         var activeModal = $('.modal:visible');
         if ( activeModal.length > 0 ) {
@@ -144,10 +124,10 @@ App.CardView = Backbone.View.extend({
         switch (event.keyCode) {
             case 37:
                 this.prev(event);
-                break;
+            break;
             case 39:
                 this.next(event);
-                break;
+            break;
         }
     }
 });
@@ -270,7 +250,7 @@ App.CardsLayout = new Backbone.Layout({
         var el = event.currentTarget;
         var cardId = $(el).data('prev');
         if ( cardId ) {
-        this.startShow(cardId);
+            this.startShow(cardId);
             // TODO This is silly, fix it!
             var currentPath = Backbone.history.fragment;
             var base = currentPath.split('/')[0];
@@ -300,7 +280,6 @@ App.Layout = new Backbone.Layout({
         intro.visible = true;
     },
     views: {
-        "nav.hamburger": new App.HamburgerNavView()
     },
     initialize: function () {
         var self = this;
@@ -310,22 +289,15 @@ App.Layout = new Backbone.Layout({
         $('a.smooth').smoothScroll({
             speed: 1000,
         });
-        // If we want to hide the hamburger nav on scroll.
-        // Doesn't work nicely on mobile, however...
-        //$(window).on("scrollstart", function() {
-            //$('nav.hamburger').css({display: "none"});
-            //}).on("scrollstop", function() {
-        //$('nav.hamburger').css({display: "block"});
-        //});
-        }
-    });
+    }
+});
 
-    // ===================================================================
-    // Router
-    // ===================================================================
+// ===================================================================
+// Router
+// ===================================================================
 
-    App.Router = Backbone.Router.extend({
-        initialize: function() { 
+App.Router = Backbone.Router.extend({
+    initialize: function() { 
     },
     routes: {
         '': 'start',
@@ -385,48 +357,35 @@ App.Layout = new Backbone.Layout({
     defaultRoute: function() {
         console.log("404");
     }
-    });
+});
 
-    $(function() {
-        // Find all the articles in the page
-        var articles = $('article');
-        _.each(articles, function(article) {
-            App.chapters.add({
-                "id": article.id,
-            });
+$(function() {
+    // Find all the articles in the page
+    var articles = $('article');
+    _.each(articles, function(article) {
+        App.chapters.add({
+            "id": article.id,
         });
-        // Find all the modals in the page
-        var modals = $('.modal');
-        // Add them to a collection for easy management
-        _.each(modals, function(modal) {
-            App.cards.add({
-                "id": modal.id,
-                "group": $(modal).data('group'),
-                "js": $(modal).data('js'),
-                "css": $(modal).data('css')
-            });
-        });
-        // Enable footnotes
-        $.bigfoot({
-            actionOriginalFN: "ignore",
-            useFootnoteOnlyOnce: false
-        });
-        // Enable the slideout menu
-        App.slideout = new Slideout({
-            'panel': document.getElementById('panel'),
-            'menu': document.getElementById('menu'),
-            'padding': 256,
-            'tolerance': 70
-        });
-        // Render the cards layout
-        App.CardsLayout.render();
-        // Start the app
-        App.router = new App.Router();
-        App.Layout.render().then(function() {
-            Backbone.history.start();
-        });
-        // Set the menu div to visible now
-        setTimeout(function(){
-            $("#menu").removeClass("hidden");
-        }, 1000);
     });
+    // Find all the modals in the page
+    var modals = $('.modal');
+    // Add them to a collection for easy management
+    _.each(modals, function(modal) {
+        App.cards.add({
+            "id": modal.id,
+            "group": $(modal).data('group'),
+            "js": $(modal).data('js'),
+            "css": $(modal).data('css'),
+            "function": $(modal).data('function'),
+            "arguments": $(modal).data('arguments')
+        });
+    });
+    // Render the cards layout
+    App.CardsLayout.render();
+    // Start the app
+    App.router = new App.Router();
+    App.Layout.render().then(function() {
+        Backbone.history.start();
+    });
+    App.slideout = slideout;
+});

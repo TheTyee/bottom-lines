@@ -7,5 +7,6 @@ card_number: 3
 prev: toxic-site
 next: ozone
 ---
-{% image thumbs-down-red.png style="float: left;margin: 0 10px 10px 0;" %}
 **1998**: Canada is making less progress than it promised toward fulfilling its six-year-old commitments under the United Nations Convention on Biological Diversity. Canada was the first industrialized country to ratify the Convention, but only two of eight ‘implementation modules’ are written, and they lack identified resources, deadlines, or performance indicators.
+
+Source: the office of Environment Commissioner, created in 1995, is a branch of the auditor general’s office.
