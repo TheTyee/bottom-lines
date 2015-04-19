@@ -148,6 +148,61 @@ function draw(data) {
         .remove();
     });
 
+    // Responsive function
+    // When the window changes size, re-calcuate the scales & re-draw
+    function resize() {
+        // Find the new window dimensions
+        width = parseInt(d3.select("#extreme-weather-budget-datavis").style("width"));
+        height = parseInt(d3.select("#extreme-weather-budget-datavis").style("height"));
+
+        // Update the container & chart dimensions
+        container_dimensions.width = width;
+        container_dimensions.height = height;
+        chart_dimensions.width = container_dimensions.width - margins.left - margins.right;
+        chart_dimensions.height = container_dimensions.height - margins.top - margins.bottom;
+        // Resize the SVG
+        svg = d3.select("#extreme-weather-budget-datavis svg");
+        svg.attr("width", container_dimensions.width)
+            .attr("height", container_dimensions.height);
+
+        // Updates the range & scales
+        time_scale = d3.time.scale()
+            .range([0,chart_dimensions.width])
+            .domain([low_year,high_year]);
+        percent_scale = d3.scale.linear()
+            .range([chart_dimensions.height, 0])
+            .domain([loses[0]-100,loses[1]+10]);
+
+        // Setup axis
+        time_axis = d3.svg.axis()
+            .scale(time_scale);
+        count_axis = d3.svg.axis()
+            .scale(percent_scale)
+            .orient("left");
+
+        time_axis.ticks(Math.max(chart_dimensions.height/50, 2));
+        count_axis.ticks(Math.max(chart_dimensions.width/50, 2));
+
+        // Update the axis with the new scale
+        chart.select('.x.axis')
+            .attr("transform", "translate(0," + chart_dimensions.height + ")")
+            .call(time_axis);
+
+        chart.select('.y.axis')
+            .call(count_axis);
+
+        chart.selectAll('.line')
+            .datum(data)
+            .attr("d", line);
+    
+        chart.selectAll('.circle')
+            .data(data)
+            .attr("cx", function(d) { return time_scale( d.year ); })
+            .attr("cy", function(d) { return percent_scale( d.loses ); });
+    }
+    d3.select(window).on('resize', resize);
+
+
 }
 
 d3.csv("/data/loses.csv", function(d) {
