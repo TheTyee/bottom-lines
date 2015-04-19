@@ -12,6 +12,17 @@ It’s an old economic truism, a corollary of the law of supply and demand, that
 
 Economists have estimated that the ecological services provided by the Mackenzie River watershed in northern Canada are worth some $571 billion a year—thirteen and a half times the region’s official GDP of $42 billion. ^83 In 2014 an unknown portion of that wealth went up in smoke, when fires consumed vast swaths of boreal forest. Soot from the fires in the Northwest Territories drifted downwind to darken Greenland’s ice sheets, hastening their melt. ^384
 
+<aside class="default">
+    <a data-card="natural-security" class="link-card" href="#" title="">
+        {% image natural-security.jpg %}
+    </a> 
+    <figcaption>
+        <strong>Can You Put Price on Canada’s ‘Natural Security’?</strong>
+        <br />
+        A summary of these cards TK from Chris Wood
+    </figcaption> 
+</aside>
+
 The anecdote illustrates how perceptions of environmental stewardship and risk have tightened over a quarter-century. Canadians feared for their natural security as long ago as 1989, when eight in ten of us agreed at least somewhat in surveys (and half of us, “strongly”), that pollution “threatens the survival of the human race.” ^360
 
 The nature and extent of that threat, and how much we stand to lose, are now much clearer.

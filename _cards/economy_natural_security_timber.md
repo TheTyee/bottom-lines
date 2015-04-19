@@ -7,7 +7,7 @@ card_number: 1
 js: natural-security.js
 cturss: natural-security.css
 function: showMap
-arguments: "dom:map-timber, lon:54.15521395, lat:-126.5556456, zoom:4"
+arguments: "dom:map-timber, lon:54.15521395, lat:-126.5556456, zoom:5"
 prev: natural-security
 next: wetlands
 ---
