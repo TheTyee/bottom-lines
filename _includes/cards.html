@@ -1,7 +1,7 @@
 {% assign cards = site.cards %}
 {% assign cards_sorted = cards | sort: 'card_number' %}
 {% for card in cards_sorted %}
-<div class="modal {{ card.group }}" id="{{ card.id }}" data-group="{{card.group}}" data-next="{{ card.next}}" data-prev="{{ card.prev }}" data-js="{% if card.js %}{{ card.js | asset_path }}{% endif %}" data-css="{% if card.css %}{{ card.css | asset_path }}{% endif %}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal {{ card.group }}" id="{{ card.id }}" data-group="{{card.group}}" data-next="{{ card.next}}" data-prev="{{ card.prev }}" data-js="{% if card.js %}{{ card.js | asset_path }}{% endif %}" data-css="{% if card.css %}{{ card.css | asset_path }}{% endif %}" data-function="{{ card.function }}" data-arguments="{{ card.arguments }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
