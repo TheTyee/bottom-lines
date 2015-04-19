@@ -81,10 +81,23 @@ App.CardView = Backbone.View.extend({
             $.ajax({
                 url: js,
                 dataType: "script",
-                success: function(){ model.set("js-loaded", true); }
+                success: function(){ 
+                    model.set("js-loaded", true);
+                    // If there's a function for this card, run it w/ args
+                    if ( model.get('function') ) {
+                        var args = model.get('arguments').split(', ');
+                        argsObject = {};
+                        if( typeof args === 'object') {
+                           _.each(args, function(arg) {
+                              var c = arg.split(':');
+                              argsObject[c[0]] = c[1];
+                           });
+                        }
+                        window[model.get('function')](argsObject);
+                    }
+                }
             });
         }
-        // If there's a draw function for this card, run it
         // If there is already an active modal
         // then toggle which modal is active
         // TODO switch this to use models
@@ -362,7 +375,9 @@ $(function() {
             "id": modal.id,
             "group": $(modal).data('group'),
             "js": $(modal).data('js'),
-            "css": $(modal).data('css')
+            "css": $(modal).data('css'),
+            "function": $(modal).data('function'),
+            "arguments": $(modal).data('arguments')
         });
     });
     // Render the cards layout
