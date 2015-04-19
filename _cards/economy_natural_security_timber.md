@@ -5,11 +5,11 @@ dek: "British Columbia reaps billions from uncut forest."
 group: "economy"
 card_number: 1
 js: natural-security.js
-css: natural-security.css
+cturss: natural-security.css
 function: showMap
-arguments: "dom:map-timber, lon:56, lat:-96, zoom:5"
+arguments: "dom:map-timber, lon:54.15521395, lat:-126.5556456, zoom:4"
 prev: natural-security
-next: to-come
+next: wetlands
 ---
 <div class="map" id="map-timber"></div>
 
