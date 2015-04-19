@@ -94,6 +94,7 @@ assets:
     - bower_components/datatables/media/css
     - bower_components/datatables/media/images
     - bower_components/slideout/dist/
+    - bower_components/leaflet/dist/
   js_compressor: yui
   css_compressor: yui
   cache: true
