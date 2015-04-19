@@ -9,4 +9,4 @@ css: extreme-weather-budget.css
 ---
 <div id="extreme-weather-budget-datavis"></div>
 
-Caption: More heat in the climate system means more violent winds, extreme rain and snowfall, droughts, floods and wildfires—all of which damage Canadian homes, cities and businesses. Not all of that damage is covered by insurance, but insured losses chart a decades-long increase in overall damage.
+More heat in the climate system means more violent winds, extreme rain and snowfall, droughts, floods and wildfires—all of which damage Canadian homes, cities and businesses. Not all of that damage is covered by insurance, but insured losses chart a decades-long increase in overall damage.
