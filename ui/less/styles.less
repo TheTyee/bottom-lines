@@ -244,9 +244,7 @@ body.datatable #content {
 /* ==========================================================================
 Modules 
 ========================================================================== */
-.tss-logo {
-  max-width: 100px;
-}
+
 body.default article {
   display: none;
 }
@@ -308,7 +306,7 @@ header.fullscreen {
 .intro {
   opacity: 0;
   padding-top: 10%;
-  padding-top: 10vh;
+  padding-top: 14vh;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -317,6 +315,48 @@ header.fullscreen {
   opacity: 0;
   padding-top: 50px;
 }
+.logo-block {
+  padding-bottom: 10%;
+}
+.tss-logo {
+  max-width: 100px;
+}
+#content  img.tss-logo {
+    width: 90%;
+    max-width: 170px;    
+  }
+
+
+.sponsor {
+  text-align: right;
+  padding-bottom: 20px;
+}
+#content .sponsor-logo {
+  width: 58%;
+  max-width: 170px;
+}
+.social-block {
+  display: block;
+  position: relative;
+  /* text-align: right; */
+  top: 0px;
+  /* top: -70px; */
+}
+.intro .social-block span {
+  filter: alpha(opacity=93);
+  opacity: .93;
+}
+
+.longform .social-block {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  #intro .intro .social-block {
+    text-align: right;
+  }
+}
+
 .intro h1 {
   color: #FFF;
   font-family: "adelle", serif;
@@ -324,7 +364,7 @@ header.fullscreen {
   font-weight: 800;
   font-size: 11vw;
   line-height: 10.5vw ;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 2vw;
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
 }
@@ -347,6 +387,13 @@ header.fullscreen {
   padding-top: 5px;
   } 
 }
+
+@media (min-width: 910px) {
+  /* set max text size on wide screens */
+  .intro h1 {font-size: 100px; line-height: 90px; padding-bottom: 15px;}
+  .intro h2 {font-size: 33px; line-height: 45px;}
+}
+
 
 .intro p {
   color: #C7E8FF;
