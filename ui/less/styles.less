@@ -465,9 +465,17 @@ section.parallax h3 {
 }
 footer {
   color: #ffffff;
+  height: 10vmax;
   min-height: 120px;
   margin-top: 40px;
+  margin-top: 5vmax;
   padding-top: 18px;
+  padding-top: calc(18px + 0.25vmax);
+  background-color: #2e569c;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 footer:after {
@@ -486,6 +494,7 @@ footer a:visited {
   font-size: 20px;
   letter-spacing: .5px;
   color: #ffffff;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
 }
 footer nav.chapter {
   /* width: 45%; */
@@ -784,8 +793,26 @@ AG's media queries to be merged
   .tss-logo {
     max-width: 100%;
   }
+  footer a:link,
+  footer a:hover,
+  footer a:visited {
+  font-size: 24px;
+}
+
 }
 /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1600px) {
+
+  footer a:link,
+  footer a:hover,
+  footer a:visited {
+  font-size: 30px;
+  }
+  
+}
+
+
+
 /* ==========================================================================
 Print styles.
 Should be inlined to avoid required HTTP connection: h5bp.com/r
