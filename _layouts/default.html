@@ -62,7 +62,7 @@ $(function() {
     App.router = new App.Router();
     App.Layout.render().then(function() {
 {% if site.mode != 'development' %}
-        Backbone.history.start({ pushstate: true });
+        Backbone.history.start({ pushState: true });
 {% else %}
         Backbone.history.start();
 {% endif %}
