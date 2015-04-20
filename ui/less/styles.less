@@ -300,9 +300,17 @@ header.fullscreen {
   min-height: 100vh;
   
 }
-
-.title_block {
+.social-block {
+  display: block;
+  position: relative;
+  text-align: right;
+  top: 0px;
+  /* top: -70px; */
 }
+.social-block {
+  top: 0px;
+}
+
 .intro {
   opacity: 0;
   padding-top: 10%;
@@ -311,6 +319,15 @@ header.fullscreen {
   opacity: 0;
   padding-top: 50px;
 }
+.intro .social-block span {
+  filter: alpha(opacity=93);
+  opacity: .93;
+}
+.intro .social-block {
+  /*text-align: left; */
+  /* top: -70px; */
+}
+
 .intro h1 {
   color: #FFF;
   font-family: "adelle", serif;
@@ -476,20 +493,6 @@ article.card h2 {
   stroke: black;
   fill: none;
 }
-.social-block {
-  display: block;
-  position: relative;
-  text-align: right;
-  top: 0px;
-  /* top: -70px; */
-}
-.social-block {
-  top: 0px;
-}
-.intro .social-block span {
-  filter: alpha(opacity=93);
-  opacity: .93;
-}
 .link-resource {
     background: url("/assets/graph.png") 4px no-repeat #e3e3e3;
     padding: 3px 4px 0px 20px;
@@ -598,13 +601,17 @@ AG's media queries to be merged
   .intro .next {
     color: #ABDCFF;
     font-size: 60px;
-    padding-top: 30px;
+    padding-top:0px;
     padding-bottom: 15px;
   }
   .social-block {
     top: 0px;
     padding-top: 10px;
   }
+    .intro .social-block {
+    text-align: left;
+  }
+
   header.site-header nav {
     background: #5F7EB4;
     margin: 0;
@@ -644,6 +651,14 @@ AG's media queries to be merged
   .chapter-section {
     padding-top: 40px;
   }
+
+  .title_block{
+  padding-top: 170px;
+  }
+  #intro .title_block {
+    padding-top: 110px;
+  }
+
   .intro h1 {
     color: #FFF;
     font-family: "adelle", serif;
@@ -651,7 +666,7 @@ AG's media queries to be merged
     font-weight: 800;
     font-size: 100px;
     line-height: 90px;
-    padding-top: 200px;
+    padding-top:;
     padding-bottom: 15px;
   }
   .intro h2 {
@@ -686,7 +701,7 @@ AG's media queries to be merged
   .intro .next {
     color: #ABDCFF;
     font-size: 80px;
-    padding-top: 30px;
+    padding-top:0px;
     padding-bottom: 15px;
   }
     // Note to AG: aside is also used for the footnotes, so we need these to be classed
