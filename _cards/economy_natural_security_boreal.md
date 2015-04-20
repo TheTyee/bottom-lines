@@ -7,7 +7,7 @@ card_number: 5
 js: natural-security.js
 css: natural-security.css
 function: showMap
-arguments: "dom:map-boreal, lon:54.4997618, lat:-95.4926153, zoom:5"
+arguments: "dom:map-boreal, lon:54.4997618, lat:-95.4926153, zoom:3"
 prev: rivers
 next: urban-lungs
 ---
