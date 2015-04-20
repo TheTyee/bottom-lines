@@ -6,6 +6,9 @@
 {% else %}
 <article id="{{ chapter.id }}" data-chapter-number="{{ chapter.chapter_number }}">
     <header class="fullscreen">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
                     <section class="slide intro">
                         <div class="social-block">
                             <span class='share-button share-twitter-large'></span>
@@ -18,6 +21,9 @@
                             <div class="center-block" align="center"><a class="smooth" href="#{{ chapter.id }}-longform"><i class="next glyphicon glyphicon-chevron-down"></i></a></div>
                         </div>
                     </section>
+                </div>
+            </div>
+        </div>
     </header>
 {% endif %}
     <section id="{{ chapter.id }}-longform" class="longform">
