@@ -3,8 +3,7 @@ id: environment
 chapter_number: 5
 header_title: "Billions of Reasons to Change"
 header_dek: "Impaired natural security leaves Canada at a global disadvantage."
-title: ""
-dek: "Researchers have cracked the code to work out nature’s dollar value to the economy"
+seotitle: "Researchers have cracked the code to work out nature’s dollar value to the economy"
 ---
 #### Researchers have cracked the code to work out nature’s dollar value to the economy
 

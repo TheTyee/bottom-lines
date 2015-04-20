@@ -30,6 +30,26 @@ Backbone.Layout.configure({
 // Utilities
 // ===================================================================
 
+App.updateMeta = function(model) {
+    var title = model.get('title');
+    var desc  = model.get('dek');
+    var image = model.get('image');
+    $('title').remove();
+    $('meta[property="og:title"]').remove();
+    $('meta[property="DC.title"]').remove();
+    $('meta[property="description"]').remove();
+    $('meta[property="DC.description"]').remove();
+    $('meta[property="og:description"]').remove();
+    $('meta[property="og:image"]').remove();
+    $('meta[property="og:url"]').remove();
+    $("head").append('<title>' + title + '</title>');
+    $("head").append('<meta property="og:title" content="' + title + '">');
+    $("head").append('<meta property="DC.title" content="' + title + '">');
+    $("head").append('<meta property="og:description" content="' + desc + '">');
+    $("head").append('<meta property="description" content="' + desc + '">');
+    $("head").append('<meta property="DC.description" content="' + desc + '">');
+    $("head").append('<meta property="og:image" content="' + image + '">');
+};
 
 // ===================================================================
 // Models
@@ -45,6 +65,26 @@ App.chapters = new Backbone.Collection();
 // ===================================================================
 // Views
 // ===================================================================
+
+App.NavView = Backbone.View.extend({
+    initialize: function(options){
+        var dom = options.dom;
+        this.$el = $(dom);
+    },
+    events: {
+        "click .nav-item": "navigate"
+    },
+    navigate: function(e) {
+        e.preventDefault();
+        var el = e.currentTarget;
+        var navTo = $(el).data('nav');
+        App.router.navigate(navTo, { trigger: true });
+    }
+});
+
+App.navTop = new App.NavView({ "dom": "#top-nav" });
+App.navSide = new App.NavView({ "dom": "#menu" });
+App.navFooter = new App.NavView({ "dom": "nav.chapter-next" });
 
 // Create a modal view class
 App.CardView = Backbone.View.extend({
@@ -68,6 +108,9 @@ App.CardView = Backbone.View.extend({
     },
     show: function(card){
         var model = App.cards.get(this.modelId);
+        //TODO first update the _cards with the data attributes
+        //     then use this to update the meta for the route
+        //     App.updateMeta(model);
         if ( model.get('css') && model.get('css-loaded') !== true ) {
             var css = model.get('css');
             $('<link>')
@@ -143,6 +186,7 @@ App.ArticleView = Backbone.View.extend({
         var id = options.id;
         var visibility = options.visible;
         var card = options.card;
+        this.modelId = id;
         this.el = '#' + id;
         this.$el = $(this.el); 
         this.visible = visibility;
@@ -170,6 +214,11 @@ App.ArticleView = Backbone.View.extend({
         // Handle cards
         if ( this.card ) {
             App.CardsLayout.startShow( this.card );
+        } else {
+            // Not showing a card, so let's update the meta info for sharing
+            // TODO move all of this to a utility so it can be used by cards too
+            var model = App.chapters.get({ "id": this.modelId });
+            App.updateMeta(model);
         }
         var parallax = this.$('.parallax');
         if (parallax.length >= 1) { 
@@ -357,35 +406,4 @@ App.Router = Backbone.Router.extend({
     defaultRoute: function() {
         console.log("404");
     }
-});
-
-$(function() {
-    // Find all the articles in the page
-    var articles = $('article');
-    _.each(articles, function(article) {
-        App.chapters.add({
-            "id": article.id,
-        });
-    });
-    // Find all the modals in the page
-    var modals = $('.modal');
-    // Add them to a collection for easy management
-    _.each(modals, function(modal) {
-        App.cards.add({
-            "id": modal.id,
-            "group": $(modal).data('group'),
-            "js": $(modal).data('js'),
-            "css": $(modal).data('css'),
-            "function": $(modal).data('function'),
-            "arguments": $(modal).data('arguments')
-        });
-    });
-    // Render the cards layout
-    App.CardsLayout.render();
-    // Start the app
-    App.router = new App.Router();
-    App.Layout.render().then(function() {
-        Backbone.history.start();
-    });
-    App.slideout = slideout;
 });

@@ -3,8 +3,7 @@ id: air-and-water
 chapter_number: 2
 header_title: "Return of the Dead Zones"
 header_dek: "Few Advances on Canadians’ Top Three Concerns: Air, Water, and Toxic Chemicals"
-title: ""
-dek: "Some familiar old threats are back, and exotic new ones are coming to light."
+seotitle: "Some familiar old threats are back, and exotic new ones are coming to light."
 ---
 #### Some familiar old threats are back, and exotic new ones are coming to light.
 
