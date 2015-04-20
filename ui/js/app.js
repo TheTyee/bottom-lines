@@ -197,10 +197,6 @@ App.ArticleView = Backbone.View.extend({
         if ( this.card ) {
             console.log("showing a modal");
         }
-        // Set up the smooth scrool for the intros
-        $('a.smooth').smoothScroll({
-            speed: 1000,
-        });
     },
     show: function() {
         // TODO re-work the modal-finding stuff
@@ -215,6 +211,10 @@ App.ArticleView = Backbone.View.extend({
         // If we're using figures
         $(this.el + " figure.fluidbox a").fluidbox();
         $(this.el + " aside.fluidbox a").fluidbox();
+        // Set up the smooth scrool for the intros
+        $('a.smooth').smoothScroll({
+            speed: 1000,
+        });
         // Handle cards
         if ( this.card ) {
             App.CardsLayout.startShow( this.card );
