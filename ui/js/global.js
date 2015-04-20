@@ -30,8 +30,4 @@ $(function() {
     $('nav.hamburger').click(function(){
         slideout.toggle();
     });
-    // Set up the smooth scrool for the intros
-    $('a.smooth').smoothScroll({
-        speed: 1000,
-    });
 });
