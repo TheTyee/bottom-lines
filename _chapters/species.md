@@ -3,8 +3,7 @@ id: species
 chapter_number: 3
 header_title: "More Endangered than Ever"
 header_dek: "Most Species “Protected” Under Canadian Law Are Losing Ground"
-title: ""
-dek: "Canada has made strong commitments on biodiversity; fewer promises have been fully met"
+seotitle: "Canada has made strong commitments on biodiversity; fewer promises have been fully met"
 ---
 #### Canada has made strong commitments on biodiversity; fewer promises have been fully met
 

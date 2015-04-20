@@ -1,8 +1,9 @@
 ---
 id: intro 
 chapter_number: 0
-title: ""
-dek: "Our review covered Canada’s record on water, land and air, as well as species, ecosystems and climate change."
+header_title: "Bottom Lines"
+header_dek: "A quarter-century report on Canada's natural security."
+seotitle: "Our review covered Canada’s record on water, land and air, as well as species, ecosystems and climate change."
 ---
 #### Our review covered Canada’s record on water, land and air, as well as species, ecosystems and climate change.
 

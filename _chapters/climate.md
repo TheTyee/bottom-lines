@@ -3,8 +3,7 @@ id: climate
 chapter_number: 4
 header_title: "A Different Country"
 header_dek: "As Canada delays, rising temperatures alter the landscape and test the economy."
-title: ""
-dek: "Canada’s greenhouse emissions briefly dropped, and are now forecast to rise sharply"
+seotitle: "Canada’s greenhouse emissions briefly dropped, and are now forecast to rise sharply"
 ---
 #### Canada’s greenhouse emissions briefly dropped, and are now forecast to rise sharply
 
