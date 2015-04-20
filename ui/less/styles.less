@@ -222,7 +222,7 @@ nav.hamburger.persistent {
 }
 
 .slideout-menu .nav-label {
-  color: #7FA4DB;
+  color: #7FB5DC;
 }
 
 .slideout-menu .nav > li {
@@ -233,18 +233,16 @@ nav.hamburger.persistent {
   padding:0;
 }
 
-ul.secondary {
-  font-style: italic;
-}
-
 body.datatable #content {
-    padding-top: 60px;
+    margin-top: 60px;
 }
 
 /* ==========================================================================
 Modules 
 ========================================================================== */
-
+.tss-logo {
+  max-width: 100px;
+}
 body.default article {
   display: none;
 }
@@ -300,102 +298,42 @@ header.fullscreen {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+  
 }
+
 .title_block {
 }
 .intro {
   opacity: 0;
   padding-top: 10%;
-  padding-top: 14vh;
-  width: 75%;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
 }
 #intro .intro {
   opacity: 0;
   padding-top: 50px;
 }
-.logo-block {
-  padding-bottom: 10%;
-}
-.tss-logo {
-  max-width: 100px;
-}
-#content  img.tss-logo {
-    width: 90%;
-    max-width: 170px;    
-  }
-
-
-.sponsor {
-  text-align: right;
-  padding-bottom: 20px;
-}
-#content .sponsor-logo {
-  width: 58%;
-  max-width: 170px;
-}
-.social-block {
-  display: block;
-  position: relative;
-  /* text-align: right; */
-  top: 0px;
-  /* top: -70px; */
-}
-.intro .social-block span {
-  filter: alpha(opacity=93);
-  opacity: .93;
-}
-
-.longform .social-block {
-  text-align: right;
-}
-
-@media (max-width: 768px) {
-  #intro .intro .social-block {
-    text-align: right;
-  }
-}
-
 .intro h1 {
   color: #FFF;
   font-family: "adelle", serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 11vw;
-  line-height: 10.5vw ;
-  padding-top: 10px;
-  padding-bottom: 2vw;
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  font-size: 60px;
+  line-height: 64px;
+  padding-top: 30px;
+  padding-bottom: 7.5px;
+  text-shadow: 0px 0px 3px rgba(0,0,0,0.25);
 }
+
 .intro h2 {
   color: #C7E8FF;
   font-family: "adelle", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 3.2vw;
-  line-height: 4.4vw;
+  font-size: 22px;
+  line-height: 30px;
   padding-top: 5px;
   padding-bottom: 0px;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.65);
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.65);
 }
-@media (max-width: 550px) { 
-  .intro h2 {
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 23px;
-  padding-top: 5px;
-  } 
-}
-
-@media (min-width: 910px) {
-  /* set max text size on wide screens */
-  .intro h1 {font-size: 100px; line-height: 90px; padding-bottom: 15px;}
-  .intro h2 {font-size: 33px; line-height: 45px;}
-}
-
-
 .intro p {
   color: #C7E8FF;
 }
@@ -464,18 +402,17 @@ section.parallax h3 {
   font-weight: 700;
 }
 footer {
-  color: #ffffff;
-  height: 10vmax;
-  min-height: 120px;
-  margin-top: 40px;
-  margin-top: 5vmax;
-  padding-top: 18px;
-  padding-top: calc(18px + 0.25vmax);
-  background-color: #2e569c;
-  background-position: bottom;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+    color: #FFF;
+    height: 10vmax;
+    min-height: 120px;
+    margin-top: 5vmax;
+    padding-top: 18px;
+    padding-top: calc(18px + 0.25vmax);
+    background-color: #2E569C;
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 footer:after {
@@ -494,7 +431,7 @@ footer a:visited {
   font-size: 20px;
   letter-spacing: .5px;
   color: #ffffff;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+  text-shadow: 0px 0px 15px #000;
 }
 footer nav.chapter {
   /* width: 45%; */
@@ -608,9 +545,8 @@ Progressively enhance for larger screens
 @media screen and (min-width: 768px) and (max-width: 992px) {
   /* portrait tablets */
   header.fullscreen {
-  /*  min-height: 1024px; */
+    min-height: 1024px;
   }
-
   .pull-left {
     position: relative;
     left: -60px;
@@ -657,7 +593,7 @@ AG's media queries to be merged
 ========================================================================== */
 
 /* Special exception of extra-extra-small devices (e.g. iphone5, less than 380px) */
-/* @media (max-width: 380px) {
+@media (max-width: 380px) {
     .intro h1 {
     font-size: 50px;
     line-height: 55px;
@@ -668,16 +604,19 @@ AG's media queries to be merged
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-/*  header.fullscreen .intro {
+  header.fullscreen .intro {
     opacity: 0;
     padding-top: 15%;
-  } 
-*/
+  }
   .intro .next {
     color: #ABDCFF;
     font-size: 60px;
     padding-top: 30px;
     padding-bottom: 15px;
+  }
+  .social-block {
+    top: 0px;
+    padding-top: 10px;
   }
   header.site-header nav {
     background: #5F7EB4;
@@ -718,7 +657,7 @@ AG's media queries to be merged
   .chapter-section {
     padding-top: 40px;
   }
-/*  .intro h1 {
+  .intro h1 {
     color: #FFF;
     font-family: "adelle", serif;
     font-style: normal;
@@ -741,7 +680,6 @@ AG's media queries to be merged
   header.fullscreen .site-intro h1 {
     padding-top: 80px;
   }
-*/
   article.card {
     padding-top: 67.5px;
     background-color: #eee;
@@ -793,25 +731,18 @@ AG's media queries to be merged
   .tss-logo {
     max-width: 100%;
   }
-  footer a:link,
-  footer a:hover,
-  footer a:visited {
-  font-size: 24px;
-}
+  footer a:link, footer a:hover, footer a:visited {
+    font-size: 24px;
+  }
 
 }
 /* Large devices (large desktops, 1200px and up) */
+
 @media (min-width: 1600px) {
-
-  footer a:link,
-  footer a:hover,
-  footer a:visited {
-  font-size: 30px;
+  footer a:link, footer a:hover, footer a:visited {
+      font-size: 30px;
   }
-  
 }
-
-
 
 /* ==========================================================================
 Print styles.
