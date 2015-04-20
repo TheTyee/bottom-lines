@@ -334,10 +334,6 @@ App.Layout = new Backbone.Layout({
         var self = this;
     },
     afterRender: function() {
-        // Set up the smooth scrool for the intros
-        $('a.smooth').smoothScroll({
-            speed: 1000,
-        });
     }
 });
 
