@@ -14,11 +14,11 @@ Our leaders have appeared to be in step. Regardless of party, they have regularl
 <aside class="default">
     <a data-card="laws-intro" class="link-card" href="#" title="">
         <img src="http://placehold.it/200x200&text=Graphic+TK" title="" alt="" />
-    </a> 
     <figcaption>
         <strong>Canada’s Environmental Protection Laws Then and Now </strong>
         | See which legislative gems of the ‘80s and ‘90s haven’t aged well.
     </figcaption> 
+    </a> 
 </aside>
 
 Yet independent assessments and a candid account of our history tell quite a different story. Much of this country’s original wealth was created by logging forests for timber, breaking native prairie for grain fields, and blasting minerals from hard rock. The idea that environmental loss is a regrettable but necessary price for prosperity has been deeply engrained. Last year, the Prime Minister argued against additional measures to preserve a stable climate by saying, “No country is going to take actions that are going to deliberately destroy jobs and growth in their country.”
@@ -42,13 +42,12 @@ Such rankings are only as old as the new century. One of the earliest was comple
 <aside class="default">
     <a data-card="reportcard-intro" class="link-card" href="#" title="">
         {% image report-card.png %}
-    </a> 
     <figcaption>
-
         <strong>Canada’s Environment Report Card</strong>
         <br />
         Here’s how the enviro-commissioner graded 25 years of federal actions.
     </figcaption> 
+    </a> 
 </aside>
 
 But more critical assessments surfaced almost at once. In the same year that Yale and Columbia placed Canada third in the world, researchers at the University of Victoria called Canada’s environmental record, “one of the poorest of the industrialized countries." ^16 In follow-up comparisons, the same team ranked Canada 28th among 30 wealthy countries in 2005, and 24th of 25 in 2010. ^25 ^35

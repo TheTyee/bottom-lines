@@ -377,13 +377,10 @@ header.fullscreen {
 aside.default {
   margin-top: 30px;
   margin-bottom: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
   padding: 20px 45px 15px 45px;
   border-top: 1px solid #959595;
   border-bottom: 1px solid #959595;
 }
-
 aside.default h1 {
   color: #4D4D4D;
   font-family: "adelle", serif;
@@ -392,19 +389,27 @@ aside.default h1 {
   font-size: 13px;
 }
 aside.default * {
-  color: #333;
+  color: #2075C7;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "adelle-sans", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
 }
+aside.default img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 figure {
-    margin-top: 30px;
+  margin-top: 30px;
   margin-bottom: 15px;
 }
 figcaption {
-  color: #333;
+  color: #2075C7;
   font-family: "adelle-sans", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -413,6 +418,11 @@ figcaption {
   padding-top: 10px;
   padding-bottom: 0px;
 }
+aside.default a:hover figcaption, aside.default a:hover strong, aside.default a  {
+  color: #2075C7;
+  text-decoration: ;
+}
+
 .pull-right {
   padding-left: 3rem;
 }
