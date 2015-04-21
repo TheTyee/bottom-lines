@@ -16,9 +16,8 @@ Our leaders have appeared to be in step. Regardless of party, they have regularl
         <img src="http://placehold.it/200x200&text=Graphic+TK" title="" alt="" />
     </a> 
     <figcaption>
-        <strong>Canada’s Environmental Protection Laws Then and Now</strong>
-        <br />
-        See which legislative gems of the ‘80s and ‘90s haven’t aged well.
+        <strong>Canada’s Environmental Protection Laws Then and Now </strong>
+        | See which legislative gems of the ‘80s and ‘90s haven’t aged well.
     </figcaption> 
 </aside>
 

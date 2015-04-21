@@ -78,6 +78,9 @@ h4 {
 .lightface {
   font-weight: 300;
 }
+b, strong {
+    font-weight: 700 !important;
+}
 /* ==========================================================================
 Layout
 ========================================================================== */
@@ -707,6 +710,19 @@ AG's media queries to be merged
   article.card .lead {
     margin-bottom: 22.5px;
   }
+  aside.default {
+    float: right !important;
+    position: relative;
+    left: 10vw;
+    max-width: 45%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 20px 1px 15px 1px;
+    margin-left: -6vw;
+    border-top: 1px solid #959595;
+    border-bottom: 1px solid #959595;
+  }
+
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -721,11 +737,14 @@ AG's media queries to be merged
   aside.default {
     float: right !important;
     position: relative;
-    left: 60px;
+    max-width: 40%;
+    left: 10vw;
     padding-top: 22px;
-    margin-left: -10px;
+    margin-left: -6vw;
     padding-bottom: 15px;
-    padding-left: 3rem;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+    margin-bottom: 20px;
   }
 
   .pull-left {
