@@ -31,5 +31,44 @@
 {% include footer_scripts.html %}
 {% javascript global.js %}
 {% javascript app.js %}
+<script>
+$(function() {
+    // Find all the articles in the page
+    var articles = $('article');
+    _.each(articles, function(article) {
+        App.chapters.add({
+            "id": article.id,
+            "title": $(article).data('title'),
+            "dek": $(article).data('dek'),
+            "image": $(article).data('image')
+        });
+    });
+    // Find all the modals in the page
+    var modals = $('.modal');
+    // Add them to a collection for easy management
+    _.each(modals, function(modal) {
+        App.cards.add({
+            "id": modal.id,
+            "group": $(modal).data('group'),
+            "js": $(modal).data('js'),
+            "css": $(modal).data('css'),
+            "function": $(modal).data('function'),
+            "arguments": $(modal).data('arguments')
+        });
+    });
+    // Render the cards layout
+    App.CardsLayout.render();
+    // Start the app
+    App.router = new App.Router();
+    App.Layout.render().then(function() {
+{% if site.mode != 'development' %}
+        Backbone.history.start({ pushState: true });
+{% else %}
+        Backbone.history.start();
+{% endif %}
+    });
+    App.slideout = slideout;
+    });
+</script>
     </body>
 </html>

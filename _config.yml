@@ -70,6 +70,7 @@ assets:
   sources:
     - _assets/images
     - _assets/icons
+    - _assets
     - ui/js
     - ui/img
     - ui/less

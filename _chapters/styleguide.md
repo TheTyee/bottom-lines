@@ -3,8 +3,7 @@ id: styleguide
 chapter_number: 100
 header_title: "Style<br />guide"
 header_dek: "Twenty-five years of active lawmaking has not halted the decline of Canada’s ecosystems or environmental standing."
-title: ""
-dek: "When others grade our stewardship, Canada consistently falls short of its citizens’ aspirations"
+seotitle: "When others grade our stewardship, Canada consistently falls short of its citizens’ aspirations"
 ---
 #### When others grade our stewardship, Canada consistently falls short of its citizens’ aspirations
 

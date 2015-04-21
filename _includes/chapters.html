@@ -4,7 +4,7 @@
 {% if chapter.id == 'intro' %}
 {% include chapter_header_intro.html %}
 {% else %}
-<article id="{{ chapter.id }}" data-chapter-number="{{ chapter.chapter_number }}">
+<article id="{{ chapter.id }}" data-chapter-number="{{ chapter.chapter_number }}" data-title="{{ chapter.seotitle }}" data-dek="{{ chapter.header_dek }}" data-image="{{ chapter.image }}">
     <header class="fullscreen">
         <div class="container">
             <div class="row">
@@ -48,17 +48,17 @@
 {% if next %}
 {% if next.id != 'styleguide' %}
                     <nav class="chapter chapter-next">
-                        <a href="/#chapter/{{ next.id }}"><span class="lightface chapter-next-label">Next Chapter</span> {{ next.header_title }} <span class="glyphicon glyphicon-chevron-right"></span></a>
+                        <a class="nav-item" data-nav="chapter/{{ next.id}}"  href="/#chapter/{{ next.id }}"><span class="lightface chapter-next-label">Next Chapter</span> {{ next.header_title }} <span class="glyphicon glyphicon-chevron-right"></span></a>
                     </nav>
 
 {% else %}
                     <nav class="chapter chapter-next">
-                        <a href="/#chapter/intro"><span class="lightface chapter-next-label">Back to</span>Introduction <span class="glyphicon glyphicon-chevron-right"></span></a>
+                        <a class="nav-item" data-nav="chapter/intro" href="/#chapter/intro"><span class="lightface chapter-next-label">Back to</span>Introduction <span class="glyphicon glyphicon-chevron-right"></span></a>
                     </nav>
 {% endif %}
 {% else %}
                     <nav class="chapter chapter-next">
-                        <a href="/#chapter/intro"><span class="lightface chapter-next-label">Back to</span>Introduction <span class="glyphicon glyphicon-chevron-right"></span></a>
+                        <a class="nav-item" data-nav="chapter/intro" href="/#chapter/intro"><span class="lightface chapter-next-label">Back to</span>Introduction <span class="glyphicon glyphicon-chevron-right"></span></a>
                     </nav>
 {% endif %}
     </footer>
