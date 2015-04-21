@@ -319,12 +319,20 @@ header.fullscreen {
   opacity: 0;
   padding-top: 50px;
 }
+.logo {
+  max-width: 90%;
+  float: right;
+}
+
+#intro .intro .social-block {
+  text-align: right;
+}
 .intro .social-block span {
   filter: alpha(opacity=93);
   opacity: .93;
 }
 .intro .social-block {
-  /*text-align: left; */
+  text-align: left;
   /* top: -70px; */
 }
 
@@ -592,6 +600,7 @@ AG's media queries to be merged
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   header.fullscreen .intro {
@@ -609,6 +618,9 @@ AG's media queries to be merged
     padding-top: 10px;
   }
     .intro .social-block {
+    text-align: left;
+  }
+  #intro .intro .social-block {
     text-align: left;
   }
 
@@ -666,7 +678,7 @@ AG's media queries to be merged
     font-weight: 800;
     font-size: 100px;
     line-height: 90px;
-    padding-top:;
+    padding-top: 20px;
     padding-bottom: 15px;
   }
   .intro h2 {
