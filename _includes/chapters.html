@@ -4,7 +4,9 @@
 {% if chapter.id == 'intro' %}
 {% include chapter_header_intro.html %}
 {% else %}
-<article id="{{ chapter.id }}" data-chapter-number="{{ chapter.chapter_number }}" data-title="{{ chapter.seotitle }}" data-dek="{{ chapter.header_dek }}" data-image="{{ chapter.image }}">
+{% assign share_image = "share_image_" | append: chapter.id | append: '.jpg' %}
+
+<article id="{{ chapter.id }}" data-chapter-number="{{ chapter.chapter_number }}" data-title="{{ chapter.seotitle }}" data-dek="{{ chapter.header_dek }}" data-image="{{ share_image | asset_path }}">
     <header class="fullscreen">
         <div class="container">
             <div class="row">
