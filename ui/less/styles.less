@@ -78,6 +78,9 @@ h4 {
 .lightface {
   font-weight: 300;
 }
+b, strong {
+    font-weight: 700 !important;
+}
 /* ==========================================================================
 Layout
 ========================================================================== */
@@ -319,12 +322,20 @@ header.fullscreen {
   opacity: 0;
   padding-top: 50px;
 }
+.logo {
+  max-width: 90%;
+  float: right;
+}
+
+#intro .intro .social-block {
+  text-align: right;
+}
 .intro .social-block span {
   filter: alpha(opacity=93);
   opacity: .93;
 }
 .intro .social-block {
-  /*text-align: left; */
+  text-align: left;
   /* top: -70px; */
 }
 
@@ -366,13 +377,10 @@ header.fullscreen {
 aside.default {
   margin-top: 30px;
   margin-bottom: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
   padding: 20px 45px 15px 45px;
   border-top: 1px solid #959595;
   border-bottom: 1px solid #959595;
 }
-
 aside.default h1 {
   color: #4D4D4D;
   font-family: "adelle", serif;
@@ -381,19 +389,27 @@ aside.default h1 {
   font-size: 13px;
 }
 aside.default * {
-  color: #333;
+  color: #2075C7;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "adelle-sans", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
 }
+aside.default img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 figure {
-    margin-top: 30px;
+  margin-top: 30px;
   margin-bottom: 15px;
 }
 figcaption {
-  color: #333;
   font-family: "adelle-sans", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -402,6 +418,25 @@ figcaption {
   padding-top: 10px;
   padding-bottom: 0px;
 }
+
+aside.default a:hover figcaption, aside.default a:hover strong, aside.default a, a.link-card:hover figcaption, a.link-card:hover strong, a.link-card {
+  color: #2075C7;
+}
+
+aside.default figcaption:before, .link-card figcaption:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  bottom: 60px;
+  margin-bottom: -50px;
+  background-color: white;
+  background-size: 67px 67px;
+  background-repeat: no-repeat;
+  background-position: 0px -17px;
+}
+
 .pull-right {
   padding-left: 3rem;
 }
@@ -587,6 +622,7 @@ AG's media queries to be merged
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   header.fullscreen .intro {
@@ -604,6 +640,9 @@ AG's media queries to be merged
     padding-top: 10px;
   }
     .intro .social-block {
+    text-align: left;
+  }
+  #intro .intro .social-block {
     text-align: left;
   }
 
@@ -628,10 +667,10 @@ AG's media queries to be merged
     font-weight: 100;
   }
   h3 {
-    font-size: 48px;
-    line-height: 48px;
-    padding-top: 20px;
-    padding-bottom: 15px;
+    font-size: 32px;
+    line-height: 45px;
+    padding-top: 45px;
+    padding-bottom: 0px;
   }
   h4 {
     font-size: 24px;
@@ -661,7 +700,7 @@ AG's media queries to be merged
     font-weight: 800;
     font-size: 100px;
     line-height: 90px;
-    padding-top:;
+    padding-top: 20px;
     padding-bottom: 15px;
   }
   .intro h2 {
@@ -690,6 +729,19 @@ AG's media queries to be merged
   article.card .lead {
     margin-bottom: 22.5px;
   }
+  aside.default {
+    float: right !important;
+    position: relative;
+    left: 10vw;
+    max-width: 45%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 20px 1px 15px 1px;
+    margin-left: -6vw;
+    border-top: 1px solid #959595;
+    border-bottom: 1px solid #959595;
+  }
+
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -704,11 +756,14 @@ AG's media queries to be merged
   aside.default {
     float: right !important;
     position: relative;
-    left: 60px;
+    max-width: 40%;
+    left: 10vw;
     padding-top: 22px;
-    margin-left: -10px;
+    margin-left: -6vw;
     padding-bottom: 15px;
-    padding-left: 3rem;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+    margin-bottom: 20px;
   }
 
   .pull-left {

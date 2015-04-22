@@ -13,10 +13,10 @@ In a Canada Day poll a couple of years ago, 83 per cent of us identified our unt
 <figure class="default">
     <a href="#" title="" data-card="orca-whales" class="link-card">
         {% image orca-medium.jpg class="img-responsive" %}
-    </a> 
     <figcaption>
         <strong>Slideshow</strong>: What’s Happening to Canada’s Iconic Wildlife?"
     </figcaption> 
+	</a>
 </figure>
  
 Our actual care for those iconic species and landscapes, let alone for lesser-known ones, reveals a quarter-century of unfulfilled good intentions however, and lengthening odds against the survival of many of our most emblematic fauna. 
