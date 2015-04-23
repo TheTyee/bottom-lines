@@ -541,6 +541,11 @@ div.dataTables_paginate {
     text-align: left;
 }
 
+/* Module: Modals */
+.modal-content {
+    border-radius: 0px;
+}
+
 /* ==========================================================================
 Progressively enhance for larger screens 
 ========================================================================== */
@@ -581,9 +586,15 @@ Progressively enhance for larger screens
     margin-left: -10px;
     padding-bottom: 15px;
   }
+  .modal-dialog {
+    width: 720px;
+ }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /* Adjust for small desktop, wide portrait */
+  .modal-dialog {
+    width: 720px;
+ }
 }
 @media screen and (min-width: 1025px) {
   /* Adjust for large desktop */
@@ -604,6 +615,9 @@ Progressively enhance for larger screens
     margin-left: -10px;
     padding-bottom: 15px;
   }
+  .modal-dialog {
+    width: 720px;
+ }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   /* Put high-resolution display styles here */
