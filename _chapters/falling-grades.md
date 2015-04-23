@@ -12,8 +12,8 @@ Nothing says ‘Canada’ quite like a scenic vista—be it Gros Morne, the Sask
 Our leaders have appeared to be in step. Regardless of party, they have regularly assured us that Canada’s natural security is well protected. Legislation has been enacted  across an impressive range of fronts, from protecting species to penalizing polluters and preventing foreseeable harm.
 
 <aside class="default">
-    <a data-card="laws-intro" class="link-card" href="#" title="">
-        <img src="http://placehold.it/200x200&text=Graphic+TK" title="" alt="" />
+    <a data-card="fisheries-act" class="link-card" href="#" title="">
+        {% image 'environmental_protection.jpg' alt="Canada’s Environmental Protection Laws Then and Now" %}
     <figcaption>
         <strong>Canada’s Environmental Protection Laws Then and Now </strong>
         | See which legislative gems of the ‘80s and ‘90s haven’t aged well.
@@ -40,8 +40,8 @@ Elsewhere, international investors and key agencies like the World Bank and Inte
 Such rankings are only as old as the new century. One of the earliest was completed in 2000 as a pilot project for the World Economic Forum. Combining 64 indicators, the Yale Centre for Environmental Law and Policy and Columbia University Center for International Earth Science ranked Canada 7th among 56 developed and developing countries.^12 In a more polished version the following year, Canada scored even better: third in a field of 122. ^14
 
 <aside class="default">
-    <a data-card="reportcard-intro" class="link-card" href="#" title="">
-        {% image report-card.png %}
+    <a data-card="ottawa-vague" class="link-card" href="#" title="">
+        {% image report-card.jpg %}
     <figcaption>
         <strong>Canada’s Environment Report Card</strong>
         <br />

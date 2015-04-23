@@ -52,7 +52,7 @@ Derived from Roman antecedents, it holds that governments have an inescapable du
 
 Canadians remain as concerned for the security of their air and water today as they were in 1989. Justifiably: new biological and synthetic toxic threats have emerged, and Canada continues to lack mandatory national air or water pollution limits.
 
-The United States has had mandatory standards for air and water quality for over 40 years. Contained in the Clean Air and Clean Water Acts, they are enforced on a county-by-county basis. [386,387] Rules adopted in the European Union in 2007 require importers and manufacturers to replace the most toxic industrial compounds with more benign alternatives; the changes are expected to save the EU $4 billion a year in health costs. ^28
+The United States has had mandatory standards for air and water quality for over 40 years. Contained in the Clean Air and Clean Water Acts, they are enforced on a county-by-county basis. ^386 ^387 Rules adopted in the European Union in 2007 require importers and manufacturers to replace the most toxic industrial compounds with more benign alternatives; the changes are expected to save the EU $4 billion a year in health costs. ^28
 
 Other countries and some provinces have pioneered other effective approaches to better environmental stewardship: regulated water ‘markets’ (Australia and Alberta); watershed-based stewardship (France and, for more than seven decades, Ontario); taxes on carbon emissions (Britain, British Columbia) ^429; special courts that can order companies to compensate communities for lost eco-services (Mexico) ^430; and legal rights to a clean environment (Mexico and more than 110 other countries). ^431
 
