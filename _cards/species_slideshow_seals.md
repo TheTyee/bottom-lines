@@ -1,6 +1,6 @@
 ---
 id: seals
-title: "Question: What’s Happening to Canada’s Iconic Wildlife?"
+title: "What’s Happening to Canada’s Iconic Wildlife?"
 group: "species"
 card_number: 4
 prev: bowhead-whales

@@ -1,6 +1,6 @@
 ---
 id: orca-whales
-title: "Question: What’s Happening to Canada’s Iconic Wildlife?"
+title: "What’s Happening to Canada’s Iconic Wildlife?"
 dek: "Caribou, orcas and polar bears face unprecedented decline—but good news for some species."
 group: "species"
 card_number: 1

@@ -1,6 +1,6 @@
 ---
 id: caribou
-title: "Question: What’s Happening to Canada’s Iconic Wildlife?"
+title: "What’s Happening to Canada’s Iconic Wildlife?"
 group: "species"
 card_number: 9
 prev: salmon

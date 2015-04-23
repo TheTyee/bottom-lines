@@ -1,6 +1,6 @@
 ---
 id: songbirds
-title: "Question: What’s Happening to Canada’s Iconic Wildlife?"
+title: "What’s Happening to Canada’s Iconic Wildlife?"
 group: "species"
 card_number: 6
 prev: polar-bears
