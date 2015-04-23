@@ -13,7 +13,7 @@ Our leaders have appeared to be in step. Regardless of party, they have regularl
 
 <aside class="default">
     <a data-card="fisheries-act" class="link-card" href="#" title="">
-        {% image 'environmental_protection.jpg' alt="Canada’s Environmental Protection Laws Then and Now" %}
+        {% image environmental_protection.jpg alt="Canada’s Environmental Protection Laws Then and Now" %}
     <figcaption>
         <strong>Canada’s Environmental Protection Laws Then and Now </strong>
         | See which legislative gems of the ‘80s and ‘90s haven’t aged well.
