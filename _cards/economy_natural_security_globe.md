@@ -9,7 +9,6 @@ css: natural-security.css
 function: showMap
 arguments: "dom:map-globe, lon:56, lat:-96, zoom:1"
 prev: urban-lungs
-next: natural-security-share
 ---
 <div class="map" id="map-globe"></div>
 
