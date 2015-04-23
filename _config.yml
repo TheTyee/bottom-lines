@@ -3,8 +3,7 @@ version: 0.0.1
 title: "Bottom Lines"
 description: "A quarter-century report on Canada's natural security."
 baseurl: ""
-url: "http://preview.bottomlines.tyeesolutions.org"
-logo: 'tss_logo.png'
+url: "http://bottomlines.tyeesolutions.org"
 
 # Project settings - Analytics
 analytics:

@@ -34,6 +34,7 @@ App.updateMeta = function(model) {
     var title = model.get('title');
     var desc  = model.get('dek');
     var image = model.get('image');
+    var url =  domain + '/' + model.get('id');
     $('title').remove();
     $('meta[property="og:title"]').remove();
     $('meta[property="DC.title"]').remove();
@@ -48,7 +49,8 @@ App.updateMeta = function(model) {
     $("head").append('<meta property="og:description" content="' + desc + '">');
     $("head").append('<meta property="description" content="' + desc + '">');
     $("head").append('<meta property="DC.description" content="' + desc + '">');
-    $("head").append('<meta property="og:image:url" content="' + image + '">');
+    $("head").append('<meta property="og:image:url" content="' + domain + image + '">');
+    $("head").append('<meta property="og:url" content="' + url + '">');
 };
 
 // ===================================================================
