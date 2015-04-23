@@ -16,11 +16,11 @@
     <meta name="copyright" content="{{ site.copyright}}" />
     <meta name="MSSmartTagsPreventParsing" content="TRUE" />
     <!-- OpenGraph properties -->
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:title" content="{{ site.title }}" />
     <meta property="og:description" content="{{ site.description }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ site.url }}" />
-    <meta property="og:image:url" content="{{ site.asset_paths.img }}{{ site.image }}" />
+    <meta property="og:image:url" content="{{ 'share_image_intro.jpg' | asset_path }}" />
     <meta property="og:site_name" content="{{ site.tite }}" />
     <meta property="fb:admins" content="{{ site.fb_admins }}" />
     <!-- Additional required for Twitter cards -->
