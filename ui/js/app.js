@@ -34,7 +34,8 @@ App.updateMeta = function(model) {
     var title = model.get('title');
     var desc  = model.get('dek');
     var image = model.get('image');
-    var url =  domain + '/' + model.get('id');
+    // TODO this will need to work for cards too...
+    var url =  domain + '/chapter/' + model.get('id');
     $('title').remove();
     $('meta[property="og:title"]').remove();
     $('meta[property="DC.title"]').remove();
