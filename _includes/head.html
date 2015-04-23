@@ -16,25 +16,17 @@
     <meta name="copyright" content="{{ site.copyright}}" />
     <meta name="MSSmartTagsPreventParsing" content="TRUE" />
     <!-- OpenGraph properties -->
-    <meta property="og:title" content="{{ site.title }}" />
-    <meta property="og:description" content="{{ site.description }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ site.url }}" />
-    <meta property="og:image:url" content="{{ site.url }}{{ 'share_image_intro.jpg' | asset_path }}" />
+    <meta property="og:title" content="{{ site.title }}" />
     <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:image" content="{{ site.url }}{{ 'share_image_intro.jpg' | asset_path }}" />
+    <meta property="og:image:url" content="{{ site.url }}{{ 'share_image_intro.jpg' | asset_path }}" />
     <meta property="fb:admins" content="{{ site.fb_admins }}" />
     <!-- Additional required for Twitter cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@tyeesolutions">
-    <!-- Dublin Core properties -->
-    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
-    <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
-    <meta name="DC.title" lang="English" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta name="DC.description" lang="English" content="{{ site.description }}" />
-    <meta name="DC.creator" content="{{ site.author }}" />
-    <meta name="DC.publisher" content="{{ site.author }}" />
-    <meta name="DC.format" content="text/html" />
-    <meta name="DC.language" scheme="DCTERMS.URI" content="English" />
     <!-- /Meta -->
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="{{ site.asset_paths.img }}ui/img/favicon.ico">
