@@ -377,7 +377,7 @@ header.fullscreen {
 }
 .intro .next {
   color: #ABDCFF;
-  font-size: 5rem;
+  font-size: 60px;
   padding-top: 15px;
   padding-bottom: 15px;
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
@@ -772,14 +772,29 @@ AG's media queries to be merged
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+  header.fullscreen {
+    background-attachment: fixed;
+  }
+
   .intro .next {
     color: #ABDCFF;
     font-size: 80px;
     padding-top:0px;
     padding-bottom: 15px;
   }
-  header.fullscreen {
-    background-attachment: fixed;
+  .intro {
+    position: relative;
+    height: 100vh;
+    max-width: 617px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title_block {
+    position: absolute;
+    top: 15%;
+    padding-top: 0;
   }
 
     // Note to AG: aside is also used for the footnotes, so we need these to be classed
