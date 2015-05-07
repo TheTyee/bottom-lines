@@ -240,6 +240,17 @@ body.datatable #content {
     margin-top: 60px;
 }
 
+.longform .social-block, .longform h4, .longform aside, .longform h3, .longform figure, .longform p {
+  max-width: 617px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title_block {
+  max-width: 617px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ==========================================================================
 Modules 
 ========================================================================== */
@@ -301,7 +312,6 @@ header.fullscreen {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  
 }
 .social-block {
   display: block;
@@ -641,7 +651,10 @@ AG's media queries to be merged
 @media (min-width: 768px) {
   header.fullscreen .intro {
     opacity: 0;
-    padding-top: 15%;
+    padding-top: 0;
+  }
+  .intro {
+    padding-top: 0;
   }
   .intro .next {
     color: #ABDCFF;
@@ -765,6 +778,10 @@ AG's media queries to be merged
     padding-top:0px;
     padding-bottom: 15px;
   }
+  header.fullscreen {
+    background-attachment: fixed;
+  }
+
     // Note to AG: aside is also used for the footnotes, so we need these to be classed
     // to avoid unwanted styles on footnotes.
   aside.default {
