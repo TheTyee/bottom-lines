@@ -38,16 +38,17 @@ We examined the actions that Canada’s governments—of differing political str
 
 The consequences of bi-partisan neglect are now becoming apparent. Many supposedly ‘protected’ species are at greater risk today than they were in 1989. New and more elusive chemical threats have replaced older biological ones in Canada’s water—although some of the latter are also back with a vengeance.
 
-Ambitious goals articulated a quarter-century ago to reduce Canada’s climate-altering greenhouse gas emissions have slipped by unmet. Our contributions to climate change have reversed a brief decline and are now again trending upward, even as its manifestations take a growing toll on livelihoods and structures.
-
-<aside class="fluidbox default">
-    <a href="http://placehold.it/1000x1000" title="">
-        <img src="http://placehold.it/200x200" title="" alt="" />
+<aside class="default">
+    <a data-card="fisheries-act" class="link-card" href="#" title="">
+        {% image environmental_protection.jpg alt="Canada’s Environmental Protection Laws Then and Now" %}
+        <figcaption>
+            <strong>Aside Title Goes Here </strong>
+            | A caption for the aside's linked resource goes here.
+        </figcaption> 
     </a> 
-    <figcaption>
-        This is a Figure Caption inside an Aside.
-    </figcaption> 
 </aside>
+
+Ambitious goals articulated a quarter-century ago to reduce Canada’s climate-altering greenhouse gas emissions have slipped by unmet. Our contributions to climate change have reversed a brief decline and are now again trending upward, even as its manifestations take a growing toll on livelihoods and structures.
 
 Elsewhere, international investors and key agencies like the World Bank and International Monetary Fund now question the conventional Canadian wisdom that expanding the economy is worth any price to the environment. Bodies that report on how well different countries’ maintain their natural security have made the same link.
 
@@ -78,6 +79,15 @@ That same year the Centre for Global Development put us last in class for enviro
 Our national decline in global stewardship rankings is at odds with Canadians’ priorities over the same years as captured in opinion polls, although these also reveal that we’ve long been skeptical that our governments were up to the job.
 
 Back in 1989, more than four-fifths of Canadians polled by Environics Research agreed at least somewhat (and fully half felt so “strongly”) that pollution “threatens the very survival of the human race.” ^360 More than nine in ten of us were at least somewhat concerned about specific issues like acid rain, toxic chemicals, and air and water quality. Concern for wildlife followed closely. Climate change was on the minds of eight Canadians in ten even then.
+
+<figure class="default">
+    <a href="#" title="" data-card="orca-whales" class="link-card">
+        {% image orca-medium.jpg class="img-responsive" %}
+        <figcaption>
+            <strong>Slideshow</strong>: This is a slideshow inside a figure"
+        </figcaption> 
+    </a>
+</figure>
 
 At the same time, Canadians were roughly split on whether the federal government was doing a “fair” job protecting the environment, or a “poor” one. Four in ten nonetheless optimistically believed the environment would improve over the following decade.
 A dozen years later, further research by the same company revealed that public concern about threats like toxic chemicals, water quality and wildlife, had hardly changed. ^361 Confidence in the federal government was up modestly: by 2001 more than half of Canadians felt it was doing a “fair” job; only 29% rated it “poor.”

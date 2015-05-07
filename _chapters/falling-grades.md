@@ -14,10 +14,9 @@ Our leaders have appeared to be in step. Regardless of party, they have regularl
 <aside class="default">
     <a data-card="fisheries-act" class="link-card" href="#" title="">
         {% image environmental_protection.jpg alt="Canada’s Environmental Protection Laws Then and Now" %}
-    <figcaption>
-        <strong>Canada’s Environmental Protection Laws Then and Now </strong>
-        | See which legislative gems of the ‘80s and ‘90s haven’t aged well.
-    </figcaption> 
+        <figcaption>
+            <strong>Canada’s Environmental Protection Laws Then and Now </strong> | See which legislative gems of the ‘80s and ‘90s haven’t aged well.
+        </figcaption> 
     </a> 
 </aside>
 
@@ -42,11 +41,9 @@ Such rankings are only as old as the new century. One of the earliest was comple
 <aside class="default">
     <a data-card="ottawa-vague" class="link-card" href="#" title="">
         {% image report-card.jpg %}
-    <figcaption>
-        <strong>Canada’s Environment Report Card</strong>
-        <br />
-        Here’s how the enviro-commissioner graded 25 years of federal actions.
-    </figcaption> 
+        <figcaption>
+            <strong>Canada’s Environment Report Card</strong> | Here’s how the enviro-commissioner graded 25 years of federal actions.
+        </figcaption> 
     </a> 
 </aside>
 
