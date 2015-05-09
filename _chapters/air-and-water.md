@@ -31,16 +31,30 @@ And such toxic blooms are spreading. ^364 ^365 Once banished from Lake Erie, blo
 After intestinal ailments killed seven people in Walkerton, ON, in 2000, and sickened half the population of North Battleford, SK, ten months later, many provinces tightened up regulations to protect Canadians’ drinking water. ^368 Traditional water-borne threats such as cholera and typhoid are largely vanquished, although hundreds of smaller and remote communities continue to experience water safety warnings, some of many years standing. ^368 ^371
  
 Meanwhile exotic new contaminants have emerged to pose elusive but alarming threats to Canadians’ reproductive health. ^372 So-called ‘endocrine-disrupting chemicals’ (EDCs) are found in thousands of commercial products, from face creams to industrial cleaners. All mimic or disrupt natural hormone signals that normally control the body’s physical processes from growth to appetite. Low-level exposure at critical moments in life—notably conception and puberty—are being linked to a spate of strange effects on sex characteristics in both human and wildlife.
+
+<figure>
+    {% image LakeErie2011BloomsNOAA.jpg title="Lake Erie 2011 Blooms" alt="Lake Erie 2011 Blooms" %}
+    <figcaption>
+        A satellite image captures algae blooms in Lake Erie that prompted warnings to Canadian and American residents not to drink their tap-water. (Photo NOAA)
+    </figcaption> 
+</figure>
  
 Doctors observe an ongoing decline in the number of Canadian boys being born in comparison to girls—equivalent to about 800 statistically ‘missing’ boys a year by 2010. ^373 ^368 Meanwhile hypospadias, a correctable birth defect in which the urethra opens at the base of the penis instead of the tip, is becoming more common. ^374 Reproductive system cancers—especially of the breast and testes—are also on the rise. ^372 Fish exposed to EDCs in wild settings display trans-gender physiology, fewer males, and in controlled experiments, eventually population collapse. ^375 Surveys have found scores of such EDCs in virtually every Canadian river, wetland and drinking-water reservoir tested from coast to coast. ^377 ^378
  
-Of an estimated 23,000 such ‘chemicals of concern, Health Canada and Environment Canada have targeted 4,300 for re-evaluation, but do not expect to complete the task until 2020 at the earliest. ^368 Toxicity information for nearly nine in ten chemicals in current use (87%) is missing, the Council of Canadian Academies warned in 2012. ^379
+Of an estimated 23,000 such ‘chemicals of concern, Health Canada and Environment Canada has targeted 4,300 for re-evaluation, but does not expect to complete the task until 2020 at the earliest. ^368 Toxicity information for nearly nine in ten chemicals in current use (87%) is missing, the Council of Canadian Academies warned in 2012. ^379
  
 ### Airborne wins and losses
  
 Air quality presents the same mixed picture over the past two-and-a-half decades. While some pollutants, such as the nitrogen and sulfur oxides that created acid rain, have receded, others such as air-borne ammonia are on the rise. ^380 Toxic mercury, carcinogenic hydrocarbons, and EDCs have been found to be accumulating on surfaces downwind from Alberta’s oil sands regions. ^381 ^382
  
 Global winds are blamed for carrying other pollutants from as far away as Asia to the Canadian arctic, where levels of exotic chemicals in the breast milk of nursing mothers in the North are on the rise. ^368 ^383 At the same time, smoke from massive fires in Canada’s boreal forest in 2013 and 2014 was tracked as far away as Europe. ^384 ^385
+
+<figure>
+    {% image forest-fires.jpg title="Forest fires in western Canada" alt="Forest fires in western Canada" %}
+    <figcaption>
+        Giant forest fires in western Canada are blamed for polluting the air as far away as Europe. (Photo by Vladimir Melnikov, Shutterstock)
+    </figcaption> 
+</figure>
  
 Canada has no equivalent of the Clean Water Act or Clean Air Act that set mandatory standards for water and air quality in the United States, nor of the Water Framework Directive, which does the same thing for Europe’s water. ^386 ^387 ^13 Instead, the Canadian Environmental Protection Act (CEPA), put into effect in 1989, allows the federal government to relinquish enforcement of water and air-quality goals to the provinces. ^112 ^309
  

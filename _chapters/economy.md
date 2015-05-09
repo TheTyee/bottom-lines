@@ -22,13 +22,20 @@ Economists have estimated that the ecological services provided by the Mackenzie
 
 The anecdote illustrates how perceptions of environmental stewardship and risk have tightened over a quarter-century. Canadians feared for their natural security as long ago as 1989, when eight in ten of us agreed at least somewhat in surveys (and half of us, “strongly”), that pollution “threatens the survival of the human race.” ^360
 
-The nature and extent of that threat, and how much we stand to lose, are now much clearer.
+The nature and extent of that threat are now much clearer, as is how much we stand to lose. 
 
 The eco-systems that provide Canadians with their natural security, that sustain health and prosperity, are weakening and degrading. While some old hazards are in check, others have resurfaced and new ones are appearing in our air and water. ^372 Wildlife and landscapes deeply woven into Canadians’ identity are at more risk now than 25 years ago. ^366 ^394 And a quarter-century after Canada’s government endorsed cutting our annual greenhouse gas emissions to 472 MT within sixteen years, they are nearly one and a half times that, and will rise more by 2020 and beyond. ^283
 
 If Canada has realized few of the good intentions embodied in its array of environmental legislation, research and experience have heightened our awareness of what’s at stake. Setting aside—though not discounting—the intangible cultural and spiritual values received from natural landscapes, the release of tension found in an urban park or remote campsite, and the moral “existence value” imputed to non-human creatures, close analysis has revealed with growing precision the measurable benefits that natural infrastructure provides to our dollar-denominated economy.
 
 An early study, for example, estimated in 1996 that British Columbia received $2.75 billion a year (adjusted for inflation to 2014) in non-lumber value from its pre-pine-beetled forests, mainly from outdoor recreation, but also from wildlife viewing and recreational fishing and hunting. ^59
+
+<figure>
+    {% image ontario.jpg title="Ontario's greenbelt" alt="Ontario's greenbelt" %}
+    <figcaption>
+    Southern Ontario’s ‘greenbelt’ provides benefits valued at $2.7 billion a year to the province’s residents. (Photo SF Photo, Shutterstock)    
+    </figcaption> 
+</figure>
 
 Investigators have since revealed the economic value of services that Ontarians derive from Toronto’s greenbelt: farmland, recreational areas, water collection and air quality benefits ring in at $2.7 billion a year. ^77 Toronto’s trees were revealed in a different study to be worth more than $80 million annually, in services that run from energy-saving shade to scrubbing pollutants from the air; that amount was more than the city spent in 2014 on economic development and recreation. The asset value of the urban forest was assessed at $7 billion. ^103
 

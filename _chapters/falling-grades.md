@@ -20,7 +20,7 @@ Our leaders have appeared to be in step. Regardless of party, they have regularl
     </a> 
 </aside>
 
-Yet independent assessments and a candid account of our history tell quite a different story. Much of this country’s original wealth was created by logging forests for timber, breaking native prairie for grain fields, and blasting minerals from hard rock. The idea that environmental loss is a regrettable but necessary price for prosperity has been deeply engrained. Last year, the Prime Minister argued against additional measures to preserve a stable climate by saying, “No country is going to take actions that are going to deliberately destroy jobs and growth in their country.”
+Yet independent assessments and a candid account of our history tell quite a different story. Much of this country’s original wealth was created by logging forests for timber, breaking native prairie for grain fields, and blasting minerals from hard rock. The idea that environmental loss is a regrettable but necessary price for prosperity has been deeply ingrained. Last year, the Prime Minister argued against additional measures to preserve a stable climate by saying, “No country is going to take actions that are going to deliberately destroy jobs and growth in their country.”
  
 That this conventional wisdom is wrong is one of the clearest signals to emerge from the past quarter-century. To the contrary, a growing body of evidence reveals the very large economic benefits that flow from healthy ecosystems, and the correspondingly high cost of their loss or disruption.
  

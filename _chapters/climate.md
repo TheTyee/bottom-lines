@@ -28,6 +28,13 @@ A global science assessment reported in 2001 that “demonstrable” change in g
 Canada did not act to implement its Kyoto commitments until 2005 however. Eighteen days after the protocol came into international force that February, Prime Minister Paul Martin’s government committed $1 billion to purchase credits testifying to the reduction of greenhouse gas emissions anywhere in the world. ^248 It promised additional money for research and demonstration projects aimed at reducing industrial emissions. The measures were passed into law later that year, shortly before a general election ended the Liberal mandate.
  
 Within months, the newly elected Conservative minority government announced that Canada would not meet its Kyoto emission targets. ^251 Nevertheless, it continued to assert that “this Government takes its responsibilities under the Kyoto Protocol very seriously.” And in early 2007 released a plan to reduce the “intensity” of industrial emissions (greenhouse gas releases per unit of output) by 18 per cent by 2010. The plan further envisaged a carbon price for industry of $65 a ton to take effect the same year, as well as an emissions trading system. ^254
+
+<figure>
+    {% image oilsands.jpg title="Canada's oil sands" alt="Canada's oil sands" %}
+    <figcaption>
+    Rising greenhouse gas emissions from oil and gas development have offset reductions elsewhere, pushing Canada’s overall contribution to climate change up. (Photo Chris Kolaczan, Shutterstock) 
+    </figcaption> 
+</figure>
  
 In March of 2008, Natural Resources Canada reported that our climate was already changing, in ways that “will exacerbate many current climate risks, and present new risks,” as well as some opportunities. ^258 In particular, Canada is losing its winter ice—both in the Arctic and over the Great Lakes. Extreme weather threatens southern infrastructure, while “resource-dependent and Aboriginal communities are particularly vulnerable.” (A follow-up report in 2014 confirmed that all those trends continue. ^288)
  
@@ -39,7 +46,14 @@ Half of the ten southern provinces have in fact made headway in cutting their gr
  
 Canada formally renounced its Kyoto commitments in 2011. ^273 Before doing so however it agreed (in Copenhagen in 2009) to a new target to be met by 2020: emissions 17 percent below 2005 levels, roughly 611 MT. ^265
  
-Now that target too is beyond reach. Since dipping after the 2008 economic downturn, national emissions have hovered around 700 MT a year since 2010—roughly 14 per cent above our revised goal. ^421 In 2014 Canada reported to the United Nations that by 2020 our emissions are likely to breach 735 MT—20 per cent over its promise in by 2030. ^283
+Now that target too is beyond reach. Since dipping after the 2008 economic downturn, national emissions have been climbing again since 2010, [reaching 726 MT a year](http://www.google.com/url?q=http%3A%2F%2Fec.gc.ca%2Fges-ghg%2Fdefault.asp%3Flang%3DEn%26n%3D5B59470C-1%26offset%3D2%26toc%3Dshow&sa=D&sntz=1&usg=AFQjCNFWwUA19b996CFrpa1BbxlnvYHJ1g) —-almost 19 per cent above our revised goal. ^421 In 2014 Canada reported to the United Nations that by 2020 our emissions are likely to breach 735 MT—20 per cent over its promise in by 2030. ^283
+
+<figure>
+    {% image flood.jpg title="Extreme precipitation" alt="Extreme precipitation" %}
+    <figcaption>
+    Calgary’s record-setting $4.8 billion 2013 flood was typical of the rising costs associated with more extreme precipitation caused by a warming climate. (Photo Ryan Morgan, Shutterstock)
+    </figcaption> 
+</figure>
  
 Canada’s serial failures to meet its climate commitments have attracted international censure. They have been identified as a factor in our plummeting standing on environmental care. ^48 ^53 In a 2014 assessment by Europe’s Climate Action Network of national responses to climate change, Morocco and Turkey warranted “good” grades; Canada, with Australia, Russia and Saudi Arabia, were graded as “very poor.” ^357
  

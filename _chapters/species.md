@@ -33,6 +33,14 @@ There is some good news: seals and whales once hunted to near extinction are rec
  
 According to the same assessment by federal scientists, all three oceans are becoming more acid, threatening the future of shellfish, and experiencing more exotic chemical contamination. Stifling ‘dead zones’ are appearing off our Pacific and Atlantic coasts. Toxic mercury is accumulating in the Arctic Ocean. On both the east and west coasts, commercial fish stocks have collapsed and the average size of the remaining fish has declined. Marine ‘trophic’ indices—which reflect the complexity of life present—have declined, indicating that simpler forms like worms and jelly fish are replacing higher ones like fin fish and marine mammals.
  
+
+<figure>
+    {% image jellyfish.jpg title="Jellyfish in Canada's coastal zones" alt="Jellyfish in Canada's coastal zones" %}
+    <figcaption>
+    Jellyfish and other creatures low on the ‘trophic’ scale are replacing higher-ranked more vertebrate fish in Canada’s coastal zones. (Photo Allen McDavid Stoddard, Shutterstock)
+    </figcaption> 
+</figure>
+
 Numerous factors contribute to those changes. However Canada lags far behind other countries with long coastlines in the portion that is protected. More than 30 per cent of U.S. and Australian coastlines have protected status, and more than 11 per cent of Russia’s; less than two per cent of Canada’s coastline is similarly secure. ^395
  
 In 2013, Canada’s Commissioner of the Environment advised Parliament that the federal government had not met its obligations under the Species At Risk Act. ^343 Of 97 recovery plans the law required, only seven were in place. Of those, three failed to identify habitat crucial to the species’ survival, while others provided no budget or failed to say what agency would take actions required to reverse the species’ decline. ^344
@@ -48,6 +56,14 @@ Entire landscapes are also disappearing, albeit mostly beyond urban notice. In t
 Researchers speculate that British Columbia’s interior pine forests, devastated by a plague of bark beetles unleashed by warmer winters, will not return; rather, they will be replaced by prairie-like vegetation. ^401 Once-continuous boreal forest in Alberta and Saskatchewan is now so sliced by cut-lines cleared for seismic surveying that the balance of forces between caribou and their top predator, wolves, has shifted decisively in the wolves’ favour. ^207 ^402 Further east and south, rising temperatures are literally sucking the Great Lakes up into the air, increasing summer humidity and altering shorelines. ^106
  
 How fast these changes are occurring, especially to species on the losing end of habitat loss, is difficult to know. Ottawa abandoned an initiative to provide Canadians with regular reports on the State of the Environment in 1993, amid government-wide budget cuts.
+
+<figure>
+    {% image polar-bear.jpg title="Shrinking ice for Canada's polar bears" alt="Shrinking ice for Canada's polar bears" %}
+    <figcaption>
+    A changing climate is transforming Canada’s Arctic, shrinking the extent of floating sea ice on which polar bears and other wildlife rely. (Photo by Baranov E, Shutterstock)
+    </figcaption> 
+</figure>
+
  
 In the economic downdraft following the 2008 financial crisis, federal personnel engaged in environmental science were cut further. ^402 Several research facilities highly prized by researchers were scheduled for closure, although two—the Experimental Lakes Area in northwest Ontario and the Polar Environment Atmospheric Research Laboratory (PEARL) on Ellesmere Island, Canada’s northernmost point—received reprieves, one by transfer to a non-government operator, the latter with a five-year funding extension. 
 Ottawa also shifted the focus of federal support for science from government-sector research (typically focused on basic and natural-resource science) to technology development in the private and public-private university sectors. ^403
