@@ -13,9 +13,9 @@ In a Canada Day poll a couple of years ago, 83 per cent of us identified our unt
 <figure class="default">
     <a href="#" title="" data-card="orca-whales" class="link-card">
         {% image orca-medium.jpg class="img-responsive" %}
-    <figcaption>
-        <strong>Slideshow</strong>: What’s Happening to Canada’s Iconic Wildlife?"
-    </figcaption> 
+	    <figcaption>
+	        <strong>Slideshow</strong>: What’s Happening to Canada’s Iconic Wildlife?"
+	    </figcaption> 
 	</a>
 </figure>
  

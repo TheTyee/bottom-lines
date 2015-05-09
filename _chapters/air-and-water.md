@@ -16,13 +16,10 @@ An example is blue-green algae—a type of primitive phyto-plankton.  These can 
 <aside class="default">
     <a data-card="groundwater" class="link-card" href="#" title="">
         {% image microscope.png %}
+	    <figcaption>
+	        <strong>Can’t Fix What We Don’t Measure</strong> | Two decades summarized from 11 reports
+	    </figcaption> 
     </a> 
-    <figcaption>
-
-        <strong>Can’t Fix What We Don’t Measure</strong>
-        <br />
-        Two decades summarized from 11 reports
-    </figcaption> 
 </aside>
  
 The primary cause of their summertime ‘blooms’ in lakes, oceans and rivers is an over-abundance of dissolved phosphorus and nitrogen—ingredients in farm and garden fertilizers that have the same powerful effect in the wild, ‘fertilizing’ the rapid growth of aquatic algae. The organisms flourish particularly well in water bodies depleted and warmed by a changing climate.

@@ -14,12 +14,10 @@ Economists have estimated that the ecological services provided by the Mackenzie
 <aside class="default">
     <a data-card="natural-security" class="link-card" href="#" title="">
         {% image natural-security.jpg %}
+	    <figcaption>
+	        <strong>Can You Put Price on Canada’s ‘Natural Security’?</strong> | A summary of these cards TK from Chris Wood
+	    </figcaption>
     </a> 
-    <figcaption>
-        <strong>Can You Put Price on Canada’s ‘Natural Security’?</strong>
-        <br />
-        A summary of these cards TK from Chris Wood
-    </figcaption> 
 </aside>
 
 The anecdote illustrates how perceptions of environmental stewardship and risk have tightened over a quarter-century. Canadians feared for their natural security as long ago as 1989, when eight in ten of us agreed at least somewhat in surveys (and half of us, “strongly”), that pollution “threatens the survival of the human race.” ^360

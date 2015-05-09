@@ -240,6 +240,17 @@ body.datatable #content {
     margin-top: 60px;
 }
 
+.longform .social-block, .longform h4, .longform aside, .longform h3, .longform figure, .longform p {
+  max-width: 617px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title_block {
+  max-width: 617px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ==========================================================================
 Modules 
 ========================================================================== */
@@ -301,7 +312,6 @@ header.fullscreen {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  
 }
 .social-block {
   display: block;
@@ -367,7 +377,7 @@ header.fullscreen {
 }
 .intro .next {
   color: #ABDCFF;
-  font-size: 5rem;
+  font-size: 60px;
   padding-top: 15px;
   padding-bottom: 15px;
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
@@ -641,7 +651,10 @@ AG's media queries to be merged
 @media (min-width: 768px) {
   header.fullscreen .intro {
     opacity: 0;
-    padding-top: 15%;
+    padding-top: 0;
+  }
+  .intro {
+    padding-top: 0;
   }
   .intro .next {
     color: #ABDCFF;
@@ -759,12 +772,31 @@ AG's media queries to be merged
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+  header.fullscreen {
+    background-attachment: fixed;
+  }
+
   .intro .next {
     color: #ABDCFF;
     font-size: 80px;
     padding-top:0px;
     padding-bottom: 15px;
   }
+  .intro {
+    position: relative;
+    height: 100vh;
+    max-width: 617px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title_block {
+    position: absolute;
+    top: 15%;
+    padding-top: 0;
+  }
+
     // Note to AG: aside is also used for the footnotes, so we need these to be classed
     // to avoid unwanted styles on footnotes.
   aside.default {
