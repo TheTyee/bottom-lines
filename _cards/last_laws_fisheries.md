@@ -5,7 +5,6 @@ dek: "A century-old environmental law gets an omnibus makeover."
 group: "laws"
 card_number: 1
 next: navigable-waters-act
-prev: laws-intro
 ---
 
 <div role="tabpanel">
