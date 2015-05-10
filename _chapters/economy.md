@@ -15,7 +15,7 @@ Economists have estimated that the ecological services provided by the Mackenzie
     <a data-card="natural-security" class="link-card" href="#" title="">
         {% image natural-security.jpg %}
 	    <figcaption>
-	        <strong>Can You Put Price on Canada’s ‘Natural Security’?</strong> | A summary of these cards TK from Chris Wood
+	        <strong>Can You Put Price on Canada’s ‘Natural Security’?</strong> | Ecological economists are running the numbers to prove that ecosystems are worth much more alive than dead.
 	    </figcaption>
     </a> 
 </aside>
