@@ -19,7 +19,7 @@ That said, both Canadians’ acceptance of the scientific consensus that human a
  
 ### Out front back in the day
  
-Prime Minister Brian Mulroney was among the leaders of the world’s seven largest economies who called from their 1989 summit meeting in Paris for “common efforts to limit emissions of carbon dioxide." ^227 The previous year, Canada had hosted an international meeting that proposed a global goal of reducing human CO2 emissions by 20 percent by 2005. Soon after the Paris summit, Canada joined 59 other countries in endorsing that objective. ^228
+Prime Minister Brian Mulroney was among the leaders of the world’s seven largest economies who called from their 1989 summit meeting in Paris for “common efforts to limit emissions of carbon dioxide." ^227 The previous year, Canada had hosted an international meeting that proposed a global goal of reducing human CO<sup>2</sup> emissions by 20 percent by 2005. Soon after the Paris summit, Canada joined 59 other countries in endorsing that objective. ^228
  
 Canada was also an active participant in the 1992 Rio de Janeiro Earth Summit, where the ground was laid for the Kyoto accord on reducing greenhouse emissions, concluded five years later in 1997. ^231 Canada, by then under a Liberal government, promised to reduce its 676 million tons (MT) of greenhouse emissions that year to 555 MT by 2012. ^236
  
