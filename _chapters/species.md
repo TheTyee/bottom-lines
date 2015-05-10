@@ -66,8 +66,11 @@ How fast these changes are occurring, especially to species on the losing end of
 
  
 In the economic downdraft following the 2008 financial crisis, federal personnel engaged in environmental science were cut further. ^402 Several research facilities highly prized by researchers were scheduled for closure, although two—the Experimental Lakes Area in northwest Ontario and the Polar Environment Atmospheric Research Laboratory (PEARL) on Ellesmere Island, Canada’s northernmost point—received reprieves, one by transfer to a non-government operator, the latter with a five-year funding extension. 
+
 Ottawa also shifted the focus of federal support for science from government-sector research (typically focused on basic and natural-resource science) to technology development in the private and public-private university sectors. ^403
+
 There have been some new science investments. Ground was broken in August for a new $142 million lab facility at Cambridge Bay, Nunavut, about 1,300 km south of the PEARL site; it’s expected to begin operating in 2017. ^354 ^404 And in August Ottawa announced $2.5 million (roughly one-tenth of what it budgets for prime ministerial security) for new climate research. ^293
+
 Nonetheless numerous investigations by think-tanks, scientific bodies, individual authors and the federal Commissioner of the Environment—including several predating the present government—have drawn attention to the failure to collect reliable, consistent and long-term observations of such key indicators of natural security as water flows, air contamination, or wildlife populations. ^410 ^412
  
 Environment Canada itself has acknowledged, in communications cited by the Environment Commissioner, that it has no idea whether nearly a third of Canada’s bird populations are safe from extinction. ^342 Its ability to ensure the health of entire ecosystems is no better: in 2013 the Commissioner reported that it had “made little progress in monitoring activities, conditions, and threats for the protected areas it manages.” ^343
