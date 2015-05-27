@@ -240,7 +240,7 @@ body.datatable #content {
     margin-top: 60px;
 }
 
-.longform .social-block, .longform h4, .longform aside, .longform h3, .longform figure, .longform p {
+.longform .social-block, .longform h4, .longform aside, .longform h3, .longform figure, .longform p, .longform ul, .longform ol, .longform dl {
   max-width: 617px;
   margin-left: auto;
   margin-right: auto;
@@ -418,15 +418,21 @@ aside.default img {
 figure {
   margin-top: 30px;
   margin-bottom: 15px;
+  font-weight: 700;
+  color: #555;
 }
+
 figcaption {
   font-family: "adelle-sans", sans-serif;
   font-style: normal;
-  font-weight: 300;
   font-size: 13px;
   line-height: 20px;
   padding-top: 10px;
   padding-bottom: 0px;
+}
+
+a figcaption {
+  font-weight: 300;
 }
 
 aside.default a:hover figcaption, aside.default a:hover strong, aside.default a, a.link-card:hover figcaption, a.link-card:hover strong, a.link-card {
