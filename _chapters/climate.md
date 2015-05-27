@@ -9,7 +9,7 @@ seotitle: "Canada’s greenhouse emissions briefly dropped, and are now forecast
 
 Nothing has changed more widely or dramatically over the past 25 years than the global climate. And on no other subject has Canada’s  natural security policy reversed more sharply. In 1989, Canada was a leader in the international response to climate change. ^227 ^228 In many assessments it is now deemed a laggard. ^48 ^357
  
-Over the same period, the [evidence that human emissions](#){:.link-resource}{:.link-card}{:data-card='better-then-worse'} of greenhouse gasses are the biggest factor in rising global temperatures has solidified. ^256 ^280 The human and economic costs of disrupting familiar climate patterns has become sharply clearer. ^258 ^292
+Over the same period, the evidence that human emissions of greenhouse gasses are the biggest factor in rising global temperatures has solidified. ^256 ^280 The human and economic costs of disrupting familiar climate patterns has become sharply clearer. ^258 ^292
 
 
  
