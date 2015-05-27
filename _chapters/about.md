@@ -32,7 +32,7 @@ We are also grateful to the [Environmental Law Centre at the University of Victo
 * Phillip Smith, Web Producer
 * Alex Grunenfelder, Creative Director
 * Sarah Berman, Associate Producer
-* Michelle Hoar, Publisher
+* Michelle Hoar, Project Administrator
 * Carra Simpson, Project Administrator
 
 #### Reprints

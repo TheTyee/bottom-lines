@@ -46,7 +46,7 @@ Half of the ten southern provinces have in fact made headway in cutting their gr
  
 Canada formally renounced its Kyoto commitments in 2011. ^273 Before doing so however it agreed (in Copenhagen in 2009) to a new target to be met by 2020: emissions 17 percent below 2005 levels, roughly 611 MT. ^265
  
-Now that target too is beyond reach. Since dipping after the 2008 economic downturn, national emissions have been climbing again since 2010, [reaching 726 MT a year](http://www.google.com/url?q=http%3A%2F%2Fec.gc.ca%2Fges-ghg%2Fdefault.asp%3Flang%3DEn%26n%3D5B59470C-1%26offset%3D2%26toc%3Dshow&sa=D&sntz=1&usg=AFQjCNFWwUA19b996CFrpa1BbxlnvYHJ1g) —-almost 19 per cent above our revised goal. ^421 In 2014 Canada reported to the United Nations that by 2020 our emissions are likely to breach 735 MT—20 per cent over its promise in by 2030. ^283
+Now that target too is beyond reach. Since dipping after the 2008 economic downturn, national emissions have been climbing again since 2010, [reaching 726 MT a year](#){:.link-resource}{:.link-card}{:data-card='better-then-worse'} —- almost 19 per cent above our revised goal. ^421 In 2014 Canada reported to the United Nations that by 2020 our emissions are likely to breach 735 MT—20 per cent over its promise in by 2030. ^283
 
 <figure>
     {% image flood.jpg title="Extreme precipitation" alt="Extreme precipitation" %}
@@ -59,8 +59,8 @@ Canada’s serial failures to meet its climate commitments have attracted intern
  
 The issue has created an intangible impediment to other national objectives, such as market access to Europe for Canadian crude oil and the proposed XL pipeline across America. ^425 ^426
  
-The Intergovernmental Panel on Climate Change warned again late last year that humanity must achieve “stringent” reductions in greenhouse gas emissions, or face “irreversible and dangerous impacts.” ^280 World leaders will meet in Paris again this year, to consider new national reduction commitments.
- 
+The Intergovernmental Panel on Climate Change warned again late last year that humanity must achieve “stringent” reductions in greenhouse gas emissions, or face “irreversible and dangerous impacts.” ^280 World leaders will meet in Paris again this year, to consider new national reduction commitments. In May, Environment Minister Leona Aglukkaq said Canada would commit to reduce its emissions by 30 per cent below their 2005 levels by 2030. The 515 MT target is 6.5 per cent lower than Canada’s 1997 commitment at Kyoto--but to be achieved 18 years later. 
+
 ### Costs becoming clearer
  
 Meanwhile, the cost of climate instability has come into sharper focus over 25 years. A report released with little fanfare by Natural Resources Canada early in 2014 warned that some livelihoods will no longer be “feasible and/or cost-effective” in the near future. ^288 Indeed, it appeared to endorse a fatalistic approach for some: selling “last chance tourism,” to witness wildlife and landscapes before they disappear.
