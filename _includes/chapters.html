@@ -14,9 +14,9 @@
                     <section class="slide intro">
                         <div class='title_block'>
                             <div class="social-block">
-                                <span class='share-button share-twitter-large'></span>
-                                <span class='share-button share-facebook-large'></span>
-                                <span class='share-button share-email-large'></span>
+                                <a target="_blank" href="http://www.twitter.com/share?text={{ chapter.seotitle | url_escape }}&url=http://bottomlines.tyeesolutions.org/chapter/{{ chapter.id }}"><span class='share-button share-twitter-large'></span></a>
+                                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://bottomlines.tyeesolutions.org/chapter/{{ chapter.id}}"><span class='share-button share-facebook-large'></span></a>
+                                <!--<span class='share-button share-email-large'></span>-->
                             </div>
                             <h1>{{ chapter.header_title }}</h1>
                             <h2>{{ chapter.header_dek }}</h2>
@@ -33,9 +33,9 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
                     <div class="social-block">
-                        <span class='share-button share-twitter-large'></span>
-                        <span class='share-button share-facebook-large'></span>
-                        <span class='share-button share-email-large'></span>
+                        <a target="_blank" href="http://www.twitter.com/share?text={{ chapter.seotitle | url_escape }}&url=http://bottomlines.tyeesolutions.org/chapter/{{ chapter.id }}"><span class='share-button share-twitter-large'></span></a>
+                        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://bottomlines.tyeesolutions.org/chapter/{{ chapter.id}}"><span class='share-button share-facebook-large'></span></a>
+                        <!--<span class='share-button share-email-large'></span>-->
                     </div>
                     {{ chapter.content }}
 

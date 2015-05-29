@@ -28,11 +28,11 @@ We are also grateful to the [Environmental Law Centre at the University of Victo
 #### The Team
 
 * Chris Wood, Research & Reporting
-* David Beers,  Executive Producer & Editor
+* David Beers, Editing
 * Phillip Smith, Web Producer
 * Alex Grunenfelder, Creative Director
 * Sarah Berman, Associate Producer
-* Michelle Hoar, Publisher
+* Michelle Hoar, Project Administrator
 * Carra Simpson, Project Administrator
 
 #### Reprints
