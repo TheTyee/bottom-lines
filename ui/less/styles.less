@@ -850,6 +850,37 @@ AG's media queries to be merged
 }
 
 /* ==========================================================================
+iPad fix for background image in portrait
+========================================================================== */
+/* ----------- iPad mini ----------- */
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  header.fullscreen {background-size: cover; background-attachment: scroll;}
+}
+/* ----------- iPad 1 and 2 ----------- */
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  header.fullscreen {background-size: cover; background-attachment: scroll;}
+}
+/* ----------- iPad 3 and 4 ----------- */
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  header.fullscreen {background-size: cover; background-attachment: scroll;}
+}
+
+/* ==========================================================================
 Print styles.
 Should be inlined to avoid required HTTP connection: h5bp.com/r
 ========================================================================== */
