@@ -4,7 +4,14 @@ layout: datatable
 
 ### Just the Facts
 
-This data set was assembled to inform [Bottom Lines](http://bottomlines.tyeesolutions.org), a research project by the Tyee Solutions Society. For more details scroll down or [click here](/references/#methods).
+This data set was assembled to inform [Bottom Lines](http://bottomlines.tyeesolutions.org), a research project by the Tyee Solutions Society. <span class="hidden-xs hidden-sm">For more details scroll down or [click here](/references/#methods).</span>
+
+<div  class="visible-xs">
+    <br />
+    <p class="alert alert-warning" role="alert">This content is only avaialble from your tablet, laptop, or desktop device.</p>
+</div>
+
+<div class="hidden-xs">
 
 #### References 
 
@@ -89,6 +96,8 @@ The data can be searched by keyword or the following tags:
 * Progressive Conservative (PC
 * Liberal Party of Canada (Lib)
 * Conservative Party of Canada (CPC)
+
+</div>
          
 #### Methods 
 
@@ -97,8 +106,3 @@ This information was assembled and reported with strict, non-partisan neutrality
 The underlying research and data collection for this project was done by Tyee Solutions Society in collaboration with the University of Victoria Environmental Law Centre and Tides Canada Initiatives, with the intent of making it freely available to any individual or organization who might find it useful.
 
 If you would like to contribute to maintaining and expanding this database, [please let us know](http://www.google.com/recaptcha/mailhide/d?k=01buOlX5MUmv64VTyP_gZIRQ==&c=VSBhM_2a-4AF8i4r0JbIJ2HGJMEbzXyix7iTml6KnII=).
-
-
-
-
-
