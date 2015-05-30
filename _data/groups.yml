@@ -1,28 +1,28 @@
 - name: climate
   path: '/chapter/intro/better-then-worse'
-  title: 'Test SEO title'
-  dek: 'Test SEO dek'
+  title: 'Is Canada Meeting its Climate Commitments?'
+  dek: 'After 2007 carbon emissions went down, then up.'
 - name: measurement
   path: '/chapter/intro/groundwater'
-  title: 'Test SEO title'
-  dek: 'Test SEO dek'
+  title: 'Can’t Fix What We Don’t Measure'
+  dek: 'Two decades summarized from 11 reports'
 - name: economy
   path: '/chapter/intro/natural-security'
-  title: 'Test SEO title'
-  dek: 'Test SEO dek'
+  title: 'Can You Put Price on Canada’s ‘Natural Security’?'
+  dek: 'What do ecosystems do for the human economy?'
 - name: laws
   path: '/chapter/intro/fisheries-act'
-  title: 'Test SEO title'
-  dek: 'Test SEO dek'
+  title: 'Canada’s Environmental Protection Laws Then and Now'
+  dek: 'See which legislative gems of the ‘80s and ‘90s haven’t aged well.'
 - name: reportcard
   path: '/chapter/intro/ottawa-vague'
-  title: 'Test SEO title'
-  dek: 'Test SEO dek'
+  title: 'Canada’s Environment Report Card'
+  dek: 'Here’s how the enviro-commissioner graded 25 years of federal actions.'
 - name: extreme
   path: '/chapter/intro/extreme-weather-budget'
   title: 'Test SEO title'
   dek: 'Test SEO dek'
 - name: species
   path: '/chapter/intro/orca-whales'
-  title: 'Test SEO title'
-  dek: 'Test SEO dek'
+  title: 'What’s Happening to Canada’s Iconic Wildlife?'
+  dek: 'Canada’s Iconic Wildlife: a visual tour'
