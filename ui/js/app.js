@@ -115,7 +115,7 @@ App.CardView = Backbone.View.extend({
         var model = App.cards.get(this.modelId);
         //TODO first update the _cards with the data attributes
         //     then use this to update the meta for the route
-        //     App.updateMeta(model);
+        App.updateMeta(model);
         if ( model.get('css') && model.get('css-loaded') !== true ) {
             var css = model.get('css');
             $('<link>')
