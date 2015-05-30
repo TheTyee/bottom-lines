@@ -1,7 +1,15 @@
 {% assign cards = site.cards %}
 {% assign cards_sorted = cards | sort: 'card_number' %}
 {% for card in cards_sorted %}
-<div class="modal {{ card.group }}" id="{{ card.id }}" data-group="{{card.group}}" data-next="{{ card.next}}" data-prev="{{ card.prev }}" data-js="{% if card.js %}{{ card.js | asset_path }}{% endif %}" data-css="{% if card.css %}{{ card.css | asset_path }}{% endif %}" data-function="{{ card.function }}" data-arguments="{{ card.arguments }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+{% assign share_image = "share_image_group_" | append: card.group | append: '.jpg' %}
+{% for group in site.data.groups %}
+    {% if group.name == card.group %}
+    {% assign share_path = group.path %}
+    {% assign share_title = group.title %}
+    {% assign share_dek = group.dek %}
+    {% endif %}
+{% endfor %}
+<div class="modal {{ card.group }}" id="{{ card.id }}" data-group="{{card.group}}" data-next="{{ card.next}}" data-prev="{{ card.prev }}" data-js="{% if card.js %}{{ card.js | asset_path }}{% endif %}" data-css="{% if card.css %}{{ card.css | asset_path }}{% endif %}" data-function="{{ card.function }}" data-arguments="{{ card.arguments }}" data-image="{{ share_image | asset_path }}" data-path="{{ share_path }}" data-title="{{ share_title }}" data-dek="{{ share_dek }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
