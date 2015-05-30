@@ -2,7 +2,7 @@
 id: extreme-weather-budget
 title: "What Does a Warming Climate Cost Canadians?"
 dek: "Insurance payouts chart the rising price of extreme weather."
-group: "economy"
+group: "extreme"
 card_number: 1
 js: extreme-weather-budget.js
 css: extreme-weather-budget.css
