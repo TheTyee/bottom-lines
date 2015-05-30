@@ -1,0 +1,28 @@
+- name: climate
+  path: '/chapter/intro/better-then-worse'
+  title: 'Test SEO title'
+  dek: 'Test SEO dek'
+- name: measurement
+  path: '/chapter/intro/groundwater'
+  title: 'Test SEO title'
+  dek: 'Test SEO dek'
+- name: economy
+  path: '/chapter/intro/natural-security'
+  title: 'Test SEO title'
+  dek: 'Test SEO dek'
+- name: laws
+  path: '/chapter/intro/fisheries-act'
+  title: 'Test SEO title'
+  dek: 'Test SEO dek'
+- name: reportcard
+  path: '/chapter/intro/ottawa-vague'
+  title: 'Test SEO title'
+  dek: 'Test SEO dek'
+- name: extreme
+  path: '/chapter/intro/extreme-weather-budget'
+  title: 'Test SEO title'
+  dek: 'Test SEO dek'
+- name: species
+  path: '/chapter/intro/orca-whales'
+  title: 'Test SEO title'
+  dek: 'Test SEO dek'
