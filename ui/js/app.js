@@ -323,6 +323,7 @@ App.CardsLayout = new Backbone.Layout({
         var base = currentPath.split('/')[0];
         var item = currentPath.split('/')[1];
         App.router.navigate(base + '/' + item, { trigger: false } );
+        App.router.trackPageView();
     }
 });
 
