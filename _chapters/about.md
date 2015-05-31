@@ -35,6 +35,22 @@ We are also grateful to the [Environmental Law Centre at the University of Victo
 * Michelle Hoar, Project Administrator
 * Carra Simpson, Project Administrator
 
+#### Photo credits
+
+All images unless otherwise noted here were provided by Shutterstock.
+
+Polluted water photo by [Jes Abeita](https://www.flickr.com/photos/jesmonster/) in [Your BC: The Tyee's Photo Pool](https://www.flickr.com/groups/thetyee/).
+
+Leaf on cement photo by [Elvis](https://www.flickr.com/photos/elvis_hitler/) in [Your BC: The Tyee's Photo Pool](https://www.flickr.com/groups/thetyee/).
+
+Caribou skull photo by [Waferboard](https://www.flickr.com/photos/waferboard/) in [Your BC: The Tyee's Photo Pool](https://www.flickr.com/groups/thetyee/).
+
+Whales photo by [Carrie Cole](https://www.flickr.com/photos/carriecolephotography/) in [Your BC: The Tyee's Photo Pool](https://www.flickr.com/groups/thetyee/).
+
+Satellite of Saskatchewan oil pads (photo Google Earth)
+
+Smokestacks photo by [Chris Yakimov](https://www.flickr.com/photos/doucy/) in [Your BC: The Tyee's Photo Pool](https://www.flickr.com/groups/thetyee/).
+
 #### Reprints
 
 Tyee Solutions Society offers its reporting free of charge to be republished by other media.  If you wish to re-publish elements of this project or any other TSS-produced article, please contact [Chris Wood](http://www.google.com/recaptcha/mailhide/d?k=011TKBYVKa4jQsFjQjddbAtw==&c=OaWzGT7XWIENAFNOvhg9ZsDdj8AF-LqooBW1ttrsWqo=).
