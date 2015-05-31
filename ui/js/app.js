@@ -364,12 +364,12 @@ App.Router = Backbone.Router.extend({
         '*default': 'defaultRoute'
     },
     start: function() {
-        console.log('Routing started');
+        //console.log('Routing started');
         this.navigate("chapter/intro", {trigger: true});
     },
     // TODO Remove the duplication from these two routes:
     displayChapter: function(name) {
-        console.log('Showing chapter: ' + name);
+        //console.log('Showing chapter: ' + name);
         var currentView = App.Layout.getView({ visible: true });
         var nextView = App.Layout.getView(name);
         if ( nextView ) {
@@ -380,11 +380,11 @@ App.Router = Backbone.Router.extend({
             nextView.show();
             window.scrollTo(0, 0); // Yuck!
         } else {
-            console.log('No matching chapter');
+            //console.log('No matching chapter');
         }
     },
     displayChapterWithCard: function(name, card) {
-        console.log('Showing chapter: ' + name + ' with card ' + card );
+        //console.log('Showing chapter: ' + name + ' with card ' + card );
         var currentView = App.Layout.getView({ visible: true });
         var nextView = App.Layout.getView(name);
         if ( nextView ) {
@@ -396,11 +396,11 @@ App.Router = Backbone.Router.extend({
             nextView.show();
             window.scrollTo(0, 0); // Yuck!
         } else {
-            console.log('No matching chapter');
+            //console.log('No matching chapter');
         }
     },
     displayCard: function(name) {
-        console.log('Showing card: ' + name);
+        //console.log('Showing card: ' + name);
         var currentView = App.Layout.getView({ visible: true });
         var nextView = App.Layout.getView(name);
         if ( nextView ) {
@@ -408,19 +408,19 @@ App.Router = Backbone.Router.extend({
             nextView.show();
             //window.scrollTo(0, 0); // Yuck!
         } else {
-            console.log('No matching card');
+            //console.log('No matching card');
         }
     },
     defaultRoute: function() {
-        console.log("404");
+        //console.log("404");
     },
     trackPageView: function() {
         var url = Backbone.history.getFragment();
         // Add a slash if neccesary
         if (!/^\//.test(url)) url = '/' + url;
         // Record page view
-        console.log('trackPageView');
-        console.log(url);
+        //console.log('trackPageView');
+        //console.log(url);
         ga('send', {
             'hitType': 'pageview',
             'page': url
