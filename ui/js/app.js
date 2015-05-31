@@ -286,6 +286,7 @@ App.CardsLayout = new Backbone.Layout({
                 var base = currentPath.split('/')[0];
                 var item = currentPath.split('/')[1];
                 App.router.navigate(base + '/' + item + '/' + cardId, { trigger: false } );
+                App.router.trackPageView();
             } else {
                 setTimeout(check, 1000);
             }
@@ -352,6 +353,8 @@ App.Layout = new Backbone.Layout({
 
 App.Router = Backbone.Router.extend({
     initialize: function() { 
+        // Track every route and call trackPage
+        this.bind('route', this.trackPageView);
     },
     routes: {
         '': 'start',
@@ -410,5 +413,17 @@ App.Router = Backbone.Router.extend({
     },
     defaultRoute: function() {
         console.log("404");
+    },
+    trackPageView: function() {
+        var url = Backbone.history.getFragment();
+        // Add a slash if neccesary
+        if (!/^\//.test(url)) url = '/' + url;
+        // Record page view
+        console.log('trackPageView');
+        console.log(url);
+        ga('send', {
+            'hitType': 'pageview',
+            'page': url
+        });
     }
 });
