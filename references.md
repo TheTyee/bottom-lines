@@ -13,7 +13,7 @@ This data set was assembled to inform [Bottom Lines](http://bottomlines.tyeesolu
 
 <div class="hidden-xs">
 
-#### References 
+<h4>References</h4>
 
 <table id="references" class="table table-striped table-bordered dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="example_info" style="width: 100%;">
         <thead>
@@ -45,7 +45,7 @@ This data set was assembled to inform [Bottom Lines](http://bottomlines.tyeesolu
     </tbody>
 </table>
 
-#### Footnotes
+<h4>Footnotes</h4>
 
 <table id="footnotes" class="table table-striped table-bordered dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="example_info" style="width: 100%;">
         <thead>
@@ -66,37 +66,47 @@ This data set was assembled to inform [Bottom Lines](http://bottomlines.tyeesolu
     </tbody>
 </table>
 
-#### Legend
+<h4>Legend</h4>
 
-The data are organized chronologically into the following sections:
+<p>The data are organized chronologically into the following sections:</p>
   
-**Peers**: Including Canada’s standing on the environment internationally, significant actions taken by Canada’s peers to protect the environment and major international treaties.
- 
-**Economy**: Including the cost of major environmental events and estimates of the value to Canada’s economy of existing ecosystems.
- 
-**Land, Air and Water**: Including legislation to protect these environmental basics, independent assessments of the implementation and effectiveness of those measures, and significant related court decisions.
- 
-**Species**: Including legislation to protect individual species and ecosystems, independent assessments of the implementation and effectiveness of those measures, and significant related court decisions.
- 
-**Climate**: Including both international assessments of the state of the global climate, the effects of climate change in Canada, national policy responses, as well as climate-related events and economic impacts.
- 
-**Awareness**: Including Canada’s support for natural science, the monitoring of natural security, and legislation designed to anticipate and prevent environmental harms from development.
- 
-(**Footnotes**: Support references in Bottom Lines not otherwise included in chronologies.)
- 
+<p><strong>Peers</strong>: Including Canada’s standing on the environment internationally, significant actions taken by Canada’s peers to protect the environment and major international treaties.
+</p>
+<p>
+<strong>Economy</strong>: Including the cost of major environmental events and estimates of the value to Canada’s economy of existing ecosystems.
+</p>
+<p>
+<strong>Land, Air and Water</strong>: Including legislation to protect these environmental basics, independent assessments of the implementation and effectiveness of those measures, and significant related court decisions.
+</p>
+<p>
+<strong>Species</strong>: Including legislation to protect individual species and ecosystems, independent assessments of the implementation and effectiveness of those measures, and significant related court decisions.
+</p>
+<p>
+<strong>Climate</strong>: Including both international assessments of the state of the global climate, the effects of climate change in Canada, national policy responses, as well as climate-related events and economic impacts.
+</p>
+<p>
+<strong>Awareness</strong>: Including Canada’s support for natural science, the monitoring of natural security, and legislation designed to anticipate and prevent environmental harms from development.
+</p>
+<p>
+(<strong>Footnotes</strong>: Support references in Bottom Lines not otherwise included in chronologies.)
+</p>
+<p>
 The data can be searched by keyword or the following tags:
-
-* Diplomacy
-* Litigation
-* Science
-* Legislation
-* Assessments
-* Events
-* Valuations
-* Progressive Conservative (PC
-* Liberal Party of Canada (Lib)
-* Conservative Party of Canada (CPC)
-
+</p>
+<p>
+<ul>
+    <li>Diplomacy</li>
+    <li>Litigation</li>
+    <li>Science</li>
+    <li>Legislation</li>
+    <li>Assessments</li>
+    <li>Events</li>
+    <li>Valuations</li>
+    <li>Progressive Conservative (PC)</li>
+    <li>Liberal Party of Canada (Lib)</li>
+    <li>Conservative Party of Canada (CPC)</li>
+</ul>
+</p>
 </div>
          
 #### Methods 
