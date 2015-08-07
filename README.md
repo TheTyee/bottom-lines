@@ -67,6 +67,19 @@ It's also possible to run the development set-up through Grunt. The `Gruntfile.j
 
 It works nicely, but it's not fast.
 
+## Deployment
+
+bundle exec jekyll build --config _config.yml,_config.preview.yml -d ~/bottomlines.tyeesolutions.org/www/
+bundle exec jekyll build --config _config.yml -d ~/bottomlines.tyeesolutions.org/www/
+perl _scripts/parse_footnotes.pl ~/bottomlines.tyeesolutions.org/www/index.html
+rm -r -f .jekyll-assets-cache/
+env GIT_SSL_NO_VERIFY=true git pull
+
+bundle exec jekyll build --config _config.yml,_config.preview.yml -d ~/preview.bottomlines.tyeesolutions.org/www/
+perl _scripts/parse_footnotes.pl ~/preview.bottomlines.tyeesolutions.org/www/index.html
+rm -r -f .jekyll-assets-cache/
+env GIT_SSL_NO_VERIFY=true git pull
+
 ## General concepts
 
 To come.
